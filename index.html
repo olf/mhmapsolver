@@ -1,9 +1,9 @@
 <head>
     <title>Map Solver and Mouse Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="jquery.a-tools.js"></script>
-    <script type="text/javascript" src="jquery.asuggest.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/14589881/jquery.a-tools.js"></script>
+    <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/14589881/jquery.asuggest.js"></script>
     <script type="text/javascript" src="map_solver.js"></script>
     <style type="text/css">
         * {
@@ -20,7 +20,7 @@
             padding:20px;
         }
         td {
-        	padding: 5px;
+            padding: 5px;
             text-align:center;
             vertical-align: top;
             font-size: 10px;
@@ -43,7 +43,7 @@
             text-align:left;
         }
         .header {
-        	font-size: 11px;
+            font-size: 11px;
         }
         .header h1 {
             font-weight: 700;
@@ -52,8 +52,8 @@
             text-align:center;
         }
         .invalid {
-			color: red;
-		}
+            color: red;
+        }
         }
     </style>
     <!--###################################################################################-->
@@ -64,10 +64,10 @@
             <tr>
                 <td colspan>
                     <div class="header">
-                        	<h1>Map Solver and Mouse Finder</h1>
-                        	based on Chad Moore's<br><br>
-                        	Copy and paste mice from maps<br>
-                        	Or type mice names leaving a line break between each<br><br>
+                            <h1>Map Solver and Mouse Finder</h1>
+                            based on Chad Moore's<br><br>
+                            Copy and paste mice from maps<br>
+                            Or type mice names leaving a line break between each<br><br>
                             Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions
                     </div>
                 </td>
@@ -75,7 +75,71 @@
             <!--###################################################################################-->
             <tr>
                 <td>
-                    <textarea id="map" rows="25" cols="40"></textarea>
+                    <textarea id="map" rows="25" cols="40">
+Amplified Grey
+Angry Train Staff
+Assassin Beast
+Bear
+Briegull
+Burglar
+Core Sample
+Cyclops
+Desert Architect
+Dream Drifter
+Essence Guardian
+Falling Carpet
+Flame Ordnance
+Frozen
+Giant Snail
+Gluttonous Zombie
+Goblin
+Hapless Marionette
+Industrious Digger
+Itty-Bitty Burroughs
+Keeper
+Leviathan
+Lich
+Lightning Rod
+Limestone Miner
+Monster
+Mutated Brown
+Mutated White
+Mystic Guardian
+Nightshade Nanny
+Phalanx
+Photographer
+Pinchy
+Plutonium Tentacle
+Polar Bear
+Prospector
+Prototype
+Radioactive Ooze
+Red-Eyed Watcher Owl
+Rift Tiger
+Riftweaver
+Saloon Gal
+Sand Pilgrim
+Scarab
+Scavenger
+Serpentine
+Shopkeeper
+Silth
+Snow Slinger
+Sorcerer
+Spotted
+Steam Grip
+Super Mega Mecha Ultra RoboGold
+Surgeon Bot
+Theurgy Warden
+Thorn
+Tiger
+Twisted Hotcakes
+Twisted Treant
+Warmonger
+Water Sprite
+Wealth
+Wound Up White
+Zombie                    </textarea>
                 </td>
                 <td id="interpretedAs">
                 </td>
@@ -85,13 +149,13 @@
         </table>
 
         <table>
-        	<td>
-        		<table id='bestLocation'></table>
-        		</td><td>
-       	        <table id='mouseList'></table>
-       	        </td>
-        	</td>
-       	</table>
+            <td>
+                <table id='bestLocation'></table>
+                </td><td>
+                <table id='mouseList'></table>
+                </td>
+            </td>
+        </table>
     </div>
 </body>
 
