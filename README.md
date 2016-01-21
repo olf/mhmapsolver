@@ -2,7 +2,7 @@
 
 for HitGrab's [MouseHunt](https://www.mousehuntgame.com/) browser game.
 
-Based upon code by Chad Moore's and [haoala](https://dl.dropboxusercontent.com/u/14589881/map.html)
+Based upon code by Chad Moore and [haoala](https://dl.dropboxusercontent.com/u/14589881/map.html)
 
 ### Try it ###
 
