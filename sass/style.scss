@@ -2,37 +2,6 @@ $table-bg-color: #beb;
 $table-bg-color-light: lighten($table-bg-color, 10);
 $invalid-color: #f00;
 
-#bestlocation {
-  float: left;
-
-  table {
-    border-collapse: separate;
-    border-spacing: 0;
-  }
-
-  tr {
-    &:nth-child(even) {
-      background: $table-bg-color;
-    }
-
-    &:nth-child(odd) {
-      background: $table-bg-color-light;
-    }
-  }
-
-  td {
-    text-align: left;
-    vertical-align: top;
-    font-size: 11px;
-    padding: 4px 2px;
-  }
-
-}
-
-#mouselist {
-  float: left;
-}
-
 body {
   font-family: Arial;
   font-size: 10px;
@@ -53,4 +22,39 @@ h1 {
 
 .invalid {
   color: $invalid-color;
+}
+
+#bestlocationscontainer {
+  float: left;
+}
+
+#mouselistcontainer {
+  float: left;
+}
+
+#mouselist,
+#bestlocations {
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  td {
+    font-size: 11px;
+    padding: 4px 2px;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+#bestlocations {
+  tr {
+    &:nth-child(even) {
+      background: $table-bg-color;
+    }
+
+    &:nth-child(odd) {
+      background: $table-bg-color-light;
+    }
+  }
 }

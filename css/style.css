@@ -1,21 +1,3 @@
-#bestlocation {
-  float: left; }
-  #bestlocation table {
-    border-collapse: separate;
-    border-spacing: 0; }
-  #bestlocation tr:nth-child(even) {
-    background: #beb; }
-  #bestlocation tr:nth-child(odd) {
-    background: #e4f8e4; }
-  #bestlocation td {
-    text-align: left;
-    vertical-align: top;
-    font-size: 11px;
-    padding: 4px 2px; }
-
-#mouselist {
-  float: left; }
-
 body {
   font-family: Arial;
   font-size: 10px; }
@@ -32,3 +14,27 @@ h1 {
 
 .invalid {
   color: #f00; }
+
+#bestlocationscontainer {
+  float: left; }
+
+#mouselistcontainer {
+  float: left; }
+
+#mouselist table,
+#bestlocations table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+#mouselist td,
+#bestlocations td {
+  font-size: 11px;
+  padding: 4px 2px;
+  text-align: left;
+  vertical-align: top; }
+
+#bestlocations tr:nth-child(even) {
+  background: #beb; }
+
+#bestlocations tr:nth-child(odd) {
+  background: #e4f8e4; }

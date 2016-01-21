@@ -1,5 +1,3 @@
-//"use strict";
-
 var popCSV = [];
 var popArray = [];
 
@@ -8,9 +6,7 @@ pop.open("get", "https://dl.dropboxusercontent.com/u/14589881/populations2.csv",
 pop.onreadystatechange = function() {
     if (pop.readyState == 4) {
         processPop();
-        var mapText = document.getElementById("map").value;
-        //console.log(mapText);
-        processMap(mapText);
+        processMap($('#map').val());
     }
 };
 pop.send();
@@ -149,7 +145,6 @@ function processPop() {
     loadMouseDropdown();
 }
 
-
 function loadMouseDropdown() {
     var popArrayLength = Object.size(popArray);
     var suggests = [];
@@ -160,7 +155,6 @@ function loadMouseDropdown() {
     }
 
     $("#map").asuggest(suggests);
-
 }
 
 function amendMouseName(name) {
@@ -177,11 +171,10 @@ function processMap(mapText) {
     var mouseArray = mapText
         .split("\n")
         .map(amendMouseName)
-        .filter(function (v) {return v.length > 0;})
+        .filter(function(v) {
+            return v.length > 0;
+        })
         .sort();
-
-    var interpretedAs = document.getElementById("interpretedAs");
-    var mouseList = document.getElementById("mouseList");
 
     var mouseListText = '';
 
@@ -230,7 +223,10 @@ function processMap(mapText) {
 
                             var attractionRate = parseFloat(popArray[mouseName][locationName][phaseName][cheeseName][charmName]);
 
-                            var mouse = {name: mouseName, rate: attractionRate};
+                            var mouse = {
+                                name: mouseName,
+                                rate: attractionRate
+                            };
                             if (bestLocationArray[locationPhaseCheeseCharm] === undefined) {
                                 var newitem = {
                                     location: locationName,
@@ -267,16 +263,19 @@ function processMap(mapText) {
     }
 
     if (unknownMice.length > 0) {
-        interpretedAs.innerHTML =
+        $('#unknownmice').html(
             'Unknown:<br>' +
             '<div class="invalid">' +
-            unknownMice.reduce(function (p, c) {return p + c + '<br>';}, "") +
-            '</div>';
+            unknownMice.reduce(function(p, c) {
+                return p + c + '<br>';
+            }, "") +
+            '</div>'
+        );
     } else {
-        interpretedAs.innerHTML = "";
+        $('#unknownmice').html("");
     }
 
-    mouseList.innerHTML = "<table>" + mouseListText + "</table>";
+    $('#mouselist').html("<table>" + mouseListText + "</table>");
 
     var sortedLocation = sortLocations(bestLocationArray);
     printBestLocation(sortedLocation);
@@ -292,7 +291,9 @@ function sortLocations(bestLocationArray) {
         sortedLocation.push(bestLocationArray[theLocation]);
     }
 
-    sortedLocation.sort(function(a,b) {return b.totalRate - a.totalRate;});
+    sortedLocation.sort(function(a, b) {
+        return b.totalRate - a.totalRate;
+    });
 
     return sortedLocation;
 }
@@ -305,7 +306,6 @@ function sortBestLocation(bestLocationArray) {
 
     for (var i = 0; i < bLALength; i++) {
         var locationCheese = bLAKeys[i];
-        //sortedLocation[bestLocationArray[locationCheese]] = locationCheese;
         sortedLocation.push([locationCheese, bestLocationArray[locationCheese]]);
     }
 
@@ -319,21 +319,25 @@ function sortBestLocation(bestLocationArray) {
 function printBestLocation(sortedLocation) {
     var bestLocationHTML = '';
 
-    bestLocationHTML = sortedLocation.reduce(function (p, c) {
+    bestLocationHTML = sortedLocation.reduce(function(p, c) {
         return p +
             "<tr>" +
             "<td>" +
-                "<b>" + c.location + "</b> (" + c.totalRate.toFixed(2) + ")<br>" +
-                (c.phase.length > 0 ? c.phase + "<br>" : "") +
-                (c.cheese.length > 0 ? c.cheese + "<br>" : "") +
-                (c.charm.length > 0 ? c.charm + "<br>" : "") +
+            "<b>" + c.location + "</b> (" + c.totalRate.toFixed(2) + ")<br>" +
+            (c.phase.length > 0 ? c.phase + "<br>" : "") +
+            (c.cheese.length > 0 ? c.cheese + "<br>" : "") +
+            (c.charm.length > 0 ? c.charm + "<br>" : "") +
             "</td>" +
             "<td>" +
-                c.mice
-                .sort(function(a,b) {return b.rate - a.rate;})
-                .reduce(function (txt, mouse) {return txt + mouse.name + " (" + mouse.rate.toFixed(2) + ")<br>";}, "") +
+            c.mice
+            .sort(function(a, b) {
+                return b.rate - a.rate;
+            })
+            .reduce(function(txt, mouse) {
+                return txt + mouse.name + " (" + mouse.rate.toFixed(2) + ")<br>";
+            }, "") +
             "</tr>";
     }, "");
 
-    $('#bestLocation').html("<table>" + bestLocationHTML + "</table>");
+    $('#bestlocations').html("<table>" + bestLocationHTML + "</table>");
 }
