@@ -261,7 +261,7 @@ function processMap(mapText) {
             var maxMLC = (sortedMLC.length > 10 ? 10 : sortedMLC.length);
             for (var n = 0; n < maxMLC; n++) {
                 mouseListText += "<td>" + sortedMLC[n][0] + "</td>";
-                mouseListTextRow2 += "<td>" + sortedMLC[n][1] + "</td>";
+                mouseListTextRow2 += "<td>" + sortedMLC[n][1].toFixed(2) + "%</td>";
             }
 
             if (sortedMLC.length > 10) {
@@ -345,7 +345,7 @@ function printBestLocations(sortedLocation) {
         return p +
             "<tr>" +
             "<td>" +
-            "<b>" + c.location + "</b> (" + c.totalRate.toFixed(2) + ")<br>" +
+            "<b>" + c.location + "</b> (" + c.totalRate.toFixed(2) + "%)<br>" +
             (c.phase.length > 0 ? c.phase + "<br>" : "") +
             (c.cheese.length > 0 ? c.cheese + "<br>" : "") +
             (c.charm.length > 0 ? c.charm + "<br>" : "") +
@@ -356,7 +356,7 @@ function printBestLocations(sortedLocation) {
                 return b.rate - a.rate;
             })
             .reduce(function(txt, mouse) {
-                return txt + mouse.name + " (" + mouse.rate.toFixed(2) + ")<br>";
+                return txt + mouse.name + " (" + mouse.rate.toFixed(2) + "%)<br>";
             }, "") +
             "</tr>";
     }, "");

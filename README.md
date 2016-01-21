@@ -4,6 +4,8 @@ for HitGrab's [MouseHunt](https://www.mousehuntgame.com/) browser game.
 
 Based upon code by Chad Moore and [haoala](https://dl.dropboxusercontent.com/u/14589881/map.html)
 
+Using data from [MH Calculator](http://goo.gl/y17T4q)
+
 ### Try it ###
 
 You can try it [here on GitHub](http://olf.github.io/mhmapsolver/)
