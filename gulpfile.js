@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 
 gulp.task('default', ['watch']);
@@ -20,7 +22,7 @@ gulp.task('inject', function() {
 gulp.task('sass', function() {
     return gulp
         .src('./sass/**/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 
@@ -35,11 +37,14 @@ gulp.task('server', function() {
 
 gulp.task('release', ['sass'], function() {
     gulp.src('./index.html')
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./release'));
 
-    gulp.src('./css/*.css')
+    gulp.src('./sass/**/*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./release/css'));
 
     gulp.src('./js/*.js')
+        .pipe(uglify())
         .pipe(gulp.dest('./release/js'));
 });
