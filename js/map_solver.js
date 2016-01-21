@@ -1,8 +1,11 @@
 var popCSV = [];
 var popArray = [];
 
+// attractionrates.csv is the (hidden) attraction rates
+// sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
+
 var pop = new XMLHttpRequest();
-pop.open("get", "http://olf.github.io/mhmapsolver/data/populations.csv", true);
+pop.open("get", "http://olf.github.io/mhmapsolver/data/attractionrates.csv", true);
 pop.onreadystatechange = function() {
     if (pop.readyState == 4) {
         processPop();
@@ -132,13 +135,13 @@ function processPop() {
     //Creating popArray
     for (var i = 1; i < popCSVLength; i++) {
         var row = popCSV[i];
-        var location = row[0];
-        var phase = row[1];
+        var location = row[1];
+        var phase = "";
         var cheese = row[2];
-        var charm = row[3];
-        var mouseName = row[4];
+        var charm = row[4];
+        var mouseName = row[0];
         mouseName = mouseName.capitalise();
-        var population = row[5];
+        var population = row[8];
 
         if (popArray[mouseName] === undefined) popArray[mouseName] = []; //If mouse doesn't exist in array
         if (popArray[mouseName][location] === undefined) popArray[mouseName][location] = [];
