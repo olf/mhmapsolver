@@ -47,4 +47,7 @@ gulp.task('release', ['sass'], function() {
     gulp.src('./js/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./release/js'));
+
+    gulp.src('./data/*.csv')
+        .pipe(gulp.dest('./release/data'));
 });

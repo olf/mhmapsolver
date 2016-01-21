@@ -2,7 +2,7 @@ var popCSV = [];
 var popArray = [];
 
 var pop = new XMLHttpRequest();
-pop.open("get", "https://dl.dropboxusercontent.com/u/14589881/populations2.csv", true);
+pop.open("get", "http://olf.github.io/mhmapsolver/data/populations.csv", true);
 pop.onreadystatechange = function() {
     if (pop.readyState == 4) {
         processPop();
