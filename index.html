@@ -1,10 +1,8 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>Map Solver and Mouse Finder</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.a-tools.js"></script>
-    <script type="text/javascript" src="js/jquery.asuggest.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="js/map_solver.js"></script>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -25,7 +23,7 @@
     </div>
     <div id="bestlocationscontainer">
         <h2>Best Locations</h2>
-        <p><a id="overviewlink" href="#mice">Mice Overview</a></p>
+        <p><a id="overviewlink" href="#mouselistcontainer">Mice Overview</a></p>
         <div id="bestlocations">
             <table>
                 <thead><tr><th>Location</th><th>Mice</th></tr></thead>
@@ -35,9 +33,14 @@
     </div>
 
     <div id="mouselistcontainer">
-        <h2><a name="mice">Mice</a></h2>
+        <h2>Mice</h2>
         <div id="mouselist"></div>
     </div>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.a-tools.js"></script>
+<script type="text/javascript" src="js/jquery.asuggest.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/map_solver.js"></script>
 </body>
 </html>
