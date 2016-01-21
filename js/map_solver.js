@@ -1,5 +1,14 @@
 //"use strict";
 
+$(document).load(function() {
+    document.getElementById("map").onkeyup = function() {
+        var mapText = document.getElementById("map").value;
+        //console.log(mapText);
+        processMap(mapText);
+    };
+});
+
+
 String.prototype.capitalise = function() {
     return this.replace(/(?:^|\s)\S/g, function(a) {
         return a.toUpperCase();
@@ -155,15 +164,6 @@ function loadMouseDropdown() {
 
 }
 
-
-window.onload = function() {
-    document.getElementById("map").onkeyup = function() {
-        var mapText = document.getElementById("map").value;
-        //console.log(mapText);
-        processMap(mapText);
-    };
-};
-
 function amendMouseName(name) {
     name = name.capitalise().trim();
 
@@ -175,22 +175,25 @@ function amendMouseName(name) {
 }
 
 function processMap(mapText) {
-    var mouseArray = mapText.split("\n");
-    mouseArray.sort();
+    var mouseArray = mapText
+        .split("\n")
+        .map(amendMouseName)
+        .filter(function (v) {return v.length > 0;})
+        .sort();
 
     var interpretedAs = document.getElementById("interpretedAs");
     var mouseList = document.getElementById("mouseList");
 
-    var interpretedAsText = "Rectify:</b><br>";
     var mouseListText = '';
 
     var bestLocationArray = [];
+    var unknownMice = [];
 
     for (var i = 0; i < mouseArray.length; i++) {
-        var mouseName = amendMouseName(mouseArray[i]);
+        var mouseName = mouseArray[i];
 
         if (popArray[mouseName] === undefined) { //Mouse name not recognised
-            interpretedAsText += "<div class='invalid'>" + mouseName + "</div>";
+            unknownMice.push(mouseName);
             mouseListText += "<tr><td><b>" + mouseName + "</b></td></tr>";
         } else {
             var mouseLocationCheese = [];
@@ -264,8 +267,17 @@ function processMap(mapText) {
         }
     }
 
-    // interpretedAs.innerHTML = interpretedAsText;
-    // mouseList.innerHTML = mouseListText;
+    if (unknownMice.length > 0) {
+        interpretedAs.innerHTML =
+            'Unknown:<br>' +
+            '<div class="invalid">' +
+            unknownMice.reduce(function (p, c) {return p + c + '<br>';}) +
+            '</div>';
+    } else {
+        interpretedAs.innerHTML = "";
+    }
+
+    mouseList.innerHTML = "<table>" + mouseListText + "</table>";
 
     var sortedLocation = sortLocations(bestLocationArray);
     printBestLocation(sortedLocation);
@@ -315,16 +327,15 @@ function printBestLocation(sortedLocation) {
         return p +
             "<tr>" +
             "<td>" +
-                "<b>" + c.location + "</b><br>" +
+                "<b>" + c.location + "</b> (" + c.totalRate.toFixed(2) + ")<br>" +
                 (c.phase.length > 0 ? c.phase + "<br>" : "") +
                 (c.cheese.length > 0 ? c.cheese + "<br>" : "") +
                 (c.charm.length > 0 ? c.charm + "<br>" : "") +
             "</td>" +
-            "<td>" + c.totalRate.toFixed(2) + "</td>" +
             "<td>" +
                 c.mice
                 .sort(function(a,b) {return b.rate - a.rate;})
-                .reduce(function (txt, mouse) {return txt + mouse.name + " (" + mouse.rate + ")<br>";}, "") +
+                .reduce(function (txt, mouse) {return txt + mouse.name + " (" + mouse.rate.toFixed(2) + ")<br>";}, "") +
             "</tr>";
     }, "");
 
@@ -335,5 +346,5 @@ function printBestLocation(sortedLocation) {
         bestLocationHTML += "<tr><td><b>" + location[0].rate + "</b></td><td>" + sortedLocation[i][1].toFixed(2) + "</td></tr>";
     }
 */
-    bestLocation.innerHTML = bestLocationHTML;
+    bestLocation.innerHTML = "<table>" + bestLocationHTML + "</table>";
 }

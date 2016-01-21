@@ -1,160 +1,64 @@
 <head>
     <title>Map Solver and Mouse Finder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/14589881/jquery.a-tools.js"></script>
-    <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/14589881/jquery.asuggest.js"></script>
-    <script type="text/javascript" src="map_solver.js"></script>
-    <style type="text/css">
-        * {
-            margin:0;
-            padding:0;
-        }
-        body {
-            font-family:Arial;
-            font-size: 12px;
-            line-height:20px;
-        }
-        .container {
-            margin: 0 auto;
-            padding:20px;
-        }
-        td {
-            padding: 5px;
-            text-align:center;
-            vertical-align: top;
-            font-size: 10px;
-        }
-        select {
-            padding:4px;
-        }
-        a {
-            text-decoration: underline;
-        }
-        .center button {
-            padding:4px 8px;
-            font-family:Century Gothic;
-            font-size: 15px;
-            line-height:20px;
-        }
-        #status {
-            font-weight: 700;
-            font-size: 16px;
-            text-align:left;
-        }
-        .header {
-            font-size: 11px;
-        }
-        .header h1 {
-            font-weight: 700;
-            font-size: 24px;
-            padding-bottom: 10px;
-            text-align:center;
-        }
-        .invalid {
-            color: red;
-        }
-        }
-    </style>
-    <!--###################################################################################-->
+    <script type="text/javascript" src="js/jquery.a-tools.js"></script>
+    <script type="text/javascript" src="js/jquery.asuggest.js"></script>
+    <script type="text/javascript" src="js/map_solver.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <table cellpadding="0" cellspacing="0" width="100%">
-            <tr>
-                <td colspan>
-                    <div class="header">
-                            <h1>Map Solver and Mouse Finder</h1>
-                            based on Chad Moore's<br><br>
-                            Copy and paste mice from maps<br>
-                            Or type mice names leaving a line break between each<br><br>
-                            Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions
-                    </div>
-                </td>
-            </tr>
-            <!--###################################################################################-->
-            <tr>
-                <td>
-                    <textarea id="map" rows="25" cols="40">Amplified Grey
-Angry Train Staff
+<h1>Map Solver and Mouse Finder</h1>
+<div id="container">
+    <div class="header">
+        based on Chad Moore's<br>
+        Copy and paste mice from maps<br>
+        Or type mice names leaving a line break between each<br>
+        Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions<br>
+
+        <textarea id="map" rows="25" cols="40">
+test
+Amplified Grey
 Assassin Beast
-Bear
-Briegull
 Burglar
-Core Sample
-Cyclops
-Desert Architect
 Dream Drifter
 Essence Guardian
-Falling Carpet
-Flame Ordnance
 Frozen
-Giant Snail
 Gluttonous Zombie
 Goblin
 Hapless Marionette
-Industrious Digger
-Itty-Bitty Burroughs
 Keeper
 Leviathan
 Lich
-Lightning Rod
-Limestone Miner
-Monster
-Mutated Brown
-Mutated White
-Mystic Guardian
 Nightshade Nanny
 Phalanx
-Photographer
-Pinchy
 Plutonium Tentacle
 Polar Bear
 Prospector
 Prototype
-Radioactive Ooze
-Red-Eyed Watcher Owl
-Rift Tiger
-Riftweaver
-Saloon Gal
 Sand Pilgrim
 Scarab
-Scavenger
 Serpentine
-Shopkeeper
 Silth
-Sorcerer
-Spotted
 Steam Grip
-Super Mega Mecha Ultra RoboGold
 Surgeon Bot
-Theurgy Warden
 Thorn
 Tiger
 Twisted Hotcakes
-Twisted Treant
-Warmonger
-Water Sprite
-Wealth
 Wound Up White
-Zombie</textarea>
-                </td>
-                <td id="interpretedAs">
-                </td>
-            </tr>
-
-
-        </table>
-
-        <table>
-            <td>
-                <table id='bestLocation'></table>
-                </td><td>
-                <table id='mouseList'></table>
-                </td>
-            </td>
-        </table>
+        </textarea>
     </div>
-</body>
+    <div id="interpretedAs">
+    </div>
 
+    <div id="bestLocationContainer">
+        <h2>Best Locations</h2>
+        <div id="bestLocation"></div>
+    </div>
+
+    <div id="mouseListContainer">
+        <h2>Mice</h2>
+        <div id="mouseList"></div>
+    </div>
+</div>
+</body>
 </html>

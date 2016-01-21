@@ -1,0 +1,34 @@
+#bestlocation {
+  float: left; }
+  #bestlocation table {
+    border-collapse: separate;
+    border-spacing: 0; }
+  #bestlocation tr:nth-child(even) {
+    background: #beb; }
+  #bestlocation tr:nth-child(odd) {
+    background: #e4f8e4; }
+  #bestlocation td {
+    text-align: left;
+    vertical-align: top;
+    font-size: 11px;
+    padding: 4px 2px; }
+
+#mouselist {
+  float: left; }
+
+body {
+  font-family: Arial;
+  font-size: 10px; }
+
+.container {
+  margin: 0 auto;
+  padding: 20px; }
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.invalid {
+  color: #f00; }
