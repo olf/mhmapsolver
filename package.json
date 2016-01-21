@@ -1,13 +1,14 @@
 {
     "name": "map_solver",
     "version": "1.0.0",
-    "description": "",
+    "description": "MouseHunt Map Solver and Mouse Finder",
     "main": "map_solver.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "author": "Olaf Peters, haoala, Chad Moore",
     "license": "ISC",
+    "repository": "",
     "devDependencies": {
         "browser-sync": "^2.11.1",
         "gulp": "^3.9.0",

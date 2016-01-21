@@ -17,7 +17,9 @@ $(document).ready(function() {
     $('#map').keyup(function() {
         var mouselist = $('#map').val();
         processMap(mouselist);
-        $.cookie('mouselist', mouselist, {expires: 14});
+        $.cookie('mouselist', mouselist, {
+            expires: 14
+        });
     });
 });
 
@@ -272,7 +274,9 @@ function processMap(mapText) {
 
     if (unknownMice.length > 0) {
         $('#unknownmice').html(
-            unknownMice.reduce(function(p, c) {return p + c + '<br>';}, '')
+            unknownMice.reduce(function(p, c) {
+                return p + c + '<br>';
+            }, '')
         );
         $('#unknownmicecontainer').show();
     } else {
