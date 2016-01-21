@@ -4,7 +4,7 @@ $table-header-bg-color: darken($table-bg-color, 10);
 $unknown-bg-color: #fdd;
 
 body {
-  font-family: Arial;
+  font-family: sans-serif;
   font-size: 12px;
 }
 
@@ -12,11 +12,10 @@ body {
   width: 250px;
 
   textarea {
-    width: 250px;
     height: 400px;
+    width: 250px;
   }
 }
-
 
 h1 {
   font-size: 24px;
