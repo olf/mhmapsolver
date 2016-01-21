@@ -3,60 +3,39 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.a-tools.js"></script>
     <script type="text/javascript" src="js/jquery.asuggest.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/map_solver.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <h1>Map Solver and Mouse Finder</h1>
 <div id="container">
-    <div class="header">
-        based on Chad Moore's<br>
-        Copy and paste mice from maps<br>
-        Or type mice names leaving a line break between each<br>
-        Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions<br>
+    <div id="input">
+        <div class="header">
+            <p>based on Chad Moore's and <a href="https://dl.dropboxusercontent.com/u/14589881/map.html">haoala's</a> Map Solver.</p>
+            <p>Copy and paste mice from maps or type mice names leaving a line break between each</p>
+            <p>Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions</p>
 
-        <textarea id="map" rows="25" cols="40">
-test
-Amplified Grey
-Assassin Beast
-Burglar
-Dream Drifter
-Essence Guardian
-Frozen
-Gluttonous Zombie
-Goblin
-Hapless Marionette
-Keeper
-Leviathan
-Lich
-Nightshade Nanny
-Phalanx
-Plutonium Tentacle
-Polar Bear
-Prospector
-Prototype
-Sand Pilgrim
-Scarab
-Serpentine
-Silth
-Steam Grip
-Surgeon Bot
-Thorn
-Tiger
-Twisted Hotcakes
-Wound Up White
-        </textarea>
+            <textarea id="map" rows="25" cols="40"></textarea>
+        </div>
+        <div id="unknownmicecontainer">
+            <h2>Unknown</h2>
+            <div id="unknownmice"></div>
+        </div>
     </div>
-    <div id="unknownmice">
-    </div>
-
     <div id="bestlocationscontainer">
         <h2>Best Locations</h2>
-        <div id="bestlocations"></div>
+        <p><a id="overviewlink" href="#mice">Mice Overview</a></p>
+        <div id="bestlocations">
+            <table>
+                <thead><tr><th>Location</th><th>Mice</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </div>
 
     <div id="mouselistcontainer">
-        <h2>Mice</h2>
+        <h2><a name="mice">Mice</a></h2>
         <div id="mouselist"></div>
     </div>
 </div>

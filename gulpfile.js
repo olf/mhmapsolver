@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var scp = require('gulp-scp2');
 var browserSync = require('browser-sync').create();
 
 gulp.task('default', ['watch']);
@@ -32,4 +31,15 @@ gulp.task('server', function() {
             baseDir: '.'
         }
     });
+});
+
+gulp.task('release', ['sass'], function() {
+    gulp.src('./index.html')
+        .pipe(gulp.dest('./release'));
+
+    gulp.src('./css/*.css')
+        .pipe(gulp.dest('./release/css'));
+
+    gulp.src('./js/*.js')
+        .pipe(gulp.dest('./release/js'));
 });
