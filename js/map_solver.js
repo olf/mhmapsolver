@@ -1,11 +1,24 @@
 //"use strict";
 
-$(document).load(function() {
-    document.getElementById("map").onkeyup = function() {
+var popCSV = [];
+var popArray = [];
+
+var pop = new XMLHttpRequest();
+pop.open("get", "https://dl.dropboxusercontent.com/u/14589881/populations2.csv", true);
+pop.onreadystatechange = function() {
+    if (pop.readyState == 4) {
+        processPop();
         var mapText = document.getElementById("map").value;
         //console.log(mapText);
         processMap(mapText);
-    };
+    }
+};
+pop.send();
+
+$(document).ready(function() {
+    $('#map').keyup(function() {
+        processMap($('#map').val());
+    });
 });
 
 
@@ -106,20 +119,6 @@ Object.size = function(obj) {
     return size;
 };
 
-var pop = new XMLHttpRequest();
-pop.open("get", "https://dl.dropboxusercontent.com/u/14589881/populations2.csv", true);
-pop.onreadystatechange = function() {
-    if (pop.readyState == 4) {
-        processPop();
-        var mapText = document.getElementById("map").value;
-        //console.log(mapText);
-        processMap(mapText);
-    }
-};
-pop.send();
-
-var popCSV = [];
-var popArray = [];
 
 function processPop() {
     var popText = pop.responseText;
@@ -271,7 +270,7 @@ function processMap(mapText) {
         interpretedAs.innerHTML =
             'Unknown:<br>' +
             '<div class="invalid">' +
-            unknownMice.reduce(function (p, c) {return p + c + '<br>';}) +
+            unknownMice.reduce(function (p, c) {return p + c + '<br>';}, "") +
             '</div>';
     } else {
         interpretedAs.innerHTML = "";
@@ -318,10 +317,7 @@ function sortBestLocation(bestLocationArray) {
 }
 
 function printBestLocation(sortedLocation) {
-    var bestLocation = document.getElementById("bestLocation");
     var bestLocationHTML = '';
-
-    var currentLocation ;
 
     bestLocationHTML = sortedLocation.reduce(function (p, c) {
         return p +
@@ -339,12 +335,5 @@ function printBestLocation(sortedLocation) {
             "</tr>";
     }, "");
 
-/*
-
-    for (var i = 0; i < sortedLocationLength; i++) {
-        currentLocation = sortedLocation[i];
-        bestLocationHTML += "<tr><td><b>" + location[0].rate + "</b></td><td>" + sortedLocation[i][1].toFixed(2) + "</td></tr>";
-    }
-*/
-    bestLocation.innerHTML = "<table>" + bestLocationHTML + "</table>";
+    $('#bestLocation').html("<table>" + bestLocationHTML + "</table>");
 }
