@@ -33,12 +33,12 @@ function CSVToArray(strData, strDelimiter) {
 
     // Create an array to hold our individual pattern
     // matching groups.
-    var arrMatches = null;
+    var arrMatches = objPattern.exec(strData);
 
 
     // Keep looping over the regular expression matches
     // until we can no longer find a match.
-    while (arrMatches = objPattern.exec(strData)) {
+    while (arrMatches) {
 
         // Get the delimiter that was found.
         var strMatchedDelimiter = arrMatches[1];
@@ -81,6 +81,8 @@ function CSVToArray(strData, strDelimiter) {
         // Now that we have our value string, let's add
         // it to the data array.
         arrData[arrData.length - 1].push(strMatchedValue);
+
+        arrMatches = objPattern.exec(strData);
     }
 
     // Return the parsed data.
@@ -155,12 +157,6 @@ function loadMouseDropdown() {
 
 
 window.onload = function() {
-    /*document.getElementById("map").onchange = function () {
-        var mapText = document.getElementById("map").value;
-        //console.log(mapText);
-        processMap(mapText);
-    };*/
-
     document.getElementById("map").onkeyup = function() {
         var mapText = document.getElementById("map").value;
         //console.log(mapText);
@@ -168,9 +164,19 @@ window.onload = function() {
     };
 };
 
+function amendMouseName(name) {
+    name = name.capitalise().trim();
+
+    if (name.indexOf(" Mouse") >= 0) {
+        name = name.slice(0, indexOfMouse);
+    }
+
+    return name;
+}
+
 function processMap(mapText) {
     var mouseArray = mapText.split("\n");
-    var mouseArrayLength = Object.size(mouseArray);
+    mouseArray.sort();
 
     var interpretedAs = document.getElementById("interpretedAs");
     var mouseList = document.getElementById("mouseList");
@@ -180,48 +186,34 @@ function processMap(mapText) {
 
     var bestLocationArray = [];
 
-    for (var i = 0; i < mouseArrayLength; i++) {
-        var mouseName = mouseArray[i];
-        mouseName = mouseName.capitalise();
-        mouseName = mouseName.trim();
-        var indexOfMouse = mouseName.indexOf(" Mouse");
-        if (indexOfMouse >= 0) {
-            mouseName = mouseName.slice(0, indexOfMouse);
-        }
+    for (var i = 0; i < mouseArray.length; i++) {
+        var mouseName = amendMouseName(mouseArray[i]);
 
         if (popArray[mouseName] === undefined) { //Mouse name not recognised
             interpretedAsText += "<div class='invalid'>" + mouseName + "</div>";
             mouseListText += "<tr><td><b>" + mouseName + "</b></td></tr>";
         } else {
-
             var mouseLocationCheese = [];
 
             mouseListText += "<tr><td><b>" + mouseName + "</b></td>";
 
             var mouseLocation = Object.keys(popArray[mouseName]);
-            var noLocations = Object.size(popArray[mouseName]); //console.log(noLocations);
-            var mouseListTextRow2 = '<tr><td></td>';
 
-
-            for (var j = 0; j < noLocations; j++) {
+            for (var j = 0; j < mouseLocation.length; j++) {
                 var locationName = mouseLocation[j];
 
                 var mousePhase = Object.keys(popArray[mouseName][locationName]);
-                var noPhases = Object.size(popArray[mouseName][locationName]);
-
-                for (var k = 0; k < noPhases; k++) {
+                for (var k = 0; k < mousePhase.length; k++) {
                     var phaseName = mousePhase[k];
 
                     var mouseCheese = Object.keys(popArray[mouseName][locationName][phaseName]);
-                    var noCheeses = Object.size(popArray[mouseName][locationName][phaseName]);
 
-                    for (var l = 0; l < noCheeses; l++) {
+                    for (var l = 0; l < mouseCheese.length; l++) {
                         var cheeseName = mouseCheese[l];
 
                         var mouseCharm = Object.keys(popArray[mouseName][locationName][phaseName][cheeseName]);
-                        var noCharms = Object.size(popArray[mouseName][locationName][phaseName][cheeseName]);
 
-                        for (var m = 0; m < noCharms; m++) {
+                        for (var m = 0; m < mouseCharm.length; m++) {
                             var charmName = mouseCharm[m];
 
                             var locationPhaseCheeseCharm = locationName;
@@ -236,30 +228,34 @@ function processMap(mapText) {
 
                             var attractionRate = parseFloat(popArray[mouseName][locationName][phaseName][cheeseName][charmName]);
 
+                            var mouse = {name: mouseName, rate: attractionRate};
                             if (bestLocationArray[locationPhaseCheeseCharm] === undefined) {
-                                var newitem = Object;
-                                newitem.rate = attractionRate;
-                                newitem.mouse = mouseName;
+                                var newitem = {
+                                    location: locationName,
+                                    cheese: (cheeseName.indexOf("/") < 0 ? cheeseName : ""),
+                                    charm: (charmName != "-" ? charmName : ""),
+                                    phase: (phaseName != "-" ? phaseName : ""),
+                                    totalRate: attractionRate,
+                                    mice: [mouse]
+                                };
                                 bestLocationArray[locationPhaseCheeseCharm] = newitem;
                             } else {
-                                bestLocationArray[locationPhaseCheeseCharm].rate += attractionRate;
+                                bestLocationArray[locationPhaseCheeseCharm].totalRate += attractionRate;
+                                bestLocationArray[locationPhaseCheeseCharm].mice.push(mouse);
                             }
 
                             mouseLocationCheese[locationPhaseCheeseCharm] = attractionRate;
-
-
                         }
                     }
                 }
             }
 
             var sortedMLC = sortBestLocation(mouseLocationCheese); //console.log(sortedMLC);
-            var sortedMLCLength = Object.size(sortedMLC);
+            var mouseListTextRow2 = "";
 
-            for (var n = 0; n < sortedMLCLength; n++) {
+            for (var n = 0; n < sortedMLC.length; n++) {
                 mouseListText += "<td>" + sortedMLC[n][0] + "</td>"; // console.log(n);
                 mouseListTextRow2 += "<td>" + sortedMLC[n][1] + "</td>";
-
             }
 
             mouseListText += "</tr>";
@@ -268,11 +264,26 @@ function processMap(mapText) {
         }
     }
 
-    interpretedAs.innerHTML = interpretedAsText;
-    mouseList.innerHTML = mouseListText;
+    // interpretedAs.innerHTML = interpretedAsText;
+    // mouseList.innerHTML = mouseListText;
 
-    var sortedLocation = sortBestLocation(bestLocationArray);
-    printBestLocation(bestLocationArray);
+    var sortedLocation = sortLocations(bestLocationArray);
+    printBestLocation(sortedLocation);
+}
+
+function sortLocations(bestLocationArray) {
+    var sortedLocation = [];
+    var bLALength = Object.size(bestLocationArray);
+    var bLAKeys = Object.keys(bestLocationArray);
+
+    for (var i = 0; i < bLALength; i++) {
+        var theLocation = bLAKeys[i];
+        sortedLocation.push(bestLocationArray[theLocation]);
+    }
+
+    sortedLocation.sort(function(a,b) {return b.totalRate - a.totalRate;});
+
+    return sortedLocation;
 }
 
 function sortBestLocation(bestLocationArray) {
@@ -298,11 +309,31 @@ function printBestLocation(sortedLocation) {
     var bestLocation = document.getElementById("bestLocation");
     var bestLocationHTML = '';
 
-    var sortedLocationLength = Object.size(sortedLocation);
+    var currentLocation ;
+
+    bestLocationHTML = sortedLocation.reduce(function (p, c) {
+        return p +
+            "<tr>" +
+            "<td>" +
+                "<b>" + c.location + "</b><br>" +
+                (c.phase.length > 0 ? c.phase + "<br>" : "") +
+                (c.cheese.length > 0 ? c.cheese + "<br>" : "") +
+                (c.charm.length > 0 ? c.charm + "<br>" : "") +
+            "</td>" +
+            "<td>" + c.totalRate.toFixed(2) + "</td>" +
+            "<td>" +
+                c.mice
+                .sort(function(a,b) {return b.rate - a.rate;})
+                .reduce(function (txt, mouse) {return txt + mouse.name + " (" + mouse.rate + ")<br>";}, "") +
+            "</tr>";
+    }, "");
+
+/*
 
     for (var i = 0; i < sortedLocationLength; i++) {
-        bestLocationHTML += "<tr><td><b>" + sortedLocation[i][0].rate + "</b></td><td>" + sortedLocation[i][1].toFixed(2) + "</td></tr>";
+        currentLocation = sortedLocation[i];
+        bestLocationHTML += "<tr><td><b>" + location[0].rate + "</b></td><td>" + sortedLocation[i][1].toFixed(2) + "</td></tr>";
     }
-
+*/
     bestLocation.innerHTML = bestLocationHTML;
 }
