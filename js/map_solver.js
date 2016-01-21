@@ -284,6 +284,8 @@ function processMap(mapText) {
         $('#unknownmicecontainer').hide();
     }
 
+    $('#mousecount').text((mouseArray.length - unknownMice.length) + " mice");
+
     $('#mouselist').html("<table>" + mouseListText + "</table>");
 
     var sortedLocation = sortBestLocations(bestLocationArray);

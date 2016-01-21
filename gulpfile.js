@@ -20,7 +20,7 @@ gulp.task('inject', function() {
 gulp.task('sass', function() {
     return gulp
         .src('./sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 
