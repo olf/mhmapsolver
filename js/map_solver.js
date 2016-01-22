@@ -130,14 +130,13 @@ function processPop() {
     popCSV = CSVToArray(popText);
 
     var popCSVLength = Object.size(popCSV);
-    //console.log(popCSVLength);
 
     //Creating popArray
     for (var i = 1; i < popCSVLength; i++) {
         var row = popCSV[i];
         var location = row[1];
         var phase = "";
-        var cheese = row[2];
+        var cheese = row[3];
         var charm = row[4];
         var mouseName = row[0];
         mouseName = mouseName.capitalise();
@@ -183,6 +182,7 @@ function processMap(mapText) {
             return v.length > 0;
         })
         .sort();
+    mouseArray = jQuery.unique(mouseArray);
 
     var mouseListText = '';
 
@@ -220,12 +220,8 @@ function processMap(mapText) {
 
                             var locationPhaseCheeseCharm = locationName;
 
-                            var URLString = 'best_setup.html?';
-                            //Replace apostrophes with %27
-                            URLString += "location=" + locationName;
-
-                            if (phaseName != "-") locationPhaseCheeseCharm += "<br>" + phaseName;
-                            if (cheeseName.indexOf("/") < 0) locationPhaseCheeseCharm += "<br>" + cheeseName;
+                            if (phaseName != "-" && phaseName !== "") locationPhaseCheeseCharm += "<br>" + phaseName;
+                            if (cheeseName.length > 0) locationPhaseCheeseCharm += "<br>" + cheeseName;
                             if (charmName != "-") locationPhaseCheeseCharm += "<br>" + charmName;
 
                             var attractionRate = parseFloat(popArray[mouseName][locationName][phaseName][cheeseName][charmName]);
@@ -238,7 +234,7 @@ function processMap(mapText) {
                             if (bestLocationArray[locationPhaseCheeseCharm] === undefined) {
                                 bestLocationArray[locationPhaseCheeseCharm] = {
                                     location: locationName,
-                                    cheese: (cheeseName.indexOf("/") < 0 ? cheeseName : ""),
+                                    cheese: cheeseName,
                                     charm: (charmName != "-" ? charmName : ""),
                                     phase: (phaseName != "-" ? phaseName : ""),
                                     totalRate: attractionRate,
