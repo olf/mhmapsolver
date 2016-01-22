@@ -118,18 +118,21 @@ function csvToArray(strData, strDelimiter) {
 function processPopulationData(csv) {
     for (var row in csv) {
         var data = csv[row];
-        var mouseName = data[0].capitalise();
-        var location = data[1];
-        var phase = ''; // not supported in MH Calculator data set
-        var cheese = data[3];
-        var charm = data[4];
-        var attractionRate = data[8];
+        var attractionRate = parseFloat(data[8]);
 
-        if (populationData[mouseName] === undefined) populationData[mouseName] = []; //If mouse doesn't exist in array
-        if (populationData[mouseName][location] === undefined) populationData[mouseName][location] = [];
-        if (populationData[mouseName][location][phase] === undefined) populationData[mouseName][location][phase] = [];
-        if (populationData[mouseName][location][phase][cheese] === undefined) populationData[mouseName][location][phase][cheese] = [];
-        populationData[mouseName][location][phase][cheese][charm] = attractionRate;
+        if (attractionRate > 0.0) {
+            var mouseName = data[0].capitalise();
+            var location = data[1];
+            var phase = ''; // not supported in MH Calculator data set
+            var cheese = data[3];
+            var charm = data[4];
+
+            if (populationData[mouseName] === undefined) populationData[mouseName] = []; //If mouse doesn't exist in array
+            if (populationData[mouseName][location] === undefined) populationData[mouseName][location] = [];
+            if (populationData[mouseName][location][phase] === undefined) populationData[mouseName][location][phase] = [];
+            if (populationData[mouseName][location][phase][cheese] === undefined) populationData[mouseName][location][phase][cheese] = [];
+            populationData[mouseName][location][phase][cheese][charm] = attractionRate;
+        }
     }
 
     loadMouseDropdown();
@@ -187,7 +190,7 @@ function processMap(mapText) {
                             if (cheeseName !== "") locationPhaseCheeseCharm += "#" + cheeseName;
                             if (charmName !== "") locationPhaseCheeseCharm += "#" + charmName;
 
-                            var attractionRate = parseFloat(populationData[mouseName][locationName][phaseName][cheeseName][charmName]);
+                            var attractionRate = populationData[mouseName][locationName][phaseName][cheeseName][charmName];
 
                             var mouse = {
                                 name: mouseName,
@@ -305,7 +308,7 @@ function printMouseLocations(mice) {
     }
 
     if (mouseListText.length > 0) {
-        $('#mouselist').html('<table>' + mouseListText + '</table>');
+        $('#mouselist tbody').html(mouseListText);
         $('#mouselistcontainer').show();
     } else {
         $('#mouselistcontainer').hide();
@@ -318,23 +321,24 @@ function printBestLocations(locations) {
     bestLocationHTML = locations.reduce(function(p, c) {
         return p +
             '<tr>' +
-            '<td>' +
-            '<p>' +
-                '<strong>' + c.location + '</strong>' +
-                ' (' + c.totalRate.toFixed(2) + '%)' +
-            '</p>' +
-            (c.phase.length > 0 ? '<p>' + c.phase + '</p>' : '') +
-            (c.cheese.length > 0 ? '<p>' + c.cheese + '</p>' : '') +
-            (c.charm.length > 0 ? '<p>' + c.charm + '</p>' : '') +
-            "</td>" +
-            '<td>' +
-            c.mice
-            .sort(function(a, b) {
-                return b.rate - a.rate;
-            })
-            .reduce(function(txt, mouse) {
-                return txt + '<p>' + mouse.name + ' (' + mouse.rate.toFixed(2) + '%)</p>';
-            }, '') +
+                '<td data-value="' + c.totalRate.toFixed(2) + '">' +
+                    '<p>' +
+                        '<strong>' + c.location + '</strong>' +
+                        ' (' + c.totalRate.toFixed(2) + '%)' +
+                    '</p>' +
+                    (c.phase.length > 0 ? '<p>' + c.phase + '</p>' : '') +
+                    (c.cheese.length > 0 ? '<p>' + c.cheese + '</p>' : '') +
+                    (c.charm.length > 0 ? '<p>' + c.charm + '</p>' : '') +
+                '</td>' +
+                '<td data-value="' + c.mice.length + '">' +
+                    c.mice
+                    .sort(function(a, b) {
+                        return b.rate - a.rate;
+                    })
+                    .reduce(function(txt, mouse) {
+                        return txt + '<p>' + mouse.name + ' (' + mouse.rate.toFixed(2) + '%)</p>';
+                    }, '') +
+                '</td>' +
             '</tr>';
     }, '');
 

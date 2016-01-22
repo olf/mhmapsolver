@@ -26,8 +26,8 @@
         <h2>Best Locations</h2>
         <p><a id="overviewlink" href="#mouselistcontainer">Mice Overview</a></p>
         <div id="bestlocations">
-            <table>
-                <thead><tr><th>Location</th><th>Mice</th></tr></thead>
+            <table data-sortable>
+                <thead><tr><th data-sortable-type="numeric">Location</th><th data-sortable-type="numeric">Mice</th></tr></thead>
                 <tbody></tbody>
             </table>
         </div>
@@ -35,7 +35,11 @@
 
     <div id="mouselistcontainer">
         <h2>Mice</h2>
-        <div id="mouselist"></div>
+        <div id="mouselist">
+            <table>
+                <tbody></tbody>
+            </table>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -43,5 +47,6 @@
 <script type="text/javascript" src="js/jquery.asuggest.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/map_solver.js"></script>
+<script type="text/javascript" src="js/sortable.js"></script>
 </body>
 </html>
