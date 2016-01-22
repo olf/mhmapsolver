@@ -307,12 +307,8 @@ function printMouseLocations(mice) {
         mouseListText += mouseListTextRow2;
     }
 
-    if (mouseListText.length > 0) {
-        $('#mouselist tbody').html(mouseListText);
-        $('#mouselistcontainer').show();
-    } else {
-        $('#mouselistcontainer').hide();
-    }
+    $('#mouselist tbody').html(mouseListText);
+    $('#mouselistcontainer').toggle(mouseListText.length > 0);
 }
 
 function printBestLocations(locations) {
@@ -342,10 +338,6 @@ function printBestLocations(locations) {
             '</tr>';
     }, '');
 
-    if (bestLocationHTML.length > 0) {
-        $('#bestlocations tbody').html(bestLocationHTML);
-        $('#bestlocationscontainer').show();
-    } else {
-        $('#bestlocationscontainer').hide();
-    }
+    $('#bestlocations tbody').html(bestLocationHTML);
+    $('#bestlocationscontainer').toggle(bestLocationHTML.length > 0);
 }
