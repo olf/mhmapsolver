@@ -46,6 +46,11 @@ h1 {
 
 #mouselist,
 #bestlocations {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
   table {
     border-collapse: separate;
     border-spacing: 0;
@@ -87,6 +92,14 @@ h1 {
     &.mousename {
       background: $table-bg-color;
       font-weight: bold;
+    }
+
+    &.text {
+      border-bottom: 0;
+    }
+
+    &.rate {
+      border-top: 0;
     }
   }
 }

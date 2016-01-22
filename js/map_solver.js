@@ -4,7 +4,7 @@ var populationData = [];
 // sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
 
 var ajax = new XMLHttpRequest();
-ajax.open("get", "http://olf.github.io/mhmapsolver/data/attractionrates.csv", true);
+ajax.open('get', 'http://olf.github.io/mhmapsolver/data/attractionrates.csv', true);
 ajax.onreadystatechange = function() {
     if (ajax.readyState == 4) {
         var csv = csvToArray(ajax.responseText);
@@ -120,7 +120,7 @@ function processPopulationData(csv) {
         var data = csv[row];
         var mouseName = data[0].capitalise();
         var location = data[1];
-        var phase = ""; // not supported in MH Calculator data set
+        var phase = ''; // not supported in MH Calculator data set
         var cheese = data[3];
         var charm = data[4];
         var attractionRate = data[8];
@@ -142,13 +142,13 @@ function loadMouseDropdown() {
         suggests.push(mouse.toLowerCase());
     }
 
-    $("#map").asuggest(suggests);
+    $('#map').asuggest(suggests);
 }
 
 function amendMouseName(name) {
     name = name.capitalise().trim();
 
-    if (name.indexOf(" Mouse") >= 0) {
+    if (name.indexOf(' Mouse') >= 0) {
         name = name.slice(0, indexOfMouse);
     }
 
@@ -157,7 +157,7 @@ function amendMouseName(name) {
 
 function processMap(mapText) {
     var mouseList = mapText
-        .split("\n")
+        .split('\n')
         .map(amendMouseName)
         .filter(function(v) {
             return v.length > 0;
@@ -183,9 +183,9 @@ function processMap(mapText) {
                         for (var charmName in populationData[mouseName][locationName][phaseName][cheeseName]) {
                             var locationPhaseCheeseCharm = locationName;
 
-                            if (phaseName !== "") locationPhaseCheeseCharm += "<br>" + phaseName;
-                            if (cheeseName !== "") locationPhaseCheeseCharm += "<br>" + cheeseName;
-                            if (charmName !== "") locationPhaseCheeseCharm += "<br>" + charmName;
+                            if (phaseName !== "") locationPhaseCheeseCharm += "#" + phaseName;
+                            if (cheeseName !== "") locationPhaseCheeseCharm += "#" + cheeseName;
+                            if (charmName !== "") locationPhaseCheeseCharm += "#" + charmName;
 
                             var attractionRate = parseFloat(populationData[mouseName][locationName][phaseName][cheeseName][charmName]);
 
@@ -225,7 +225,7 @@ function processMap(mapText) {
     printBestLocations(sortBestLocations(bestLocations));
     printMouseLocations(mouseLocations);
 
-    $('#mousecount').text((mouseList.length - unknownMice.length) + " mice");
+    $('#mousecount').text((mouseList.length - unknownMice.length) + ' mice');
 }
 
 function sortBestLocations(locations) {
@@ -260,12 +260,12 @@ function printUnknownMice(mice) {
     if (mice.length > 0) {
         $('#unknownmice').html(
             mice.reduce(function(p, c) {
-                return p + c + '<br>';
+                return p + '<p>' + c + '</p>';
             }, '')
         );
         $('#unknownmicecontainer').show();
     } else {
-        $('#unknownmice').html("");
+        $('#unknownmice').html('');
         $('#unknownmicecontainer').hide();
     }
 }
@@ -273,7 +273,7 @@ function printUnknownMice(mice) {
 function printMouseLocations(mice) {
     var mouseListText = '';
 
-    mice.sort(function (a,b) {
+    mice.sort(function(a, b) {
         return b.locations[0][1] - a.locations[0][1];
     });
 
@@ -281,26 +281,31 @@ function printMouseLocations(mice) {
         var mouse = mice[i];
         mouseListText += '<tr><td rowspan="2" class="mousename">' + mouse.name + '</td>';
 
-        var mouseListTextRow2 = "<tr>";
+        var mouseListTextRow2 = '<tr>';
 
         var maxMLC = (mouse.locations.length > 10 ? 10 : mouse.locations.length);
         for (var n = 0; n < maxMLC; n++) {
-            mouseListText += "<td>" + mouse.locations[n][0] + "</td>";
-            mouseListTextRow2 += "<td>" + mouse.locations[n][1].toFixed(2) + "%</td>";
+            var textLines = mouse.locations[n][0].split('#');
+            mouseListText +=
+                '<td class="text">' +
+                    '<p><strong>' + textLines[0] + '</strong></p>' +
+                    '<p>' + textLines.slice(1).join('</p><p>') + '</p>' +
+                '</td>';
+            mouseListTextRow2 += '<td class="rate">' + mouse.locations[n][1].toFixed(2) + '%</td>';
         }
 
         if (mouse.locations.length > 10) {
-            mouseListText += '<td class="more">(' + (mouse.locations.length - 10) + ' more)</td>';
-            mouseListTextRow2 += "<td></td>";
+            mouseListText += '<td class="text">(' + (mouse.locations.length - 10) + ' more)</td>';
+            mouseListTextRow2 += '<td class="rate"></td>';
         }
 
-        mouseListText += "</tr>";
-        mouseListTextRow2 += "</tr>";
+        mouseListText += '</tr>';
+        mouseListTextRow2 += '</tr>';
         mouseListText += mouseListTextRow2;
     }
 
     if (mouseListText.length > 0) {
-        $('#mouselist').html("<table>" + mouseListText + "</table>");
+        $('#mouselist').html('<table>' + mouseListText + '</table>');
         $('#mouselistcontainer').show();
     } else {
         $('#mouselistcontainer').hide();
@@ -312,23 +317,26 @@ function printBestLocations(locations) {
 
     bestLocationHTML = locations.reduce(function(p, c) {
         return p +
-            "<tr>" +
-            "<td>" +
-            "<b>" + c.location + "</b> (" + c.totalRate.toFixed(2) + "%)<br>" +
-            (c.phase.length > 0 ? c.phase + "<br>" : "") +
-            (c.cheese.length > 0 ? c.cheese + "<br>" : "") +
-            (c.charm.length > 0 ? c.charm + "<br>" : "") +
+            '<tr>' +
+            '<td>' +
+            '<p>' +
+                '<strong>' + c.location + '</strong>' +
+                ' (' + c.totalRate.toFixed(2) + '%)' +
+            '</p>' +
+            (c.phase.length > 0 ? '<p>' + c.phase + '</p>' : '') +
+            (c.cheese.length > 0 ? '<p>' + c.cheese + '</p>' : '') +
+            (c.charm.length > 0 ? '<p>' + c.charm + '</p>' : '') +
             "</td>" +
-            "<td>" +
+            '<td>' +
             c.mice
             .sort(function(a, b) {
                 return b.rate - a.rate;
             })
             .reduce(function(txt, mouse) {
-                return txt + mouse.name + " (" + mouse.rate.toFixed(2) + "%)<br>";
-            }, "") +
-            "</tr>";
-    }, "");
+                return txt + '<p>' + mouse.name + ' (' + mouse.rate.toFixed(2) + '%)</p>';
+            }, '') +
+            '</tr>';
+    }, '');
 
     if (bestLocationHTML.length > 0) {
         $('#bestlocations tbody').html(bestLocationHTML);
