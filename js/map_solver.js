@@ -1,18 +1,18 @@
-var popCSV = [];
-var popArray = [];
+var populationData = [];
 
 // attractionrates.csv is the (hidden) attraction rates
 // sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
 
-var pop = new XMLHttpRequest();
-pop.open("get", "http://olf.github.io/mhmapsolver/data/attractionrates.csv", true);
-pop.onreadystatechange = function() {
-    if (pop.readyState == 4) {
-        processPop();
+var ajax = new XMLHttpRequest();
+ajax.open("get", "http://olf.github.io/mhmapsolver/data/attractionrates.csv", true);
+ajax.onreadystatechange = function() {
+    if (ajax.readyState == 4) {
+        var csv = csvToArray(ajax.responseText);
+        processPopulationData(csv);
         processMap($('#map').val());
     }
 };
-pop.send();
+ajax.send();
 
 $(document).ready(function() {
     $('#map').val($.cookie('mouselist'));
@@ -32,7 +32,7 @@ String.prototype.capitalise = function() {
     });
 };
 
-function CSVToArray(strData, strDelimiter) {
+function csvToArray(strData, strDelimiter) {
     // Check to see if the delimiter is defined. If not,
     // then default to comma.
     strDelimiter = ",";
@@ -115,50 +115,31 @@ function CSVToArray(strData, strDelimiter) {
     return (arrData);
 }
 
-Object.size = function(obj) {
-    var size = 0;
-    for (var key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-};
+function processPopulationData(csv) {
+    for (var row in csv) {
+        var data = csv[row];
+        var mouseName = data[0].capitalise();
+        var location = data[1];
+        var phase = ""; // not supported in MH Calculator data set
+        var cheese = data[3];
+        var charm = data[4];
+        var attractionRate = data[8];
 
-
-function processPop() {
-    var popText = pop.responseText;
-
-    popCSV = CSVToArray(popText);
-
-    var popCSVLength = Object.size(popCSV);
-
-    //Creating popArray
-    for (var i = 1; i < popCSVLength; i++) {
-        var row = popCSV[i];
-        var location = row[1];
-        var phase = "";
-        var cheese = row[3];
-        var charm = row[4];
-        var mouseName = row[0];
-        mouseName = mouseName.capitalise();
-        var population = row[8];
-
-        if (popArray[mouseName] === undefined) popArray[mouseName] = []; //If mouse doesn't exist in array
-        if (popArray[mouseName][location] === undefined) popArray[mouseName][location] = [];
-        if (popArray[mouseName][location][phase] === undefined) popArray[mouseName][location][phase] = [];
-        if (popArray[mouseName][location][phase][cheese] === undefined) popArray[mouseName][location][phase][cheese] = [];
-        popArray[mouseName][location][phase][cheese][charm] = population;
+        if (populationData[mouseName] === undefined) populationData[mouseName] = []; //If mouse doesn't exist in array
+        if (populationData[mouseName][location] === undefined) populationData[mouseName][location] = [];
+        if (populationData[mouseName][location][phase] === undefined) populationData[mouseName][location][phase] = [];
+        if (populationData[mouseName][location][phase][cheese] === undefined) populationData[mouseName][location][phase][cheese] = [];
+        populationData[mouseName][location][phase][cheese][charm] = attractionRate;
     }
 
     loadMouseDropdown();
 }
 
 function loadMouseDropdown() {
-    var popArrayLength = Object.size(popArray);
     var suggests = [];
-
-    for (var i = 0; i < popArrayLength; i++) {
-        suggests.push(Object.keys(popArray)[i]);
-        suggests.push(Object.keys(popArray)[i].toLowerCase());
+    for (var mouse in populationData) {
+        suggests.push(mouse);
+        suggests.push(mouse.toLowerCase());
     }
 
     $("#map").asuggest(suggests);
@@ -175,74 +156,56 @@ function amendMouseName(name) {
 }
 
 function processMap(mapText) {
-    var mouseArray = mapText
+    var mouseList = mapText
         .split("\n")
         .map(amendMouseName)
         .filter(function(v) {
             return v.length > 0;
         })
         .sort();
-    mouseArray = jQuery.unique(mouseArray);
+    mouseList = jQuery.unique(mouseList);
 
-    var mouseListText = '';
-
-    var bestLocationArray = [];
+    var mouseLocations = [];
+    var bestLocations = [];
     var unknownMice = [];
 
-    for (var i = 0; i < mouseArray.length; i++) {
-        var mouseName = mouseArray[i];
+    for (var i = 0; i < mouseList.length; i++) {
+        var mouseName = mouseList[i];
 
-        if (popArray[mouseName] === undefined) { //Mouse name not recognised
+        if (populationData[mouseName] === undefined) { //Mouse name not recognised
             unknownMice.push(mouseName);
         } else {
             var mouseLocationCheese = [];
 
-            mouseListText += '<tr><td rowspan="2" class="mousename">' + mouseName + '</td>';
-
-            var mouseLocation = Object.keys(popArray[mouseName]);
-
-            for (var j = 0; j < mouseLocation.length; j++) {
-                var locationName = mouseLocation[j];
-
-                var mousePhase = Object.keys(popArray[mouseName][locationName]);
-                for (var k = 0; k < mousePhase.length; k++) {
-                    var phaseName = mousePhase[k];
-
-                    var mouseCheese = Object.keys(popArray[mouseName][locationName][phaseName]);
-
-                    for (var l = 0; l < mouseCheese.length; l++) {
-                        var cheeseName = mouseCheese[l];
-
-                        var mouseCharm = Object.keys(popArray[mouseName][locationName][phaseName][cheeseName]);
-
-                        for (var m = 0; m < mouseCharm.length; m++) {
-                            var charmName = mouseCharm[m];
-
+            for (var locationName in populationData[mouseName]) {
+                for (var phaseName in populationData[mouseName][locationName]) {
+                    for (var cheeseName in populationData[mouseName][locationName][phaseName]) {
+                        for (var charmName in populationData[mouseName][locationName][phaseName][cheeseName]) {
                             var locationPhaseCheeseCharm = locationName;
 
-                            if (phaseName != "-" && phaseName !== "") locationPhaseCheeseCharm += "<br>" + phaseName;
-                            if (cheeseName.length > 0) locationPhaseCheeseCharm += "<br>" + cheeseName;
-                            if (charmName != "-") locationPhaseCheeseCharm += "<br>" + charmName;
+                            if (phaseName !== "") locationPhaseCheeseCharm += "<br>" + phaseName;
+                            if (cheeseName !== "") locationPhaseCheeseCharm += "<br>" + cheeseName;
+                            if (charmName !== "") locationPhaseCheeseCharm += "<br>" + charmName;
 
-                            var attractionRate = parseFloat(popArray[mouseName][locationName][phaseName][cheeseName][charmName]);
+                            var attractionRate = parseFloat(populationData[mouseName][locationName][phaseName][cheeseName][charmName]);
 
                             var mouse = {
                                 name: mouseName,
                                 rate: attractionRate
                             };
 
-                            if (bestLocationArray[locationPhaseCheeseCharm] === undefined) {
-                                bestLocationArray[locationPhaseCheeseCharm] = {
+                            if (bestLocations[locationPhaseCheeseCharm] === undefined) {
+                                bestLocations[locationPhaseCheeseCharm] = {
                                     location: locationName,
                                     cheese: cheeseName,
-                                    charm: (charmName != "-" ? charmName : ""),
-                                    phase: (phaseName != "-" ? phaseName : ""),
+                                    charm: charmName,
+                                    phase: phaseName,
                                     totalRate: attractionRate,
                                     mice: [mouse]
                                 };
                             } else {
-                                bestLocationArray[locationPhaseCheeseCharm].totalRate += attractionRate;
-                                bestLocationArray[locationPhaseCheeseCharm].mice.push(mouse);
+                                bestLocations[locationPhaseCheeseCharm].totalRate += attractionRate;
+                                bestLocations[locationPhaseCheeseCharm].mice.push(mouse);
                             }
 
                             mouseLocationCheese[locationPhaseCheeseCharm] = attractionRate;
@@ -251,62 +214,25 @@ function processMap(mapText) {
                 }
             }
 
-            var sortedMLC = sortMouseLocations(mouseLocationCheese);
-            var mouseListTextRow2 = "<tr>";
-
-            var maxMLC = (sortedMLC.length > 10 ? 10 : sortedMLC.length);
-            for (var n = 0; n < maxMLC; n++) {
-                mouseListText += "<td>" + sortedMLC[n][0] + "</td>";
-                mouseListTextRow2 += "<td>" + sortedMLC[n][1].toFixed(2) + "%</td>";
-            }
-
-            if (sortedMLC.length > 10) {
-                mouseListText += '<td class="more">(' + (sortedMLC.length - 10) + ' more)</td>';
-                mouseListTextRow2 += "<td></td>";
-            }
-
-            mouseListText += "</tr>";
-            mouseListTextRow2 += "</tr>";
-            mouseListText += mouseListTextRow2;
+            mouseLocations.push({
+                name: mouseName,
+                locations: sortMouseLocations(mouseLocationCheese)
+            });
         }
     }
 
-    if (unknownMice.length > 0) {
-        $('#unknownmice').html(
-            unknownMice.reduce(function(p, c) {
-                return p + c + '<br>';
-            }, '')
-        );
-        $('#unknownmicecontainer').show();
-    } else {
-        $('#unknownmice').html("");
-        $('#unknownmicecontainer').hide();
-    }
+    printUnknownMice(unknownMice);
+    printBestLocations(sortBestLocations(bestLocations));
+    printMouseLocations(mouseLocations);
 
-    $('#mousecount').text((mouseArray.length - unknownMice.length) + " mice");
-
-    $('#mouselist').html("<table>" + mouseListText + "</table>");
-
-    var sortedLocation = sortBestLocations(bestLocationArray);
-    printBestLocations(sortedLocation);
-
-    if (mouseListText.length > 0) {
-        $('#mouselistcontainer').show();
-        $('#bestlocationscontainer').show();
-    } else {
-        $('#mouselistcontainer').hide();
-        $('#bestlocationscontainer').hide();
-    }
+    $('#mousecount').text((mouseList.length - unknownMice.length) + " mice");
 }
 
 function sortBestLocations(locations) {
     var sortedLocation = [];
-    var bLALength = Object.size(locations);
-    var bLAKeys = Object.keys(locations);
 
-    for (var i = 0; i < bLALength; i++) {
-        var theLocation = bLAKeys[i];
-        sortedLocation.push(locations[theLocation]);
+    for (var location in locations) {
+        sortedLocation.push(locations[location]);
     }
 
     sortedLocation.sort(function(a, b) {
@@ -319,12 +245,8 @@ function sortBestLocations(locations) {
 function sortMouseLocations(locations) {
     var sortedLocation = [];
 
-    var bLALength = Object.size(locations);
-    var bLAKeys = Object.keys(locations);
-
-    for (var i = 0; i < bLALength; i++) {
-        var locationCheese = bLAKeys[i];
-        sortedLocation.push([locationCheese, locations[locationCheese]]);
+    for (var location in locations) {
+        sortedLocation.push([location, locations[location]]);
     }
 
     sortedLocation.sort(function(a, b) {
@@ -334,10 +256,61 @@ function sortMouseLocations(locations) {
     return sortedLocation;
 }
 
-function printBestLocations(sortedLocation) {
+function printUnknownMice(mice) {
+    if (mice.length > 0) {
+        $('#unknownmice').html(
+            mice.reduce(function(p, c) {
+                return p + c + '<br>';
+            }, '')
+        );
+        $('#unknownmicecontainer').show();
+    } else {
+        $('#unknownmice').html("");
+        $('#unknownmicecontainer').hide();
+    }
+}
+
+function printMouseLocations(mice) {
+    var mouseListText = '';
+
+    mice.sort(function (a,b) {
+        return b.locations[0][1] - a.locations[0][1];
+    });
+
+    for (var i in mice) {
+        var mouse = mice[i];
+        mouseListText += '<tr><td rowspan="2" class="mousename">' + mouse.name + '</td>';
+
+        var mouseListTextRow2 = "<tr>";
+
+        var maxMLC = (mouse.locations.length > 10 ? 10 : mouse.locations.length);
+        for (var n = 0; n < maxMLC; n++) {
+            mouseListText += "<td>" + mouse.locations[n][0] + "</td>";
+            mouseListTextRow2 += "<td>" + mouse.locations[n][1].toFixed(2) + "%</td>";
+        }
+
+        if (mouse.locations.length > 10) {
+            mouseListText += '<td class="more">(' + (mouse.locations.length - 10) + ' more)</td>';
+            mouseListTextRow2 += "<td></td>";
+        }
+
+        mouseListText += "</tr>";
+        mouseListTextRow2 += "</tr>";
+        mouseListText += mouseListTextRow2;
+    }
+
+    if (mouseListText.length > 0) {
+        $('#mouselist').html("<table>" + mouseListText + "</table>");
+        $('#mouselistcontainer').show();
+    } else {
+        $('#mouselistcontainer').hide();
+    }
+}
+
+function printBestLocations(locations) {
     var bestLocationHTML = '';
 
-    bestLocationHTML = sortedLocation.reduce(function(p, c) {
+    bestLocationHTML = locations.reduce(function(p, c) {
         return p +
             "<tr>" +
             "<td>" +
@@ -357,5 +330,10 @@ function printBestLocations(sortedLocation) {
             "</tr>";
     }, "");
 
-    $('#bestlocations tbody').html(bestLocationHTML);
+    if (bestLocationHTML.length > 0) {
+        $('#bestlocations tbody').html(bestLocationHTML);
+        $('#bestlocationscontainer').show();
+    } else {
+        $('#bestlocationscontainer').hide();
+    }
 }
