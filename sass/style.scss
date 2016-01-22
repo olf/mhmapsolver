@@ -2,8 +2,10 @@ $table-bg-color: #beb;
 $table-bg-color-light: lighten($table-bg-color, 10);
 $table-header-bg-color: darken($table-bg-color, 10);
 $unknown-bg-color: #fdd;
+$background-color: #fff;
 
 body {
+  background: $background-color;
   font-family: sans-serif;
   font-size: 12px;
 }
@@ -100,6 +102,10 @@ h1 {
 
     &.rate {
       border-top: 0;
+    }
+
+    &.padding {
+      background: $background-color;
     }
   }
 }

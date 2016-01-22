@@ -300,6 +300,8 @@ function printMouseLocations(mice) {
         if (mouse.locations.length > 10) {
             mouseListText += '<td class="text">(' + (mouse.locations.length - 10) + ' more)</td>';
             mouseListTextRow2 += '<td class="rate"></td>';
+        } else {
+            mouseListText += '<td class="padding" rowspan="2" colspan="' + (11-mouse.locations.length) +'"></td>';
         }
 
         mouseListText += '</tr>';
