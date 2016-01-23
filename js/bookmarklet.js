@@ -1,11 +1,13 @@
 javascript:void(function(){
-    var u = "http://olf.github.io/mhmapsolver/";
-    var l = document.querySelectorAll('.treasureMapPopup-mice-groups.uncaughtmice .treasureMapPopup-mice-group-mouse-name span');
-    var m = "";
-    for (i=0; i<l.length;i++) {
-        m += l[i].textContent.split(" ").join("+")+(i==l.length-1 ? '' : '/');
+    var url = "http://olf.github.io/mhmapsolver/";
+    var list = document.querySelectorAll('.treasureMapPopup-mice-groups.uncaughtmice .treasureMapPopup-mice-group-mouse-name span');
+    var mice = [];
+
+    for (i=0; i<list.length; i++) {
+        mice.push(list[i].textContent.split(" ").join("+"));
     }
-    if (l.length > 0) {
-        window.open(u + "?mice=" + m,'mhmapsolver');
+
+    if (mice.length > 0) {
+        window.open(url + "?mice=" + mice.join("/"), 'mhmapsolver');
     }
 })()
