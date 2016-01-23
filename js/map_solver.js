@@ -47,7 +47,6 @@ function getMouseListFromURL() {
         return parameters[1]
             .split("/")
             .map(function (v) {return v.split("+").join(" ");})
-            .map(function (v) {return v.split("%20").join(" ");})
             .join("\n");
     } else {
         return false;
