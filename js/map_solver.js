@@ -15,7 +15,15 @@ ajax.onreadystatechange = function() {
 ajax.send();
 
 $(document).ready(function() {
-    $('#map').val($.cookie('mouselist'));
+    var mouseList = getMouseListFromURL() ;
+
+    if (mouseList.length == 0) {
+        $('#map').val($.cookie('mouselist'));
+        console.log("Cookie");
+    } else {
+        $('#map').val(mouseList);
+        console.log("URL");
+    }
 
     $('#map').keyup(function() {
         var mouselist = $('#map').val();
@@ -31,6 +39,19 @@ String.prototype.capitalise = function() {
         return a.toUpperCase();
     });
 };
+
+function getMouseListFromURL() {
+    var parameters = window.location.search.match(/mice=([^&]*)/);
+
+    if (parameters) {
+        return parameters[1]
+            .split("/")
+            .map(function (v) {return v.replace("+", " ");})
+            .join("\n");
+    } else {
+        return false;
+    }
+}
 
 function csvToArray(strData, strDelimiter) {
     // Check to see if the delimiter is defined. If not,

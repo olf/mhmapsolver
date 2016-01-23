@@ -26,9 +26,11 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./css'));
 });
 
+// on windows use 'chrome' instead of 'google chrome'
 gulp.task('server', function() {
     browserSync.init({
-        browser: ['chrome'],
+        browser: ['google chrome'],
+        open: "local",
         server: {
             baseDir: '.'
         }
