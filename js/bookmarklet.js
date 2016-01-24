@@ -10,4 +10,4 @@ javascript:void(function(){
     if (mice.length > 0) {
         window.open(url + "?mice=" + mice.join("/"), 'mhmapsolver');
     }
-})()
+})();

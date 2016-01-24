@@ -17,12 +17,10 @@ ajax.send();
 $(document).ready(function() {
     var mouseList = getMouseListFromURL() ;
 
-    if (mouseList.length == 0) {
+    if (mouseList.length === 0) {
         $('#map').val($.cookie('mouselist'));
-        console.log("Cookie");
     } else {
         $('#map').val(mouseList);
-        console.log("URL");
     }
 
     $('#map').keyup(function() {
