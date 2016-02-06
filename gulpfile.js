@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
+var insert = require("gulp-file-insert");
+var replace = require('gulp-replace');
 var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 
@@ -37,18 +39,28 @@ gulp.task('server', function() {
     });
 });
 
-gulp.task('release', ['sass'], function() {
-    gulp.src('./index.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('./release'));
+gulp.task('jsminify', function() {
+    gulp.src('./js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./release/js'));
 
+    // process bookmarklet again to replace " by ' otherwise
+    // the insertion into index.html would break
+    gulp.src('./js/bookmarklet.js')
+        .pipe(uglify())
+        .pipe(replace('"', "'"))
+        .pipe(gulp.dest('./release/js'));
+});
+
+gulp.task('release', ['sass', 'jsminify'], function() {
     gulp.src('./sass/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./release/css'));
 
-    gulp.src('./js/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('./release/js'));
+    gulp.src('./index.html')
+        .pipe(insert({"/*bookmarklet*/": "release/js/bookmarklet.js"}))
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('./release'));
 
     gulp.src('./data/*.csv')
         .pipe(gulp.dest('./release/data'));
