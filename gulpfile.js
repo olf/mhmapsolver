@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var insert = require("gulp-file-insert");
 var replace = require('gulp-replace');
-var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 
 gulp.task('default', ['watch']);
@@ -58,8 +57,10 @@ gulp.task('release', ['sass', 'jsminify'], function() {
         .pipe(gulp.dest('./release/css'));
 
     gulp.src('./index.html')
-        .pipe(insert({"/*bookmarklet*/": "release/js/bookmarklet.js"}))
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(insert({
+            "/*bookmarklet*/": "release/js/bookmarklet.js",
+            "<!-- piwik -->": "_piwik.inc"
+        }))
         .pipe(gulp.dest('./release'));
 
     gulp.src('./data/*.csv')
