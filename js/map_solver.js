@@ -18,7 +18,10 @@ $(document).ready(function() {
     var mouseList = getMouseListFromURL() ;
 
     if (mouseList.length === 0) {
-        $('#map').val($.cookie('mouselist'));
+        var cookie = $.cookie('mouselist');
+        if (cookie !== undefined) {
+            $('#map').val($.cookie('mouselist'));
+        }
     } else {
         $('#map').val(mouseList);
     }
@@ -47,7 +50,7 @@ function getMouseListFromURL() {
             .map(function (v) {return v.split("+").join(" ");})
             .join("\n");
     } else {
-        return false;
+        return [];
     }
 }
 
