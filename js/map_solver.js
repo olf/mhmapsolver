@@ -45,9 +45,10 @@ function getMouseListFromURL() {
     var parameters = window.location.search.match(/mice=([^&]*)/);
 
     if (parameters) {
-        return parameters[1]
+        parameters = decodeURI(parameters[1]);
+
+        return parameters
             .split("/")
-            .map(function (v) {return v.split("+").join(" ");})
             .join("\n");
     } else {
         return [];
