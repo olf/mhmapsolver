@@ -51,7 +51,7 @@ gulp.task('jsminify', function() {
         .pipe(gulp.dest('./release/js'));
 });
 
-gulp.task('release', ['sass', 'jsminify'], function() {
+gulp.task('release', [jsminify'], function() {
     gulp.src('./sass/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./release/css'));
