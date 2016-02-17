@@ -1,10 +1,11 @@
+/* eslint no-unused-labels: 0 */
 javascript:void(function(){
     var url = 'http://olf.github.io/mhmapsolver/';
 
     var list = document.querySelectorAll('.treasureMapPopup-mice-groups.uncaughtmice .treasureMapPopup-mice-group-mouse-name span');
     var mice = [];
 
-    for (i=0; i<list.length; i++) {
+    for (var i=0; i<list.length; i++) {
         mice.push(list[i].textContent);
     }
 

@@ -1,7 +1,9 @@
+/* eslint-env node */
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
-var insert = require("gulp-file-insert");
+var insert = require('gulp-file-insert');
 var replace = require('gulp-replace');
 var browserSync = require('browser-sync').create();
 
@@ -31,7 +33,7 @@ gulp.task('sass', function() {
 gulp.task('server', function() {
     browserSync.init({
         browser: ['google chrome'],
-        open: "local",
+        open: 'local',
         server: {
             baseDir: '.'
         }
@@ -47,7 +49,7 @@ gulp.task('jsminify', function() {
     // the insertion into index.html would break
     gulp.src('./js/bookmarklet.js')
         .pipe(uglify())
-        .pipe(replace('"', "'"))
+        .pipe(replace('"', '\''))
         .pipe(gulp.dest('./release/js'));
 });
 
@@ -58,8 +60,8 @@ gulp.task('release', ['jsminify'], function() {
 
     gulp.src('./index.html')
         .pipe(insert({
-            "/*bookmarklet*/": "release/js/bookmarklet.js",
-            "<!-- piwik -->": "_piwik.inc"
+            '/*bookmarklet*/': 'release/js/bookmarklet.js',
+            '<!-- piwik -->': '_piwik.inc'
         }))
         .pipe(gulp.dest('./release'));
 

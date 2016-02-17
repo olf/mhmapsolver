@@ -1,3 +1,4 @@
+/* eslint-env jquery */
 var populationData = [];
 
 // attractionrates.csv is the (hidden) attraction rates
@@ -48,8 +49,8 @@ function getMouseListFromURL() {
         parameters = decodeURI(parameters[1]);
 
         return parameters
-            .split("/")
-            .join("\n");
+            .split('/')
+            .join('\n');
     } else {
         return [];
     }
@@ -58,20 +59,20 @@ function getMouseListFromURL() {
 function csvToArray(strData, strDelimiter) {
     // Check to see if the delimiter is defined. If not,
     // then default to comma.
-    strDelimiter = ",";
+    strDelimiter = ',';
 
     // Create a regular expression to parse the CSV values.
     var objPattern = new RegExp(
         (
             // Delimiters.
-            "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
+            '(\\' + strDelimiter + '|\\r?\\n|\\r|^)' +
 
             // Quoted fields.
-            "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+            '(?:"([^"]*(?:""[^"]*)*)"|' +
 
             // Standard fields.
-            "([^\"\\" + strDelimiter + "\\r\\n]*))"),
-        "gi");
+            '([^"\\' + strDelimiter + '\\r\\n]*))'),
+        'gi');
 
 
     // Create an array to hold our data. Give the array
@@ -116,8 +117,8 @@ function csvToArray(strData, strDelimiter) {
             // We found a quoted value. When we capture
             // this value, unescape any double quotes.
             strMatchedValue = arrMatches[2].replace(
-                new RegExp("\"\"", "g"),
-                "\"");
+                new RegExp('""', 'g'),
+                '"');
 
         } else {
 
@@ -175,7 +176,7 @@ function amendMouseName(name) {
     name = name.capitalise().trim();
 
     if (name.indexOf(' Mouse') >= 0) {
-        name = name.slice(0, indexOfMouse);
+        name = name.slice(0, name.indexOf(' Mouse'));
     }
 
     return name;
@@ -209,9 +210,9 @@ function processMap(mapText) {
                         for (var charmName in populationData[mouseName][locationName][baseName][cheeseName]) {
                             var locationbaseCheeseCharm = locationName;
 
-                            if (baseName !== "") locationbaseCheeseCharm += "#" + baseName;
-                            if (cheeseName !== "") locationbaseCheeseCharm += "#" + cheeseName;
-                            if (charmName !== "") locationbaseCheeseCharm += "#" + charmName;
+                            if (baseName !== '') locationbaseCheeseCharm += '#' + baseName;
+                            if (cheeseName !== '') locationbaseCheeseCharm += '#' + cheeseName;
+                            if (charmName !== '') locationbaseCheeseCharm += '#' + charmName;
 
                             var attractionRate = populationData[mouseName][locationName][baseName][cheeseName][charmName];
 
@@ -337,7 +338,7 @@ function printMouseLocations(mice) {
 }
 
 function strikethrough(text) {
-    if (text.toLowerCase().indexOf("not") > -1) {
+    if (text.toLowerCase().indexOf('not') > -1) {
         return text.replace(/not (.*)/i, '<strike>$1</strike>');
     } else {
         return text;
