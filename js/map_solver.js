@@ -1,11 +1,8 @@
 /* eslint-env jquery */
 var populationData = [];
 
-// attractionrates.csv is the (hidden) attraction rates
-// sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
-
 $(document).ready(function() {
-    var mouseList = getMouseListFromURL() ;
+    var mouseList = getMouseListFromURL(window.location.search.match(/mice=([^&]*)/)) ;
 
     if (mouseList.length === 0) {
         var cookie = $.cookie('mouselist');
@@ -17,7 +14,11 @@ $(document).ready(function() {
     }
 
     var ajax = new XMLHttpRequest();
+
+    // attractionrates.csv is the (hidden) attraction rates
+    // sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
     ajax.open('get', 'http://olf.github.io/mhmapsolver/data/attractionrates.csv', true);
+
     ajax.onreadystatechange = function() {
         if (ajax.readyState == 4) {
             var csv = csvToArray(ajax.responseText);
@@ -42,9 +43,7 @@ String.prototype.capitalise = function() {
     });
 };
 
-function getMouseListFromURL() {
-    var parameters = window.location.search.match(/mice=([^&]*)/);
-
+function getMouseListFromURL(parameters) {
     if (parameters) {
         parameters = decodeURI(parameters[1]);
 
