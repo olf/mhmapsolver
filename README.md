@@ -16,6 +16,6 @@ Clone the repository, then do <code>npm install</code>, then <code>gulp release<
 
 Available gulp tasks:
 
-* gulp (default) - launch dev environement with BrowserSync
+* gulp (default) - launch dev environment with BrowserSync
 * gulp release - update the release/ directory
 * gulp sass - generate css file
