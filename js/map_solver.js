@@ -17,6 +17,7 @@ $(document).ready(function() {
 
     // attractionrates.csv is the (hidden) attraction rates
     // sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
+    //ajax.open('get', 'http://localhost:3000/data/attractionrates.csv', true);
     ajax.open('get', 'http://olf.github.io/mhmapsolver/data/attractionrates.csv', true);
 
     ajax.onreadystatechange = function() {
