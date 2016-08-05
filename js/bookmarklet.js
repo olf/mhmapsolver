@@ -2,11 +2,11 @@
 javascript:void(function(){
     var url = 'http://olf.github.io/mhmapsolver/';
 
-    var list = document.querySelectorAll('.treasureMapPopup-mice-groups.uncaughtmice .treasureMapPopup-mice-group-mouse-name span');
+    var list = document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)');
     var mice = [];
 
     for (var i=0; i<list.length; i++) {
-        mice.push(list[i].textContent);
+        mice.push(list[i].getAttribute('data-name'));
     }
 
     if (mice.length > 0) {
