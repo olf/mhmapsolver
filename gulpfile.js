@@ -31,7 +31,7 @@ gulp.task('sass', function() {
 
 // on windows use 'chrome' instead of 'google chrome'
 gulp.task('server', function() {
-    browserSync.init({
+    return browserSync.init({
         browser: ['google chrome'],
         open: 'local',
         server: {
@@ -47,7 +47,7 @@ gulp.task('jsminify', function() {
 
     // process bookmarklet again to replace " by ' otherwise
     // the insertion into index.html would break
-    gulp.src('./js/bookmarklet.js')
+    return gulp.src('./js/bookmarklet.js')
         .pipe(uglify())
         .pipe(replace('"', '\''))
         .pipe(gulp.dest('./release/js'));
