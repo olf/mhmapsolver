@@ -43,28 +43,28 @@ gulp.task('server', function() {
 gulp.task('jsminify', function() {
     gulp.src('./js/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./release/js'));
+        .pipe(gulp.dest('./docs/js'));
 
     // process bookmarklet again to replace " by ' otherwise
     // the insertion into index.html would break
     return gulp.src('./js/bookmarklet.js')
         .pipe(uglify())
         .pipe(replace('"', '\''))
-        .pipe(gulp.dest('./release/js'));
+        .pipe(gulp.dest('./docs/js'));
 });
 
 gulp.task('release', ['jsminify'], function() {
     gulp.src('./sass/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./release/css'));
+        .pipe(gulp.dest('./docs/css'));
 
     gulp.src('./index.html')
         .pipe(insert({
-            '/*bookmarklet*/': 'release/js/bookmarklet.js',
+            '/*bookmarklet*/': 'docs/js/bookmarklet.js',
             '<!-- piwik -->': '_piwik.inc'
         }))
-        .pipe(gulp.dest('./release'));
+        .pipe(gulp.dest('./docs'));
 
     gulp.src('./data/*.csv')
-        .pipe(gulp.dest('./release/data'));
+        .pipe(gulp.dest('./docs/data'));
 });
