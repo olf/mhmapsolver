@@ -12,7 +12,7 @@ You can try it [here on GitHub](http://olf.github.io/mhmapsolver/)
 
 ### Build instructions ###
 
-Clone the repository, then do <code>npm install</code>, then <code>gulp release</code>. It will create the release directory that you can either use locally or move to your own server. Mouse data will be fetched from GitHub.
+Clone the repository, then do <code>npm install</code>, then <code>gulp release</code>. It will update the docs directory that you can either use locally or move to your own server. Mouse data will be fetched from GitHub.
 
 Available gulp tasks:
 
