@@ -30,6 +30,7 @@ h1 {
 
 .highlight {
   background: $highlight-bg-color;
+  border: 1px solid darken($highlight-bg-color, 40);
 }
 
 #input {

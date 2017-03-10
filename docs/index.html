@@ -11,13 +11,13 @@
 <div id="container">
     <div id="input">
         <div class="header">
+            <p class="highlight"><strong>Mousehunt 9th Birthday Event<br>(March 2017)</strong><br><br>Added data for solving Birthday Events Maps (however: all attraction rates set to 101% to push them to the top of the lists).</p>
+
             <p>Based on Chad Moore's and <a href="https://dl.dropboxusercontent.com/u/14589881/map.html">haoala's</a> Map Solver. Using data from <a href="http://goo.gl/y17T4q">MH Calculator</a>. Sourcecode on <a href="https://github.com/olf/mhmapsolver">GitHub</a></p>
             <p>Copy and paste mice from maps or type mice names leaving a line break between each</p>
             <p>Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions</p>
 
-            <p><strong>Bookmarklet:</strong> bookmark <a href="javascript:void function(){for(var e='http://olf.github.io/mhmapsolver/',o=document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)'),t=[],n=0;n<o.length;n++)t.push(o[n].getAttribute('data-name'));t.length>0&&window.open(e+'?mice='+encodeURI(t.join('/')),'mhmapsolver')}();">this link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy the list of uncaught mice here.</p>
-            <p class="highlight" style="font-size:90%">Bookmarklet was changed for Relic Hunter Season&nbsp;4 (August 2016) - please update!</p>
-
+            <p><strong>Bookmarklet:</strong> bookmark <a href="javascript:void function(){for(var e="http://olf.github.io/mhmapsolver/",o=document.querySelectorAll(".treasureMapPopup-mice-group-mouse:not(.caught)"),t=[],n=0;n<o.length;n++)t.push(o[n].getAttribute("data-name"));t.length>0&&window.open(e+"?mice="+encodeURI(t.join("/")),"mhmapsolver")}();">this link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy the list of uncaught mice here.</p>
             <textarea id="map" rows="25" cols="40"></textarea>
             <div id="mousecount"></div>
         </div>
