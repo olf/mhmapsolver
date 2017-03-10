@@ -47,10 +47,12 @@ gulp.task('jsminify', function() {
 
     // process bookmarklet again to replace " by ' otherwise
     // the insertion into index.html would break
-    return gulp.src('./js/bookmarklet.js')
+    gulp.src('./js/bookmarklet.js')
         .pipe(uglify())
         .pipe(replace('"', '\''))
         .pipe(gulp.dest('./docs/js'));
+
+    return;
 });
 
 gulp.task('release', ['jsminify'], function() {
