@@ -67,6 +67,6 @@ gulp.task('release', ['jsminify'], function() {
         }))
         .pipe(gulp.dest('./docs'));
 
-    gulp.src('./data/*.csv')
+    gulp.src('./data/attractionrates.csv')
         .pipe(gulp.dest('./docs/data'));
 });
