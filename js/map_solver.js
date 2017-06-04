@@ -17,8 +17,8 @@ $(document).ready(function() {
 
     // attractionrates.csv is the (hidden) attraction rates
     // sheet from http://goo.gl/y17T4q (MH Calculator) saved as CSV
-    //ajax.open('get', 'http://localhost:3000/data/attractionrates.csv', true);
-    ajax.open('get', 'http://olf.github.io/mhmapsolver/data/attractionrates.csv', true);
+    ajax.open('get', 'http://localhost:3000/data/attraction_data.csv', true);
+    //ajax.open('get', 'http://olf.github.io/mhmapsolver/data/attractionrates.csv', true);
 
     ajax.onreadystatechange = function() {
         if (ajax.readyState == 4) {
@@ -142,14 +142,14 @@ function csvToArray(strData, strDelimiter) {
 function processPopulationData(csv) {
     for (var row in csv) {
         var data = csv[row];
-        var attractionRate = parseFloat(data[8]);
+        var attractionRate = parseFloat(data[5]);
 
         if (attractionRate > 0.0) {
             var mouseName = data[0].capitalise();
             var location = data[1];
             var cheese = data[2];
-            var charm = data[4];
-            var base = data[6] + (data[6] !== '' ? ' Base' : '');
+            var charm = data[3];
+            var base = data[4] + (data[4] !== '' ? ' Base' : '');
 
             if (populationData[mouseName] === undefined) populationData[mouseName] = []; //If mouse doesn't exist in array
             if (populationData[mouseName][location] === undefined) populationData[mouseName][location] = [];
