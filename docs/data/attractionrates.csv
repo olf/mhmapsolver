@@ -2,8 +2,8 @@ Mouse,Location,Cheese,Charm,Base,AR
 Cavern Crumbler,Fungal Cavern,Glowing Gruyere,,,11.97%
 Magmarage,Fiery Warpath,,Warpath Mage,,44.30%
 Magmarage,Fiery Warpath,,,,5.22%
+Living Ice,Slushy Shoreline,SUPER|brie+,Softserve,,17.99%
 Living Ice,Slushy Shoreline,SUPER|brie+,,,19.92%
-Living Ice,Slushy Shoreline,SUPER|brie+,Softserve,,19.01%
 Magic,Town of Gnawnia,SUPER|brie+,,,5.13%
 Magic,Harbour,SUPER|brie+,,,2.87%
 Magic,King's Arms,SUPER|brie+,,,4.73%
@@ -13,8 +13,8 @@ Diamond,Mountain,SUPER|brie+,Prospector's,,19.79%
 Diamond,Mountain,,Prospector's,,15.56%
 Diamond,Tournament Hall,,,,18.75%
 Warmonger,Fiery Warpath,SUPER|brie+,,,11.60%
-Iceblade,Iceberg,,,,1.27%
 Iceblade,Iceberg,SUPER|brie+,,,0.85%
+Iceblade,Iceberg,,,,1.26%
 Gladiator,Derr Dunes,,,,0.09%
 Gladiator,Derr Dunes,Crunchy,,,29.33%
 Whirleygig,Seasonal Garden,SUPER|brie+,,,5.87%
@@ -29,9 +29,9 @@ Reanimated Carver,Zokor,Glowing Gruyere,,,12.02%
 Lightning Rod,Tournament Hall,SUPER|brie+,,,12.02%
 Lightning Rod,Meadow,White Cheddar,,,14.24%
 Lightning Rod,Tournament Hall,,,,19.57%
-Fungal Spore,Twisted Garden,Lunaria Camembert,,,38.31%
-Fungal Spore,Living Garden,Lunaria Camembert,,,33.39%
-Fungal Spore,Twisted Garden,Duskshade Camembert,,,14.25%
+Fungal Spore,Twisted Garden,Duskshade Camembert,,,14.66%
+Fungal Spore,Twisted Garden,Lunaria Camembert,,,36.05%
+Fungal Spore,Living Garden,Lunaria Camembert,,,32.52%
 Meteorite Golem,Fort Rox,Moon,,,4.30%
 Meteorite Golem,Fort Rox,Crescent Cheese,,,4.80%
 Fencer,King's Gauntlet,Dumpling Cheese,,,6.19%
@@ -54,6 +54,10 @@ Steel,Laboratory,Radioactive Blue,Dark Chocolate,,22.92%
 Steel,Laboratory,SUPER|brie+,,,28.48%
 Steel,Town of Digby,,Prospector's,,26.21%
 Mystic Scholar,Zokor,Glowing Gruyere,,,1.63%
+Parlour Player,Gnawnian Express Station,,Supply Schedule,,2.86%
+Parlour Player,Gnawnian Express Station,,,,2.47%
+Parlour Player,Gnawnian Express Station,,Dusty Coal,,2.18%
+Parlour Player,Gnawnian Express Station,,Prospector's,,4.37%
 Scrap Metal Monster,Toxic Spill,Rancid Radioactive Blue,Rotten,,3.93%
 Scrap Metal Monster,Toxic Spill,Rancid Radioactive Blue,,,3.37%
 Scrap Metal Monster,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,4.92%
@@ -66,20 +70,20 @@ Gargantuamouse,Fiery Warpath,SUPER|brie+,Warpath Commander's,,4.82%
 Gargantuamouse,Fiery Warpath,SUPER|brie+,Gargantua Guarantee,,60.57%
 Soul Binder,Zokor,,,,0.33%
 Soul Binder,Zokor,Glowing Gruyere,,,0.55%
-Barkshell,Twisted Garden,Duskshade Camembert,,,18.89%
-Barkshell,Living Garden,Duskshade Camembert,,,8.89%
+Barkshell,Living Garden,Duskshade Camembert,,,8.64%
+Barkshell,Twisted Garden,Duskshade Camembert,,,19.27%
 Retired Minotaur,Zokor,SUPER|brie+,,,2.38%
 Retired Minotaur,Zokor,,,,2.22%
 Retired Minotaur,Zokor,Glowing Gruyere,,,1.31%
-Grubling Herder,Sand Dunes,Dewthief Camembert,,,10.90%
-Grubling Herder,Sand Dunes,Dewthief Camembert,Grubling Chow,,8.12%
+Grubling Herder,Sand Dunes,Dewthief Camembert,,,10.83%
+Grubling Herder,Sand Dunes,Dewthief Camembert,Grubling Chow,,8.20%
 Moosker,Calm Clearing,SUPER|brie+,,,9.08%
 Moosker,Great Gnarled Tree,SUPER|brie+,,,5.60%
 Moosker,Great Gnarled Tree,,,,5.97%
 Moosker,Calm Clearing,,,,7.44%
-Saloon Gal,Claw Shot City,SUPER|brie+,Sheriff's Badge,,18.61%
-Saloon Gal,Claw Shot City,SUPER|brie+,,,15.78%
-Saloon Gal,Claw Shot City,SUPER|brie+,Prospector's,,16.58%
+Saloon Gal,Claw Shot City,,,,16.09%
+Saloon Gal,Claw Shot City,,Sheriff's Badge,,14.79%
+Saloon Gal,Claw Shot City,SUPER|brie+,,,15.97%
 Tri-dra,Whisker Woods Rift,Magical String,Gnarled,,1.09%
 Tri-dra,Whisker Woods Rift,Magical String,Stagnant,,4.09%
 Tri-dra,Whisker Woods Rift,Swiss String,,,1.60%
@@ -105,8 +109,9 @@ Clockwork Timespinner,Bristle Woods Rift,Ancient String Cheese,,,2.22%
 Pugilist,Town of Gnawnia,Dumpling Cheese,,,15.85%
 Lady Coldsnap,Iceberg,,,,2.72%
 Lady Coldsnap,Iceberg,SUPER|brie+,,,2.23%
-Mysterious Traveller,Gnawnian Express Station,,,,9.08%
-Mysterious Traveller,Gnawnian Express Station,,Prospector's,,11.59%
+Mysterious Traveller,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,6.62%
+Mysterious Traveller,Gnawnian Express Station,,,,9.05%
+Mysterious Traveller,Gnawnian Express Station,,Prospector's,,11.66%
 Salt Water Snapper,S.S. Huntington III,SUPER|brie+,,,9.96%
 Quillback,Fungal Cavern,,,,9.01%
 Mystic,Elub Shore,,,,15.32%
@@ -126,8 +131,8 @@ Jurassic,Jungle of Dread,Sweet Havarti,,,2.09%
 Tentacle,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,6.93%
 Tentacle,Toxic Spill,Rancid Radioactive Blue,,,5.37%
 Tentacle,Toxic Spill,Rancid Radioactive Blue,Rotten,,4.26%
-Frostwing Commander,Iceberg,,,,1.39%
-Frostwing Commander,Iceberg,SUPER|brie+,,,3.96%
+Frostwing Commander,Iceberg,SUPER|brie+,,,3.92%
+Frostwing Commander,Iceberg,,,,1.31%
 Sporeticus,Fungal Cavern,SUPER|brie+,,,1.04%
 Sporeticus,Fungal Cavern,,,,1.32%
 Hot Head,Seasonal Garden,SUPER|brie+,,,3.76%
@@ -137,13 +142,13 @@ Sugar Rush,Spooky Sandcastle,Candy Corn,Extra Spooky,,7.49%
 Sugar Rush,Spooky Sandcastle,Candy Corn,Spooky,,8.56%
 Sugar Rush,Spooky Sandcastle,Ghoulgonzola,Shortcut,,5.78%
 Sugar Rush,Spooky Sandcastle,Ghoulgonzola,Extra Spooky,,6.28%
-Enginseer,Sunken City,Fishy Fromage,,,19.35%
+Enginseer,Sunken City,Fishy Fromage,,,18.57%
 Harbinger of Death,Bristle Woods Rift,Ancient String Cheese,,,1.45%
 Harbinger of Death,Bristle Woods Rift,Runic String Cheese,,,1.22%
 Harbinger of Death,Bristle Woods Rift,Magical String,,,0.17%
 Harbinger of Death,Bristle Woods Rift,Brie String,,,0.16%
-Clownfish,Sunken City,SUPER|brie+,,,0.60%
-Clownfish,Sunken City,,,,0.51%
+Clownfish,Sunken City,,,,0.48%
+Clownfish,Sunken City,SUPER|brie+,,,0.68%
 Boulder Biter,Burroughs Rift,Terre Ricotta,,,19.63%
 Foxy,Great Gnarled Tree,Gnarled,,,3.48%
 Foxy,Great Gnarled Tree,SUPER|brie+,,,1.52%
@@ -152,9 +157,8 @@ Foxy,Calm Clearing,SUPER|brie+,,,1.33%
 Foxy,Great Gnarled Tree,,,,1.68%
 Mighty Mole,Gnawnia Rift,Swiss String,,,6.82%
 Mighty Mole,Gnawnia Rift,Magical String,,,5.46%
-Mighty Mole,Gnawnia Rift,Brie String,,,1.55%
 Mighty Mole,Gnawnia Rift,Dumpling Cheese,,,5.62%
-Warehouse Manager,Gnawnian Express Station,,Supply Schedule,,9.13%
+Warehouse Manager,Gnawnian Express Station,,Supply Schedule,,10.43%
 Nutcracker,Great Winter Hunt,Arctic Asiago,Winter,,0.70%
 Nutcracker,Great Winter Hunt,Arctic Asiago,,,0.99%
 Mousevina von Vermin,Spooky Sandcastle,Ghoulgonzola,Extra Spooky,,3.98%
@@ -175,17 +179,16 @@ Gold,Tournament Hall,,,,19.66%
 Gold,Mountain,White Cheddar,Prospector's,,17.54%
 Gold,Mountain,SUPER|brie+,Prospector's,,19.79%
 Gold,Mountain,,Prospector's,,22.96%
-Cannonball,Gnawnian Express Station,,Greasy Glob,,5.73%
-Cannonball,Gnawnian Express Station,,,,2.72%
-Cannonball,Gnawnian Express Station,,Roof Rack,,7.66%
+Cannonball,Gnawnian Express Station,,,,2.67%
+Cannonball,Gnawnian Express Station,,Roof Rack,,5.25%
+Cannonball,Gnawnian Express Station,SUPER|brie+,,,2.13%
 Toy Sylvan,King's Gauntlet,Dumpling Cheese,,,7.36%
 Toy Sylvan,King's Gauntlet,,,,23.39%
 Master of the Dojo,Pinnacle Chamber,Rumble,,,99.96%
 Master of the Dojo,Pinnacle Chamber,Rumble,Candy,,100.00%
-Steel Horse Rider,Gnawnian Express Station,,Roof Rack,,9.46%
-Steel Horse Rider,Gnawnian Express Station,,,,0.99%
-Steel Horse Rider,Gnawnian Express Station,SUPER|brie+,,,1.21%
-Steel Horse Rider,Gnawnian Express Station,,Greasy Glob,,9.63%
+Steel Horse Rider,Gnawnian Express Station,,,,1.04%
+Steel Horse Rider,Gnawnian Express Station,,Roof Rack,,8.56%
+Steel Horse Rider,Gnawnian Express Station,SUPER|brie+,,,1.33%
 Bat,Mousoleum,Moon,,,16.27%
 Bat,Mousoleum,Radioactive Blue,,,11.75%
 Subterranean,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.37%
@@ -230,8 +233,8 @@ Reaper,Spooky Sandcastle,Candy Corn,Spooky,,2.52%
 Reaper,Spooky Sandcastle,Ghoulgonzola,Spooky,,1.30%
 Reaper,Forbidden Grove,Ancient,,,2.53%
 Goldleaf,Great Gnarled Tree,SUPER|brie+,,,7.30%
-Goldleaf,Great Gnarled Tree,Gnarled,,,5.13%
-Goldleaf,Great Gnarled Tree,,,,4.38%
+Goldleaf,Great Gnarled Tree,Gnarled,,,5.12%
+Goldleaf,Great Gnarled Tree,,,,4.37%
 Toxic Warrior,Toxic Spill,Rancid Radioactive Blue,,,9.41%
 Toxic Warrior,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,8.95%
 Toxic Warrior,Toxic Spill,Rancid Radioactive Blue,Rotten,,4.30%
@@ -247,10 +250,12 @@ Aether,Crystal Library,SUPER|brie+,,,1.25%
 Mischievous Meteorite Miner,Fort Rox,SUPER|brie+,,,18.53%
 Mischievous Meteorite Miner,Fort Rox,,,,28.43%
 Briegull,S.S. Huntington III,,,,12.19%
-Mouse With No Name,Gnawnian Express Station,,Roof Rack,,12.39%
-Mouse With No Name,Gnawnian Express Station,,,,0.81%
-Mouse With No Name,Gnawnian Express Station,,Greasy Glob,,12.84%
-Mouse With No Name,Gnawnian Express Station,SUPER|brie+,,,1.33%
+Mouse With No Name,Gnawnian Express Station,SUPER|brie+,Roof Rack,,7.04%
+Mouse With No Name,Gnawnian Express Station,,Roof Rack,,12.98%
+Mouse With No Name,Gnawnian Express Station,SUPER|brie+,Greasy Glob,,5.79%
+Mouse With No Name,Gnawnian Express Station,SUPER|brie+,Door Guard,,9.93%
+Mouse With No Name,Gnawnian Express Station,,Door Guard,,11.65%
+Mouse With No Name,Gnawnian Express Station,,Greasy Glob,,11.75%
 Meteorite Miner,Fort Rox,,,,28.43%
 Gourd Ghoul,Spooky Sandcastle,Ghoulgonzola,Candy,,20.31%
 Gourd Ghoul,Spooky Sandcastle,Ghoulgonzola,Shortcut,,32.95%
@@ -261,8 +266,8 @@ Gourd Ghoul,Spooky Sandcastle,Ghoulgonzola,Extra Spooky,,0.77%
 Gourd Ghoul,Spooky Sandcastle,Candy Corn,,,30.98%
 Portable Generator,Burroughs Rift,Magical String,,,5.05%
 Portable Generator,Burroughs Rift,Magical String,Brain,,0.48%
-Living Salt,Iceberg,,,,2.37%
-Living Salt,Iceberg,SUPER|brie+,,,4.44%
+Living Salt,Iceberg,,,,2.31%
+Living Salt,Iceberg,SUPER|brie+,,,4.51%
 Battle Cleric,Zokor,SUPER|brie+,,,6.24%
 Battle Cleric,Zokor,,Candy,,9.98%
 Spore,Toxic Spill,Rancid Radioactive Blue,,,2.19%
@@ -278,21 +283,17 @@ Sludge,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,3.87%
 Sludge,Toxic Spill,Rancid Radioactive Blue,,,3.62%
 Sludge,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.28%
 Sludge,Toxic Spill,Rancid Radioactive Blue,Rotten,,0.91%
-Essence Collector,Lost City,Dewthief Camembert,Searcher,,5.46%
-Essence Collector,Lost City,Dewthief Camembert,,,16.49%
-Upper Class Lady,Gnawnian Express Station,,,,3.55%
-Upper Class Lady,Gnawnian Express Station,,Prospector's,,3.91%
-Ethereal Thief,Lost City,Dewthief Camembert,Searcher,,19.71%
-Ethereal Thief,Lost City,Dewthief Camembert,,,16.85%
-Eggscavator,Gnawnia Rift,Marshmallow Monterey,,,10.46%
-Eggscavator,S.S. Huntington III,Marshmallow Monterey,,,10.18%
-Eggscavator,Fungal Cavern,Marshmallow Monterey,,,9.96%
-Eggscavator,Dojo,Marshmallow Monterey,,,10.79%
+Essence Collector,Lost City,Dewthief Camembert,,,16.40%
+Essence Collector,Lost City,Dewthief Camembert,Searcher,,5.38%
+Upper Class Lady,Gnawnian Express Station,,,,2.81%
+Upper Class Lady,Gnawnian Express Station,,Black Powder,,2.22%
+Ethereal Thief,Lost City,Dewthief Camembert,,,17.28%
+Ethereal Thief,Lost City,Dewthief Camembert,Searcher,,20.08%
 Summoning Scholar,Labyrinth,Glowing Gruyere,Firecracker,,18.86%
 Summoning Scholar,Labyrinth,Glowing Gruyere,Candy,,11.00%
 Summoning Scholar,Labyrinth,Glowing Gruyere,Prospector's,,11.33%
 Deep,Iceberg,SUPER|brie+,,,2.42%
-Deep,Iceberg,,,,1.68%
+Deep,Iceberg,,,,1.57%
 Huntereater,Fungal Cavern,Glowing Gruyere,,,0.05%
 Huntereater,Fungal Cavern,Gemstone,,,1.68%
 Ash Golem,Labyrinth,NOT FOUND,,,16.22%
@@ -341,10 +342,12 @@ Dirt Thing,Fungal Cavern,Glowing Gruyere,,,17.18%
 Gemstone Worshipper,Fungal Cavern,Glowing Gruyere,,,2.68%
 Nerg Lich,Balack's Cove,Vanilla Stilton,,,9.96%
 Nerg Lich,Balack's Cove,Vengeful Vanilla Stilton,,,15.76%
-Incompetent Ice Climber,Slushy Shoreline,SUPER|brie+,,,12.60%
-Incompetent Ice Climber,Slushy Shoreline,,,,12.23%
-Icebreaker,Iceberg,,,,6.61%
-Icebreaker,Slushy Shoreline,,Softserve,,10.32%
+Incompetent Ice Climber,Slushy Shoreline,SUPER|brie+,,,12.13%
+Incompetent Ice Climber,Iceberg,,,,1.71%
+Incompetent Ice Climber,Slushy Shoreline,,,,11.89%
+Icebreaker,Slushy Shoreline,,Softserve,,10.36%
+Icebreaker,Iceberg,,,,6.81%
+Icebreaker,Iceberg,SUPER|brie+,,,6.87%
 Industrious Digger,Town of Digby,Limelight,,,15.90%
 Market Guard,Muridae Market,Dumpling Cheese,,,2.76%
 Market Guard,Muridae Market,SUPER|brie+,,,8.68%
@@ -366,14 +369,15 @@ Snow Fort,Great Winter Hunt,Arctic Asiago,,,0.62%
 Fog,Harbour,SUPER|brie+,,,2.93%
 Fog,Mountain,SUPER|brie+,,,5.66%
 Corrupt,Cursed City,Graveblossom Camembert,Shattering,,16.30%
-Corrupt,Cursed City,Graveblossom Camembert,,,8.06%
-Corrupt,Lost City,Graveblossom Camembert,,,8.65%
+Corrupt,Lost City,Graveblossom Camembert,,,8.19%
+Corrupt,Cursed City,Graveblossom Camembert,,,7.93%
 Draconic Warden,Dracano,Inferno Havarti,,,27.82%
 Necromancer,King's Gauntlet,Gauntlet Tier 7,,,21.77%
 Zombie,Catacombs,Radioactive Blue,Brain,,37.29%
 Zombie,Mousoleum,Radioactive Blue,Brain,,46.28%
+Excitable Electric,Gnawnia Rift,Brie String,,,12.66%
+Excitable Electric,Gnawnia Rift,Dumpling Cheese,,,6.18%
 Excitable Electric,Gnawnia Rift,Magical String,,,8.42%
-Excitable Electric,Gnawnia Rift,Brie String,,,12.68%
 Excitable Electric,Gnawnia Rift,Swiss String,,,10.93%
 Spirit of Balance,Whisker Woods Rift,Magical String,,,6.81%
 Spirit of Balance,Whisker Woods Rift,Swiss String,,,10.23%
@@ -405,9 +409,9 @@ Mystic Guardian,Labyrinth,Glowing Gruyere,Prospector's,,2.65%
 Mystic Guardian,Labyrinth,Glowing Gruyere,Firecracker,,3.07%
 Mystic Guardian,Zokor,Candy Corn,Candy,,3.17%
 Mystic Guardian,Zokor,Toxic Brie Cheese,,,5.33%
-King Grub,Sand Crypts,Graveblossom Camembert,,,0.39%
-King Grub,Sand Crypts,Graveblossom Camembert,Grub Scent,,92.25%
-King Grub,Sand Dunes,Graveblossom Camembert,,,3.24%
+King Grub,Sand Crypts,Graveblossom Camembert,,,0.21%
+King Grub,Sand Dunes,Graveblossom Camembert,,,3.17%
+King Grub,Sand Crypts,Graveblossom Camembert,Grub Scent,,92.90%
 Manaforge Smith,Zokor,,,,0.38%
 Manaforge Smith,Zokor,Glowing Gruyere,Candy,,0.95%
 Frog,Great Gnarled Tree,,,,7.29%
@@ -419,10 +423,6 @@ Mutated Grey,Acolyte Realm,Radioactive Blue,,,14.97%
 Mutated Grey,Forbidden Grove,Radioactive Blue,,,21.80%
 Mutated Grey,Bazaar,,,,15.09%
 Mutated Grey,Forbidden Grove,Rancid Radioactive Blue,,,19.64%
-Snowglobe,Great Winter Hunt,Nutmeg,Winter,,4.04%
-Snowglobe,Great Winter Hunt,Snowball Bocconcini,Winter,,2.92%
-Snowglobe,Great Winter Hunt,Seasoned Gouda,,,3.14%
-Snowglobe,Great Winter Hunt,Festive Feta,Winter,,3.38%
 Davy Jones,Balack's Cove,Vanilla Stilton,,,13.24%
 Master of the Cheese Belt,Meditation Room,Glutter,,,99.47%
 Tome Sprite,Crystal Library,SUPER|brie+,,,8.66%
@@ -438,12 +438,11 @@ Portal Paladin,Bristle Woods Rift,Runic String Cheese,,,11.50%
 Portal Paladin,Bristle Woods Rift,Ancient String Cheese,,,10.80%
 Portal Paladin,Bristle Woods Rift,Magical String,,,11.64%
 Portal Paladin,Bristle Woods Rift,Brie String,,,9.99%
-Train Engineer,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,16.37%
-Train Engineer,Gnawnian Express Station,,Black Powder,,17.26%
-Train Engineer,Gnawnian Express Station,SUPER|brie+,Black Powder,,14.00%
-Train Engineer,Gnawnian Express Station,,Magmatic Crystal,,8.30%
-Train Engineer,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,14.78%
-Train Engineer,Gnawnian Express Station,,Dusty Coal,,15.14%
+Train Engineer,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,15.35%
+Train Engineer,Gnawnian Express Station,,Black Powder,,17.56%
+Train Engineer,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,13.43%
+Train Engineer,Gnawnian Express Station,,Dusty Coal,,15.63%
+Train Engineer,Gnawnian Express Station,SUPER|brie+,Black Powder,,12.20%
 Grand Master of the Dojo,NOT FOUND,Rift Rumble Cheese,,,99.59%
 Grand Master of the Dojo,Furoma Rift,Rift Rumble Cheese,,,99.65%
 Grand Master of the Dojo,Furoma Rift,Rift Glutter Cheese,,,0.15%
@@ -454,8 +453,7 @@ Amplified Grey,Burroughs Rift,Magical String,,,1.74%
 Molten Midas,Zokor,Glowing Gruyere,,,6.00%
 Molten Midas,Zokor,SUPER|brie+,,,2.15%
 Molten Midas,Zokor,,,,1.86%
-Swashblade,Sunken City,SUPER|brie+,,,1.48%
-Swashblade,Sunken City,,,,1.54%
+Swashblade,Sunken City,,,,1.88%
 Miner,Town of Digby,Limelight,,,9.90%
 Night Shift Materials Manager,Fort Rox,Crescent Cheese,,,4.42%
 Berserker,King's Gauntlet,Gauntlet Tier 3,,,20.26%
@@ -467,22 +465,21 @@ Coco Commander,Gnawnia Rift,Marshmallow Monterey,,,11.00%
 Coco Commander,Dojo,Marshmallow Monterey,,,11.49%
 Coco Commander,S.S. Huntington III,Marshmallow Monterey,,,10.88%
 Coco Commander,Muridae Market,Marshmallow Monterey,,,11.76%
-Crabolia,Sunken City,SUPER|brie+,,,0.86%
-Crabolia,Sunken City,,,,0.92%
-Snow Soldier,Slushy Shoreline,,Softserve,,9.33%
-Snow Soldier,Slushy Shoreline,,,,14.04%
-Snow Soldier,Slushy Shoreline,SUPER|brie+,,,11.13%
-Snow Soldier,Slushy Shoreline,SUPER|brie+,Softserve,,11.98%
-Calalilly,Living Garden,SUPER|brie+,,,16.25%
-Calalilly,Living Garden,,,,16.10%
+Crabolia,Sunken City,SUPER|brie+,,,0.83%
+Crabolia,Sunken City,,,,0.80%
+Snow Soldier,Slushy Shoreline,,,,13.54%
+Snow Soldier,Slushy Shoreline,SUPER|brie+,Softserve,,10.91%
+Snow Soldier,Slushy Shoreline,SUPER|brie+,,,11.57%
+Calalilly,Living Garden,SUPER|brie+,,,17.12%
+Calalilly,Living Garden,,,,16.58%
 Alnitak,Elub Shore,SUPER|brie+,,,16.98%
 Alnitak,Elub Shore,,,,15.64%
 Tech Ravenous Zombie,Burroughs Rift,Undead String Emmental,,,15.50%
 Tech Ravenous Zombie,Burroughs Rift,Undead String Emmental,Brain,,21.34%
 Tech Ravenous Zombie,Burroughs Rift,Brie String,Brain,,25.12%
-Ethereal Engineer,Lost City,Dewthief Camembert,,,17.33%
-Ethereal Engineer,Lost City,Dewthief Camembert,Searcher,,20.59%
-Force Fighter Pink,Birthday Party Zone,Cupcake Colby,,,10.29%
+Ethereal Engineer,Lost City,Dewthief Camembert,,,17.24%
+Ethereal Engineer,Lost City,Dewthief Camembert,Searcher,,21.12%
+Force Fighter Pink,Birthday Party Zone,Cupcake Colby,,,10.24%
 Shattered Carmine,Twisted Garden,Lunaria Camembert,Shattering,,29.54%
 Shattered Carmine,Living Garden,Lunaria Camembert,Shattering,,28.83%
 Shattered Carmine,Twisted Garden,Lunaria Camembert,,,0.32%
@@ -529,12 +526,13 @@ Militant Samurai,Furoma Rift,Maki String Cheese,,,5.40%
 Militant Samurai,Furoma Rift,Magical String,,,5.46%
 Militant Samurai,Furoma Rift,Swiss String,,,5.57%
 Militant Samurai,Furoma Rift,Brie String,,,6.21%
-Ethereal Enchanter,Lost City,Dewthief Camembert,,,19.15%
-Ethereal Enchanter,Lost City,Dewthief Camembert,Searcher,,25.63%
-Thorn,Twisted Garden,Duskshade Camembert,,,18.55%
-Thorn,Living Garden,Duskshade Camembert,,,10.10%
-Mutated Brown,Forbidden Grove,Radioactive Blue,,,11.29%
-Mutated Brown,Forbidden Grove,Rancid Radioactive Blue,,,12.73%
+Ethereal Enchanter,Lost City,Dewthief Camembert,Searcher,,25.47%
+Ethereal Enchanter,Lost City,Dewthief Camembert,,,19.18%
+Thorn,Twisted Garden,Duskshade Camembert,,,18.22%
+Thorn,Living Garden,Duskshade Camembert,,,9.99%
+Mutated Brown,Forbidden Grove,Radioactive Blue,,,11.09%
+Mutated Brown,Acolyte Realm,Radioactive Blue,,,6.67%
+Mutated Brown,Forbidden Grove,Rancid Radioactive Blue,,,12.54%
 Dashing Buccaneer,Harbour,,,,6.59%
 Dashing Buccaneer,Harbour,SUPER|brie+,,,6.29%
 Vanguard,Fiery Warpath,SUPER|brie+,Super Warpath Scout,,23.81%
@@ -545,14 +543,13 @@ Flame Archer,Fiery Warpath,SUPER|brie+,Super Warpath Archer,,22.66%
 Flame Archer,Fiery Warpath,SUPER|brie+,Warpath Warrior,,2.60%
 Flame Archer,Fiery Warpath,SUPER|brie+,Warpath Archer,,30.17%
 Flame Archer,Fiery Warpath,,Warpath Archer,,28.83%
-Cursed Engineer,Lost City,Graveblossom Camembert,Safeguard,,16.81%
-Cursed Engineer,Cursed City,Graveblossom Camembert,,,16.88%
-Cursed Engineer,Cursed City,Graveblossom Camembert,Clarity,,21.57%
+Cursed Engineer,Cursed City,Graveblossom Camembert,Clarity,,21.79%
+Cursed Engineer,Cursed City,Graveblossom Camembert,,,17.04%
 Lockpick,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.20%
 Lockpick,King's Gauntlet,Gauntlet Tier 2,,,19.27%
 Raw Diamond,NOT FOUND,Magical String,,,8.31%
 Greyrun,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.25%
-Greyrun,Gnawnia Rift,Brie String,,,13.24%
+Greyrun,Gnawnia Rift,Brie String,,,13.27%
 Automated Stone Sentry,Zokor,,Prospector's,,6.78%
 Automated Stone Sentry,Zokor,Glowing Gruyere,Firecracker,,6.94%
 Automated Stone Sentry,Zokor,SUPER|brie+,Dark Chocolate,,5.48%
@@ -562,7 +559,7 @@ Automated Stone Sentry,Labyrinth,Toxic SUPER|brie+,,,9.26%
 Skeleton,Catacombs,Ancient,,,16.04%
 Skeleton,Catacombs,Undead Emmental,,,9.82%
 Skeleton,Catacombs,Radioactive Blue,,,15.59%
-Elite Guardian,Sunken City,Fishy Fromage,,,15.73%
+Elite Guardian,Sunken City,Fishy Fromage,,,14.32%
 Mystic Rook,Zugzwang's Tower,SUPER|brie+,,,7.25%
 Mystic Rook,Zugzwang's Tower,Checkmate,,,7.98%
 Mystic Rook,Zugzwang's Tower,,,,6.36%
@@ -586,8 +583,8 @@ Force Fighter Green,Birthday Party Zone,Extra Sweet Cupcake Colby,,,8.44%
 Captain Croissant,Windmill,SUPER|brie+,,,0.38%
 Captain Croissant,Windmill,Grilled,,,99.64%
 Captain Croissant,Windmill,,,,1.11%
-Mlounder Flounder,Sunken City,,,,0.59%
-Mlounder Flounder,Sunken City,SUPER|brie+,,,0.77%
+Mlounder Flounder,Sunken City,,,,0.71%
+Mlounder Flounder,Sunken City,SUPER|brie+,,,0.76%
 Tiger,Great Gnarled Tree,SUPER|brie+,,,1.66%
 Tiger,Lagoon,Wicked Gnarly,,,3.32%
 Tiger,Lagoon,Gnarled,,,5.19%
@@ -596,8 +593,8 @@ Coral,Sunken City,SUPER|brie+,,,0.80%
 Coral,Sunken City,,,,0.74%
 Mining Materials Manager,Fort Rox,SUPER|brie+,,,8.89%
 Mining Materials Manager,Fort Rox,SUPER|brie+,Candy,,13.18%
-Spiky Devil,Sand Dunes,Dewthief Camembert,,,19.85%
-Spiky Devil,Sand Dunes,Dewthief Camembert,Grubling Chow,,15.02%
+Spiky Devil,Sand Dunes,Dewthief Camembert,Grubling Chow,,14.66%
+Spiky Devil,Sand Dunes,Dewthief Camembert,,,19.91%
 Dread Knight,Bristle Woods Rift,Brie String,,,9.23%
 Dread Knight,Bristle Woods Rift,Runic String Cheese,,,9.30%
 Dread Knight,Bristle Woods Rift,Ancient String Cheese,,,7.25%
@@ -607,8 +604,8 @@ Cowbell,King's Gauntlet,Gauntlet Tier 4,,,21.43%
 Wicked Witch of Whisker Woods,Lagoon,,,,17.97%
 Wicked Witch of Whisker Woods,Great Gnarled Tree,Gnarled,,,1.52%
 Wicked Witch of Whisker Woods,Lagoon,SUPER|brie+,,,30.42%
-Sand Colossus,Sand Dunes,Graveblossom Camembert,,,23.14%
-Sand Colossus,Sand Crypts,Graveblossom Camembert,,,24.72%
+Sand Colossus,Sand Dunes,Graveblossom Camembert,,,23.74%
+Sand Colossus,Sand Crypts,Graveblossom Camembert,,,24.67%
 Mouse of Winter Future,Great Winter Hunt,Arctic Asiago,Dark Chocolate,,7.39%
 Mouse of Winter Future,Great Winter Hunt,Arctic Asiago,Candy,,11.06%
 Mouse of Winter Future,Great Winter Hunt,Arctic Asiago,Winter Hoarder,,6.48%
@@ -623,10 +620,10 @@ Big Bad Burroughs,Town of Digby,Limelight,,,4.70%
 Magma Carrier,Jungle of Dread,Spicy Havarti,,,99.32%
 Rift Bio Engineer,Burroughs Rift,Swiss String,,,10.51%
 Rift Bio Engineer,Burroughs Rift,Brie String,,,2.03%
-Carmine the Apothecary,Living Garden,Duskshade Camembert,,,22.21%
-Stuffy Banker,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,3.20%
-Stuffy Banker,Gnawnian Express Station,,,,3.48%
-Stuffy Banker,Gnawnian Express Station,,Prospector's,,4.78%
+Carmine the Apothecary,Living Garden,Duskshade Camembert,,,22.44%
+Stuffy Banker,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,3.71%
+Stuffy Banker,Gnawnian Express Station,,,,3.49%
+Stuffy Banker,Gnawnian Express Station,,Prospector's,,4.81%
 Scruffy,Windmill,,Prospector's,,12.71%
 Scruffy,King's Arms,Gilded,,,9.25%
 Scruffy,King's Arms,,,,11.68%
@@ -638,9 +635,9 @@ Dwarf,Town of Gnawnia,Mozzarella,,,19.77%
 Dwarf,Tournament Hall,,,,21.34%
 Dwarf,Laboratory,White Cheddar,,,21.43%
 Dwarf,Town of Gnawnia,White Cheddar,,,19.42%
-Circuit Judge,Claw Shot City,,,,0.71%
-Circuit Judge,Claw Shot City,,Prospector's,,0.81%
-Circuit Judge,Claw Shot City,SUPER|brie+,,,0.63%
+Circuit Judge,Claw Shot City,,Prospector's,,1.05%
+Circuit Judge,Claw Shot City,,,,0.73%
+Circuit Judge,Claw Shot City,SUPER|brie+,,,0.64%
 Soothsayer,Elub Shore,SUPER|brie+,,,17.12%
 Soothsayer,Elub Shore,,,,15.75%
 Desert Architect,Muridae Market,SUPER|brie+,Artisan,,7.62%
@@ -652,16 +649,16 @@ Paladin Weapon Master,Zokor,Glowing Gruyere,,,0.50%
 Elven Princess,Great Gnarled Tree,Gnarled,,,11.53%
 Elven Princess,Lagoon,SUPER|brie+,,,19.14%
 Elven Princess,Lagoon,,,,21.19%
-Shopkeeper,Claw Shot City,,Sheriff's Badge,,14.60%
-Shopkeeper,Claw Shot City,,,,15.87%
-Shopkeeper,Claw Shot City,SUPER|brie+,,,17.54%
-Shopkeeper,Claw Shot City,,Prospector's,,12.40%
+Shopkeeper,Claw Shot City,SUPER|brie+,,,18.10%
+Shopkeeper,Claw Shot City,,Prospector's,,12.79%
+Shopkeeper,Claw Shot City,,,,15.57%
+Shopkeeper,Claw Shot City,,Sheriff's Badge,,14.00%
 Solemn Soldier,Labyrinth,,Prospector's,,3.57%
 Solemn Soldier,Labyrinth,Glowing Gruyere,Candy,,3.85%
 Solemn Soldier,Zokor,Glowing Gruyere,Prospector's,,2.73%
 Solemn Soldier,Labyrinth,Glowing Gruyere,Firecracker,,5.70%
-Wolfskie,Iceberg,SUPER|brie+,,,6.93%
-Wolfskie,Iceberg,,,,8.28%
+Wolfskie,Iceberg,,,,8.42%
+Wolfskie,Iceberg,SUPER|brie+,,,6.92%
 Alpha Weremouse,Fort Rox,Moon,,,7.24%
 Alpha Weremouse,Fort Rox,Crescent Cheese,,,8.39%
 Splintered Stone Sentry,Fungal Cavern,Glowing Gruyere,,,4.65%
@@ -697,10 +694,11 @@ Bookborn,Crystal Library,SUPER|brie+,Scholar (Charged),,13.16%
 Bookborn,Crystal Library,,Candy,,12.20%
 Bookborn,Crystal Library,,Scholar (Charged),,7.41%
 Bookborn,Crystal Library,SUPER|brie+,Prospector's,,8.62%
-Cursed Thief,Cursed City,Graveblossom Camembert,Candy,,19.67%
-Cursed Thief,Cursed City,Graveblossom Camembert,Shine,,30.74%
-Cursed Thief,Cursed City,Graveblossom Camembert,Bravery,,27.92%
-Cursed Thief,Cursed City,Graveblossom Camembert,Clarity,,24.37%
+Cursed Thief,Cursed City,Graveblossom Camembert,Safeguard,,16.20%
+Cursed Thief,Cursed City,Graveblossom Camembert,Shine,,30.53%
+Cursed Thief,Lost City,Graveblossom Camembert,Safeguard,,18.21%
+Cursed Thief,Cursed City,Graveblossom Camembert,Bravery,,25.38%
+Cursed Thief,Cursed City,Graveblossom Camembert,Clarity,,24.48%
 Grizzled Silth,Whisker Woods Rift,Brie String,Stagnant,,10.27%
 Grizzled Silth,Whisker Woods Rift,Brie String,,,0.07%
 Grizzled Silth,Whisker Woods Rift,Magical String,Gnarled,,0.31%
@@ -737,23 +735,23 @@ Skeletal Champion,Bristle Woods Rift,Runic String Cheese,,,8.01%
 Skeletal Champion,Bristle Woods Rift,Brie String,,,8.26%
 Harvester,Seasonal Garden,SUPER|brie+,,,2.29%
 Harvester,Seasonal Garden,,,,1.68%
-Saboteur,Slushy Shoreline,,Softserve,,9.22%
-Saboteur,Iceberg,,,,3.89%
+Saboteur,Iceberg,,,,3.90%
 Saboteur,Iceberg,SUPER|brie+,,,4.60%
+Saboteur,Slushy Shoreline,,Softserve,,9.23%
 Bruticle,Seasonal Garden,SUPER|brie+,,,3.21%
 Bruticle,Seasonal Garden,,,,4.61%
 Desert Nomad,Muridae Market,Dumpling Cheese,,,2.79%
 Desert Nomad,Muridae Market,SUPER|brie+,,,3.29%
 Desert Nomad,Muridae Market,,,,1.33%
-Extreme Everysports,Gnawnia Rift,Runny,,,100.00%
 Diamondhide,Fungal Cavern,Diamond,,,11.86%
 Diamondhide,Fungal Cavern,Gemstone,,,1.37%
-Thistle,Living Garden,,,,24.24%
-Thistle,Living Garden,SUPER|brie+,,,14.40%
+Thistle,Living Garden,,,,24.43%
+Thistle,Living Garden,SUPER|brie+,,,15.12%
 Finder,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.14%
-Desperado,Claw Shot City,SUPER|brie+,,,0.67%
-Desperado,Claw Shot City,,Prospector's,,0.46%
-Desperado,Claw Shot City,,,,0.93%
+Desperado,Claw Shot City,,Sheriff's Badge,,0.29%
+Desperado,Claw Shot City,SUPER|brie+,,,0.68%
+Desperado,Claw Shot City,,Prospector's,,0.47%
+Desperado,Claw Shot City,,,,0.96%
 Evil Scientist,Burroughs Rift,Brie String,,,4.00%
 Evil Scientist,Burroughs Rift,Swiss String,,,2.90%
 Evil Scientist,Burroughs Rift,Brie String,Brain,,1.80%
@@ -761,7 +759,7 @@ Evil Scientist,Burroughs Rift,Magical String,,,4.94%
 Swarm of Pygmy Mice,Jungle of Dread,Vanilla Stilton,,,92.58%
 Swarm of Pygmy Mice,Jungle of Dread,,,,82.97%
 Swarm of Pygmy Mice,Jungle of Dread,SUPER|brie+,,,90.69%
-Yeti,Slushy Shoreline,,Softserve,,8.97%
+Yeti,Slushy Shoreline,,Softserve,,9.08%
 Yeti,Iceberg,,,,1.31%
 Kung Fu,Dojo,,,,10.98%
 Aged,Cape Clawed,Crunchy,,,36.65%
@@ -776,13 +774,12 @@ Champion,Elub Shore,Shell,,,32.34%
 Crystal Queen,Fungal Cavern,Mineral,,,1.01%
 Crystal Queen,Fungal Cavern,Gemstone,,,35.15%
 Fetid Swamp,Jungle of Dread,Crunchy Havarti,,,98.73%
+Carefree Cook,S.S. Huntington III,Marshmallow Monterey,,,5.21%
+Carefree Cook,S.S. Huntington III,Marshmallow Monterey,Dark Chocolate,,8.30%
 Fall Familiar,Seasonal Garden,SUPER|brie+,,,2.20%
 Student of the Cheese Fang,Dojo,SUPER|brie+,,,13.41%
 Student of the Cheese Fang,Dojo,Maki,,,21.53%
-Snow Slinger,Iceberg,,Dark Chocolate,,21.95%
-Snow Slinger,Iceberg,SUPER|brie+,Candy,,14.16%
-Snow Slinger,Iceberg,,Candy,,16.52%
-Snow Slinger,Slushy Shoreline,Toxic Brie Cheese,,,18.42%
+Snow Slinger,Iceberg,,,,13.50%
 Sleepwalker,Birthday Party Zone,SUPER|brie+,,,15.40%
 Sleepwalker,Birthday Party Zone,,,,20.07%
 Battering Ram,Fort Rox,SUPER|brie+,,,4.41%
@@ -790,13 +787,13 @@ Battering Ram,Fort Rox,SUPER|brie+,Candy,,6.66%
 Battering Ram,Fort Rox,Toxic SUPER|brie+,,,35.62%
 Battering Ram,Fort Rox,,Candy,,7.77%
 Guqin Player,King's Gauntlet,Gauntlet Tier 4,,,26.42%
-Scarab,Sand Crypts,Graveblossom Camembert,,,23.78%
-Scarab,Sand Dunes,Graveblossom Camembert,,,22.74%
+Scarab,Sand Dunes,Graveblossom Camembert,,,23.64%
+Scarab,Sand Crypts,Graveblossom Camembert,,,24.95%
 Christmas Tree,Great Winter Hunt,Arctic Asiago,,,2.69%
 Christmas Tree,Great Winter Hunt,Snowball Bocconcini,,,2.21%
 Student of the Cheese Claw,Dojo,Maki,,,19.18%
-Koimaid,Sunken City,SUPER|brie+,,,3.04%
-Koimaid,Sunken City,,,,3.74%
+Koimaid,Sunken City,,,,3.70%
+Koimaid,Sunken City,SUPER|brie+,,,2.69%
 Terra,King's Gauntlet,Gauntlet Tier 5,,,22.89%
 Cyclops Barbarian,Whisker Woods Rift,Swiss String,,,1.66%
 Cyclops Barbarian,Whisker Woods Rift,Magical String,,,3.22%
@@ -816,8 +813,8 @@ Bitter Root,Fungal Cavern,Toxic SUPER|brie+,,,8.14%
 Bitter Root,Fungal Cavern,,Firecracker,,9.56%
 Bitter Root,Fungal Cavern,Gilded,,,10.14%
 Bitter Root,Fungal Cavern,Brie String,,,6.78%
-Dinosuit,Birthday Party Zone,Cupcake Colby,,,9.05%
-Dinosuit,Birthday Party Zone,Extra Sweet Cupcake Colby,,,8.32%
+Dinosuit,Birthday Party Zone,Cupcake Colby,,,9.01%
+Dinosuit,Birthday Party Zone,Extra Sweet Cupcake Colby,,,8.27%
 Plutonium Tentacle,Burroughs Rift,Polluted Parmesan,,,12.81%
 Gourdborg,Spooky Sandcastle,Ghoulgonzola,Extra Spooky,,3.16%
 Gourdborg,Spooky Sandcastle,Candy Corn,Spooky,,2.08%
@@ -826,10 +823,9 @@ Slay Ride,Great Winter Hunt,Arctic Asiago,Winter,,0.60%
 Slay Ride,Great Winter Hunt,Arctic Asiago,,,1.47%
 Archer,Training Grounds,SUPER|brie+,,,23.31%
 Archer,Training Grounds,,,,21.38%
-Stoutgear,Gnawnian Express Station,,Roof Rack,,4.05%
-Stoutgear,Gnawnian Express Station,,Greasy Glob,,4.36%
-Stoutgear,Gnawnian Express Station,SUPER|brie+,,,2.12%
-Stoutgear,Gnawnian Express Station,,,,2.13%
+Stoutgear,Gnawnian Express Station,,Roof Rack,,4.70%
+Stoutgear,Gnawnian Express Station,,,,2.22%
+Stoutgear,Gnawnian Express Station,,Greasy Glob,,4.22%
 Pack,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.23%
 Surgeon Bot,Burroughs Rift,Brie String,,,2.98%
 Surgeon Bot,Burroughs Rift,Swiss String,,,4.44%
@@ -858,13 +854,13 @@ Lycan,Catacombs,Moon,,,29.66%
 Lycan,Forbidden Grove,Moon,,,40.06%
 Cupcake Runner,Birthday Party Zone,Extra Sweet Cupcake Colby,,,2.43%
 Cupcake Runner,Birthday Party Zone,Cupcake Colby,,,1.19%
-Oxygen Baron,Sunken City,Fishy Fromage,,,5.30%
+Oxygen Baron,Sunken City,Fishy Fromage,Prospector's,,5.79%
+Oxygen Baron,Sunken City,Fishy Fromage,Dark Chocolate,,5.07%
 Farmhand,Windmill,SUPER|brie+,,,5.05%
-Jellyfish,Sunken City,,,,3.72%
-Jellyfish,Sunken City,SUPER|brie+,,,3.11%
-Snow Bowler,Slushy Shoreline,SUPER|brie+,Softserve,,4.49%
-Snow Bowler,Slushy Shoreline,SUPER|brie+,,,9.03%
-Snow Bowler,Slushy Shoreline,,,,17.35%
+Jellyfish,Sunken City,SUPER|brie+,,,2.85%
+Jellyfish,Sunken City,,,,3.52%
+Snow Bowler,Slushy Shoreline,SUPER|brie+,,,9.21%
+Snow Bowler,Slushy Shoreline,,,,17.87%
 Impersonator,King's Gauntlet,Gauntlet Tier 2,,,21.19%
 Rock Muncher,Town of Digby,Limelight,,,11.20%
 Heart of the Meteor,Fort Rox,Moon,,,0.05%
@@ -888,39 +884,37 @@ Mutated White,Forbidden Grove,Radioactive Blue,,,19.58%
 Ethereal Guardian,Zokor,Glowing Gruyere,,,6.53%
 Frostbite,Seasonal Garden,SUPER|brie+,,,3.21%
 Frostbite,Seasonal Garden,,,,4.82%
-Chipper,Slushy Shoreline,SUPER|brie+,,,14.58%
-Chipper,Slushy Shoreline,,,,17.06%
-Chipper,Slushy Shoreline,SUPER|brie+,Softserve,,11.38%
+Chipper,Slushy Shoreline,SUPER|brie+,Softserve,,12.39%
+Chipper,Slushy Shoreline,,Softserve,,13.13%
+Chipper,Slushy Shoreline,,,,17.55%
+Chipper,Slushy Shoreline,SUPER|brie+,,,15.18%
 General Drheller,Iceberg,,,,0.37%
-General Drheller,Iceberg,SUPER|brie+,,,0.55%
+General Drheller,Iceberg,SUPER|brie+,,,0.56%
 Stowaway,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,3.90%
 Stowaway,Gnawnian Express Station,,Black Powder,,3.57%
 Stowaway,Gnawnian Express Station,SUPER|brie+,,,4.01%
 Stowaway,Gnawnian Express Station,SUPER|brie+,Black Powder,,3.00%
 Stowaway,Gnawnian Express Station,SUPER|brie+,Door Guard,,4.65%
-Automorat,Gnawnian Express Station,,Roof Rack,,6.53%
-Automorat,Gnawnian Express Station,,Greasy Glob,,5.96%
-Automorat,Gnawnian Express Station,SUPER|brie+,,,2.00%
-Automorat,Gnawnian Express Station,,,,1.87%
-Sand Pilgrim,Sand Dunes,Dewthief Camembert,,,19.24%
-Sand Pilgrim,Sand Dunes,Dewthief Camembert,Grubling Chow,,14.27%
+Automorat,Gnawnian Express Station,,,,1.83%
+Automorat,Gnawnian Express Station,SUPER|brie+,,,2.07%
+Sand Pilgrim,Sand Dunes,Dewthief Camembert,Grubling Chow,,15.37%
+Sand Pilgrim,Sand Dunes,Dewthief Camembert,,,19.48%
 Wound Up White,King's Gauntlet,Dumpling Cheese,,,7.31%
 Wound Up White,King's Gauntlet,,,,25.08%
 Nomad,Great Gnarled Tree,SUPER|brie+,,,1.17%
 Nomad,Great Gnarled Tree,Dumpling Cheese,,,0.37%
 Nomad,Lagoon,Gnarled,,,5.17%
 Nomad,Lagoon,Wicked Gnarly,,,4.49%
-Twisted Carmine,Twisted Garden,Lunaria Camembert,,,29.90%
-Twisted Carmine,Twisted Garden,Lunaria Camembert,Shattering,,0.55%
-Twisted Carmine,Living Garden,Lunaria Camembert,,,30.85%
+Twisted Carmine,Twisted Garden,Lunaria Camembert,,,29.71%
+Twisted Carmine,Living Garden,Lunaria Camembert,,,28.32%
 Gilded Leaf,Whisker Woods Rift,Magical String,Stagnant,,5.47%
 Gilded Leaf,Whisker Woods Rift,Magical String,,,6.03%
 Gilded Leaf,Whisker Woods Rift,Magical String,Cherry,,4.60%
 Gilded Leaf,Whisker Woods Rift,Magical String,Gnarled,,4.89%
-Brawny,NOT FOUND,Swiss String,,,8.00%
 Brawny,Gnawnia Rift,Swiss String,,,19.22%
-Brawny,Gnawnia Rift,Brie String,,,14.05%
 Brawny,Gnawnia Rift,Magical String,,,10.70%
+Brawny,Gnawnia Rift,Brie String,,,14.10%
+Brawny,NOT FOUND,Swiss String,,,7.82%
 Buckethead,Birthday Party Zone,,,,19.87%
 Sock Puppet Ghost,King's Gauntlet,,,,14.64%
 Sock Puppet Ghost,King's Gauntlet,Dumpling Cheese,,,7.42%
@@ -941,8 +935,8 @@ Speedy,Town of Gnawnia,Dumpling Cheese,,,7.64%
 Slimefist,Toxic Spill,Rancid Radioactive Blue,,,9.09%
 Slimefist,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,9.24%
 Slimefist,Toxic Spill,Rancid Radioactive Blue,Rotten,,4.48%
-Pirate Anchor,Sunken City,SUPER|brie+,,,1.89%
-Pirate Anchor,Sunken City,,,,2.04%
+Pirate Anchor,Sunken City,,,,2.28%
+Pirate Anchor,Sunken City,SUPER|brie+,,,2.06%
 Ghost,Mousoleum,Undead Emmental,Dark Chocolate,,32.63%
 Ghost,Mousoleum,Undead Emmental,,,25.63%
 Scarecrow,Seasonal Garden,,,,6.46%
@@ -973,12 +967,11 @@ Firefly,Seasonal Garden,,,,4.36%
 Zombot Unipire the Third,Burroughs Rift,Brie String,Brain,,14.86%
 Zombot Unipire the Third,Burroughs Rift,Magical String,Brain,,16.63%
 Zombot Unipire the Third,Burroughs Rift,Undead String Emmental,Brain,,14.39%
-Dehydrated,Twisted Garden,Duskshade Camembert,,,3.53%
-Dehydrated,Living Garden,Duskshade Camembert,,,1.95%
-Tonic Salesman,Gnawnian Express Station,,Prospector's,,3.91%
-Tonic Salesman,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,2.55%
-Tonic Salesman,Gnawnian Express Station,,,,2.70%
-Tonic Salesman,Gnawnian Express Station,SUPER|brie+,,,3.88%
+Dehydrated,Twisted Garden,Duskshade Camembert,,,4.06%
+Dehydrated,Living Garden,Duskshade Camembert,,,2.33%
+Tonic Salesman,Gnawnian Express Station,,,,2.84%
+Tonic Salesman,Gnawnian Express Station,,Supply Schedule,,2.45%
+Tonic Salesman,Gnawnian Express Station,SUPER|brie+,,,3.29%
 Monstrous Black Widow,Whisker Woods Rift,Magical String,,,0.16%
 Lich,Acolyte Realm,Runic,,,8.51%
 Cook,S.S. Huntington III,Dumpling Cheese,,,3.74%
@@ -1030,23 +1023,27 @@ Shadow Stalker,Zokor,,Dark Chocolate,,20.37%
 Shadow Stalker,Zokor,,Candy,,22.50%
 Shadow Stalker,Zokor,SUPER|brie+,Candy,,22.13%
 Shadow Stalker,Zokor,Candy Corn,Candy,,24.32%
-Deep Sea Diver,Sunken City,SUPER|brie+,,,1.75%
+Deep Sea Diver,Sunken City,,,,2.15%
+Deep Sea Diver,Sunken City,SUPER|brie+,,,1.86%
 Tidal Fisher,Balack's Cove,Vanilla Stilton,,,5.73%
-Snowblind,Iceberg,SUPER|brie+,,,1.80%
+Snowblind,Iceberg,SUPER|brie+,,,1.81%
 Snowblind,Iceberg,,,,2.06%
+Prospector,Claw Shot City,,Sheriff's Badge,,5.95%
 Prospector,Claw Shot City,Dumpling Cheese,Prospector's,,10.93%
-Prospector,Claw Shot City,,Prospector's,,14.51%
+Prospector,Claw Shot City,,Prospector's,,14.53%
 Prospector,Claw Shot City,Dumpling Cheese,,,9.77%
+Water Wielder,Iceberg,,,,1.61%
 Water Wielder,Iceberg,SUPER|brie+,,,1.98%
-Water Wielder,Iceberg,,,,1.60%
-Cursed Librarian,Cursed City,Graveblossom Camembert,Bravery,,21.99%
+Cursed Librarian,Cursed City,Graveblossom Camembert,Shine,,23.86%
+Cursed Librarian,Cursed City,Graveblossom Camembert,Clarity,,26.87%
 Cursed Librarian,Cursed City,Graveblossom Camembert,Safeguard,,23.71%
-Cursed Librarian,Cursed City,Graveblossom Camembert,Shine,,22.97%
 Cursed Librarian,Lost City,Graveblossom Camembert,Safeguard,,24.51%
-Cursed Librarian,Cursed City,Graveblossom Camembert,Clarity,,26.05%
-Train Conductor,Gnawnian Express Station,,,,8.40%
-Train Conductor,Gnawnian Express Station,,Black Powder,,6.75%
-Train Conductor,Gnawnian Express Station,,Prospector's,,11.45%
+Cursed Librarian,Cursed City,Graveblossom Camembert,Bravery,,23.48%
+Train Conductor,Gnawnian Express Station,,,,8.95%
+Train Conductor,Gnawnian Express Station,,Black Powder,,7.11%
+Train Conductor,Gnawnian Express Station,,Prospector's,,11.52%
+Train Conductor,Gnawnian Express Station,SUPER|brie+,Black Powder,,6.23%
+Train Conductor,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,6.20%
 Gorgon,Acolyte Realm,Runic,,,18.02%
 Gorgon,Acolyte Realm,Ancient,,,18.56%
 Icicle,Seasonal Garden,SUPER|brie+,,,3.70%
@@ -1084,26 +1081,33 @@ Lumberjack,Muridae Market,SUPER|brie+,,,14.39%
 Spud,Windmill,White Cheddar,,,18.20%
 Spud,Windmill,,,,10.70%
 Spud,Windmill,SUPER|brie+,,,9.86%
-Bartender,Gnawnian Express Station,,Dusty Coal,,2.80%
-Bartender,Gnawnian Express Station,,Prospector's,,3.04%
-Bartender,Gnawnian Express Station,,Supply Schedule,,3.10%
-Bartender,Gnawnian Express Station,,Roof Rack,,1.80%
-Bartender,Gnawnian Express Station,SUPER|brie+,,,3.62%
-Serpentine,Sand Dunes,Graveblossom Camembert,,,27.77%
-Serpentine,Sand Crypts,Graveblossom Camembert,,,25.05%
+Bartender,Gnawnian Express Station,,Supply Schedule,,2.86%
+Bartender,Gnawnian Express Station,,Dusty Coal,,2.94%
+Bartender,Gnawnian Express Station,,,,2.32%
+Bartender,Gnawnian Express Station,SUPER|brie+,,,3.65%
+Bartender,Gnawnian Express Station,,Prospector's,,3.06%
+Serpentine,Sand Crypts,Graveblossom Camembert,,,25.20%
+Serpentine,Sand Dunes,Graveblossom Camembert,,,26.36%
+Farrier,Gnawnian Express Station,SUPER|brie+,Supply Schedule,,6.93%
+Farrier,Gnawnian Express Station,,Supply Schedule,,2.66%
+Farrier,Gnawnian Express Station,,Prospector's,,3.79%
+Farrier,Gnawnian Express Station,,Black Powder,,3.56%
+Farrier,Gnawnian Express Station,SUPER|brie+,Greasy Glob,,4.96%
 Derpicorn,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.24%
 Derpicorn,Seasonal Garden,,,,1.61%
 Derpicorn,Seasonal Garden,SUPER|brie+,,,1.80%
-Sarcophamouse,Sand Dunes,Graveblossom Camembert,,,22.82%
-Sarcophamouse,Sand Crypts,Graveblossom Camembert,,,25.97%
+Sarcophamouse,Sand Dunes,Graveblossom Camembert,,,23.14%
+Sarcophamouse,Sand Crypts,Graveblossom Camembert,,,24.87%
 Dawn Guardian,Fort Rox,Crescent Cheese,,,7.50%
 Dawn Guardian,Fort Rox,Moon,,,14.33%
-Stickybomber,Iceberg,,,,3.73%
+Stickybomber,Iceberg,,,,3.76%
 Stickybomber,Iceberg,SUPER|brie+,,,4.08%
-Sharpshooter,Gnawnian Express Station,,,,1.27%
-Sharpshooter,Gnawnian Express Station,,Roof Rack,,12.84%
-Sharpshooter,Gnawnian Express Station,SUPER|brie+,,,1.35%
-Sharpshooter,Gnawnian Express Station,,Greasy Glob,,10.78%
+Sharpshooter,Gnawnian Express Station,SUPER|brie+,Greasy Glob,,9.09%
+Sharpshooter,Gnawnian Express Station,SUPER|brie+,Door Guard,,7.28%
+Sharpshooter,Gnawnian Express Station,,Door Guard,,11.33%
+Sharpshooter,Gnawnian Express Station,,Roof Rack,,10.50%
+Sharpshooter,Gnawnian Express Station,SUPER|brie+,Roof Rack,,9.86%
+Sharpshooter,Gnawnian Express Station,,Greasy Glob,,9.64%
 Telekinetic Mutant,Toxic Spill,Rancid Radioactive Blue,Rotten,,6.81%
 Telekinetic Mutant,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,10.90%
 Telekinetic Mutant,Toxic Spill,Rancid Radioactive Blue,,,8.67%
@@ -1130,16 +1134,19 @@ Cherry Sprite,Whisker Woods Rift,Brie String,Cherry,,10.76%
 Cherry Sprite,Whisker Woods Rift,Magical String,Cherry,,10.96%
 Grunt,Derr Dunes,,,,11.00%
 Grunt,Derr Dunes,SUPER|brie+,,,17.06%
-Polar Bear,Slushy Shoreline,SUPER|brie+,,,13.95%
-Polar Bear,Slushy Shoreline,,,,14.32%
+Polar Bear,Slushy Shoreline,,,,13.97%
+Polar Bear,Slushy Shoreline,SUPER|brie+,,,14.16%
 Wiggler,Calm Clearing,,,,8.56%
 Wiggler,Great Gnarled Tree,Dumpling Cheese,,,6.69%
 Wiggler,Calm Clearing,SUPER|brie+,,,10.61%
 Pirate,Harbour,SUPER|brie+,,,16.27%
 Pirate,Harbour,,,,16.42%
-Barnacle Beautician,Sunken City,SUPER|brie+,,,0.87%
-Barnacle Beautician,Sunken City,,,,0.92%
-Tumbleweed,Claw Shot City,,,,15.57%
+Barnacle Beautician,Sunken City,,,,0.82%
+Barnacle Beautician,Sunken City,SUPER|brie+,,,0.60%
+Tumbleweed,Claw Shot City,SUPER|brie+,,,15.37%
+Tumbleweed,Claw Shot City,SUPER|brie+,Sheriff's Badge,,14.97%
+Tumbleweed,Claw Shot City,,Sheriff's Badge,,16.03%
+Tumbleweed,Claw Shot City,,Prospector's,,14.65%
 Gemorpher,Fungal Cavern,Glowing Gruyere,,,0.06%
 Gemorpher,Fungal Cavern,Mineral,,,27.37%
 Pumpkin Hoarder,Spooky Sandcastle,Candy Corn,Extra Spooky,,1.05%
@@ -1153,9 +1160,9 @@ Cowardly,Town of Gnawnia,White Cheddar,,,41.05%
 Cowardly,Meadow,White Cheddar,,,25.86%
 Cowardly,Vacant Lot,SUPER|brie+,,,14.39%
 Cowardly,Town of Gnawnia,Mozzarella,,,16.13%
-Shroom,Living Garden,,,,16.20%
-Shroom,Living Garden,Duskshade Camembert,,,16.15%
-Shroom,Living Garden,SUPER|brie+,,,14.13%
+Shroom,Living Garden,,,,16.27%
+Shroom,Living Garden,SUPER|brie+,,,13.81%
+Shroom,Living Garden,Duskshade Camembert,,,16.31%
 Taleweaver,Cape Clawed,,,,8.59%
 Taleweaver,Cape Clawed,Shell,,,19.68%
 Taleweaver,Elub Shore,,,,8.28%
@@ -1165,7 +1172,7 @@ Technic Bishop,Zugzwang's Tower,SUPER|brie+,,,10.03%
 Pygmy Wrangler,Jungle of Dread,SUPER|brie+,,,9.39%
 Pygmy Wrangler,Jungle of Dread,,,,2.38%
 Pygmy Wrangler,Jungle of Dread,Vanilla Stilton,,,7.92%
-Dream Drifter,Gnawnia Rift,Brie String,,,1.15%
+Dream Drifter,Gnawnia Rift,Brie String,,,1.16%
 Dream Drifter,Gnawnia Rift,Dumpling Cheese,,,8.24%
 Dream Drifter,Gnawnia Rift,Magical String,,,7.71%
 Supreme Sensei,Furoma Rift,Null Onyx Gorgonzola,,,99.49%
@@ -1183,8 +1190,8 @@ Winged Harpy,Whisker Woods Rift,Magical String,Stagnant,,6.13%
 Winged Harpy,Whisker Woods Rift,Brie String,Stagnant,,6.04%
 Winged Harpy,Whisker Woods Rift,Brie String,Gnarled,,6.07%
 Winged Harpy,Whisker Woods Rift,Magical String,,,4.22%
-Bark,Living Garden,SUPER|brie+,,,17.85%
-Bark,Living Garden,,,,21.37%
+Bark,Living Garden,SUPER|brie+,,,17.74%
+Bark,Living Garden,,,,21.56%
 Candy Cane,Great Winter Hunt,Festive Feta,Winter,,2.84%
 Candy Cane,Great Winter Hunt,Snowball Bocconcini,Winter,,2.71%
 Candy Cane,Great Winter Hunt,Snowball Bocconcini,,,3.02%
@@ -1195,16 +1202,14 @@ Hare Razer,Fungal Cavern,Marshmallow Monterey,Dark Chocolate,,8.03%
 Hare Razer,Gnawnia Rift,Marshmallow Monterey,Dark Chocolate,,8.91%
 Hare Razer,Town of Gnawnia,Marshmallow Monterey,Dark Chocolate,,7.88%
 Hare Razer,King's Gauntlet,Marshmallow Monterey,Dark Chocolate,,7.98%
-Angelfish,Sunken City,,,,3.72%
-Angelfish,Sunken City,SUPER|brie+,,,4.07%
-Passenger,Gnawnian Express Station,SUPER|brie+,Greasy Glob,,12.64%
-Passenger,Gnawnian Express Station,,Dusty Coal,,7.35%
-Passenger,Gnawnian Express Station,Toxic SUPER|brie+,Black Powder,,8.18%
-Passenger,Gnawnian Express Station,,Prospector's,,10.43%
-Passenger,Gnawnian Express Station,,Magmatic Crystal,,11.55%
-Passenger,Gnawnian Express Station,SUPER|brie+,Door Guard,,7.91%
-Frostlance Guard,Iceberg,,,,3.01%
-Frostlance Guard,Iceberg,SUPER|brie+,,,5.74%
+Angelfish,Sunken City,,,,3.92%
+Angelfish,Sunken City,SUPER|brie+,,,3.94%
+Passenger,Gnawnian Express Station,SUPER|brie+,,,8.50%
+Passenger,Gnawnian Express Station,,Supply Schedule,,7.36%
+Passenger,Gnawnian Express Station,,,,9.38%
+Passenger,Gnawnian Express Station,,Prospector's,,10.50%
+Frostlance Guard,Iceberg,,,,2.99%
+Frostlance Guard,Iceberg,SUPER|brie+,,,5.81%
 Flying,Town of Gnawnia,Dumpling Cheese,,,7.48%
 Flying,Meadow,SUPER|brie+,,,10.87%
 Flying,Town of Gnawnia,SUPER|brie+,,,10.70%
@@ -1233,8 +1238,8 @@ Wreath Thief,Great Winter Hunt,Seasoned Gouda,,,3.12%
 Hired Eidolon,Labyrinth,Brie String,,,5.54%
 Hired Eidolon,Labyrinth,Glowing Gruyere,Prospector's,,3.70%
 Hired Eidolon,Labyrinth,Glowing Gruyere,Candy,,6.34%
-Lord Splodington,Iceberg,SUPER|brie+,,,2.83%
-Lord Splodington,Iceberg,,,,2.72%
+Lord Splodington,Iceberg,SUPER|brie+,,,2.84%
+Lord Splodington,Iceberg,,,,2.71%
 Hypnotized Gunslinger,Fort Rox,Moon,,,4.58%
 Hypnotized Gunslinger,Fort Rox,Moon,Candy,,8.11%
 Knight,King's Gauntlet,Gauntlet Tier 3,,,19.88%
@@ -1279,8 +1284,8 @@ Party Head,Great Winter Hunt,Arctic Asiago,Winter,,0.27%
 Party Head,Great Winter Hunt,Arctic Asiago,,,4.80%
 Falling Carpet,Muridae Market,,,,9.94%
 Falling Carpet,Muridae Market,SUPER|brie+,,,9.87%
-Cuttle,Sunken City,SUPER|brie+,,,1.56%
-Cuttle,Sunken City,,,,1.83%
+Cuttle,Sunken City,,,,1.60%
+Cuttle,Sunken City,SUPER|brie+,,,1.20%
 Crystal Golem,Fungal Cavern,Gemstone,,,6.72%
 Spiritual Steel,Gnawnia Rift,Riftiago,,,24.98%
 Spiritual Steel,Gnawnia Rift,Dumpling Cheese,,,8.70%
@@ -1290,34 +1295,38 @@ Hardworking Hauler,Fort Rox,SUPER|brie+,,,11.47%
 Pie Thief,Muridae Market,,,,14.29%
 Pie Thief,Muridae Market,,Artisan,,9.73%
 Bandit,King's Gauntlet,Gauntlet Tier 2,,,18.62%
-Eel,Sunken City,,,,4.10%
-Eel,Sunken City,SUPER|brie+,,,4.47%
+Eel,Sunken City,SUPER|brie+,,,4.29%
+Eel,Sunken City,,,,4.97%
 Lasso Cowgirl,Claw Shot City,,Prospector's,,15.32%
 Lasso Cowgirl,Claw Shot City,,,,14.64%
 Lasso Cowgirl,Claw Shot City,,Sheriff's Badge,,17.08%
 Mintaka,Derr Dunes,,,,15.38%
 Mintaka,Derr Dunes,SUPER|brie+,,,15.58%
-Crate Camo,Gnawnian Express Station,,Prospector's,,1.01%
-Crate Camo,Gnawnian Express Station,,Supply Schedule,,12.50%
-Crate Camo,Gnawnian Express Station,,,,4.18%
-Crate Camo,Gnawnian Express Station,SUPER|brie+,,,3.80%
+Coal Shoveller,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,24.23%
+Coal Shoveller,Gnawnian Express Station,,Dusty Coal,,25.09%
+Coal Shoveller,Gnawnian Express Station,,Black Powder,,1.56%
+Coal Shoveller,Claw Shot City,SUPER|brie+,Sheriff's Badge,,0.74%
+Crate Camo,Gnawnian Express Station,,,,4.11%
+Crate Camo,Gnawnian Express Station,SUPER|brie+,,,4.13%
+Crate Camo,Gnawnian Express Station,,Prospector's,,1.02%
+Crate Camo,Gnawnian Express Station,,Supply Schedule,,13.29%
 White Mage,King's Gauntlet,Gauntlet Tier 6,,,41.44%
-Twisted Lilly,Twisted Garden,Duskshade Camembert,,,19.90%
-Twisted Lilly,Living Garden,Duskshade Camembert,,,9.59%
+Twisted Lilly,Twisted Garden,Duskshade Camembert,,,19.70%
+Twisted Lilly,Living Garden,Duskshade Camembert,,,9.65%
 Flutterby,Crystal Library,,,,9.59%
 Flutterby,Crystal Library,SUPER|brie+,,,6.34%
 Master Exploder,Burroughs Rift,Polluted Parmesan,,,0.06%
 Master Exploder,Burroughs Rift,Terre Ricotta,,,16.02%
 Cardshark,Claw Shot City,,Sheriff's Badge,,0.73%
-Cardshark,Claw Shot City,,,,0.64%
+Cardshark,Claw Shot City,,,,0.66%
 Cardshark,Claw Shot City,SUPER|brie+,,,0.55%
-Cardshark,Claw Shot City,,Prospector's,,0.92%
-Strawberry Hotcakes,Living Garden,SUPER|brie+,,,21.17%
-Strawberry Hotcakes,Living Garden,,,,10.41%
+Cardshark,Claw Shot City,,Prospector's,,0.93%
+Strawberry Hotcakes,Living Garden,SUPER|brie+,,,21.44%
+Strawberry Hotcakes,Living Garden,,,,10.16%
+Magmatic Golem,Gnawnian Express Station,,Magmatic Crystal,,2.80%
 Magmatic Golem,Gnawnian Express Station,Toxic SUPER|brie+,Magmatic Crystal,,6.52%
-Magmatic Golem,Gnawnian Express Station,,Magmatic Crystal,,3.61%
-Magmatic Golem,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,5.67%
-Goliath Field,Gnawnia Rift,Resonator,,,99.48%
+Magmatic Golem,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,6.29%
+Goliath Field,Gnawnia Rift,Resonator,,,99.25%
 Naturalist,Whisker Woods Rift,Magical String,Gnarled,,9.94%
 Naturalist,Whisker Woods Rift,Brie String,Gnarled,,10.02%
 Mimic,Labyrinth,Glowing Gruyere,Candy,,8.01%
@@ -1362,18 +1371,21 @@ Master of the Chi Belt,Furoma Rift,Master Fusion Cheese,Candy,,36.51%
 Master of the Chi Belt,Furoma Rift,Rift Glutter Cheese,,,99.48%
 Master of the Chi Belt,Furoma Rift,Master Fusion Cheese,,,33.22%
 Master of the Chi Belt,NOT FOUND,Master Fusion Cheese,,,34.08%
-Twisted Hotcakes,Twisted Garden,Duskshade Camembert,,,10.01%
-Twisted Hotcakes,Living Garden,Duskshade Camembert,,,5.38%
+Twisted Hotcakes,Twisted Garden,Duskshade Camembert,,,9.96%
+Twisted Hotcakes,Living Garden,Duskshade Camembert,,,5.30%
 Teenage Vampire,Spooky Sandcastle,,,,9.08%
 Teenage Vampire,Spooky Sandcastle,Candy Corn,Spooky,,8.56%
 Teenage Vampire,Spooky Sandcastle,Candy Corn,Shortcut,,15.31%
 Teenage Vampire,Spooky Sandcastle,Candy Corn,,,4.94%
 Teenage Vampire,Spooky Sandcastle,Ghoulgonzola,Extra Spooky,,0.92%
-Betta,Sunken City,,,,3.60%
+Betta,Sunken City,SUPER|brie+,,,4.10%
+Betta,Sunken City,,,,4.34%
 Winter Mage,Seasonal Garden,SUPER|brie+,,,0.73%
 Winter Mage,Seasonal Garden,,,,1.31%
-Cursed Enchanter,Cursed City,Graveblossom Camembert,,,16.11%
-Cursed Enchanter,Cursed City,Graveblossom Camembert,Clarity,,21.01%
+Cursed Enchanter,Cursed City,Graveblossom Camembert,Bravery,,20.45%
+Cursed Enchanter,Cursed City,Graveblossom Camembert,Candy,,14.75%
+Cursed Enchanter,Cursed City,Graveblossom Camembert,Clarity,,20.00%
+Cursed Enchanter,Cursed City,Graveblossom Camembert,Shine,,20.70%
 Cursed Enchanter,Cursed City,Graveblossom Camembert,Safeguard,,20.07%
 Mush,Fungal Cavern,SUPER|brie+,Firecracker,,12.35%
 Mush,Fungal Cavern,Brie String,,,13.56%
@@ -1403,9 +1415,9 @@ Sacred Shrine,King's Gauntlet,Gauntlet Tier 6,,,37.38%
 Elub Chieftain,Elub Shore,Shell,,,14.94%
 Elub Chieftain,Elub Shore,Shell,Candy,,9.85%
 Toxikinetic,Burroughs Rift,Polluted Parmesan,,,7.88%
-Supply Hoarder,Gnawnian Express Station,SUPER|brie+,,,9.20%
-Supply Hoarder,Gnawnian Express Station,,,,5.50%
-Supply Hoarder,Gnawnian Express Station,,Supply Schedule,,3.36%
+Supply Hoarder,Gnawnian Express Station,,,,5.15%
+Supply Hoarder,Gnawnian Express Station,SUPER|brie+,,,7.95%
+Supply Hoarder,Gnawnian Express Station,,Supply Schedule,,3.68%
 Longtail,Windmill,White Cheddar,,,11.19%
 Longtail,King's Arms,Gilded,,,8.36%
 Longtail,King's Arms,,,,8.63%
@@ -1414,8 +1426,8 @@ Scavenger,Catacombs,Ancient,,,13.16%
 Scavenger,Catacombs,Ancient,Antiskele,,13.17%
 Scavenger,Forbidden Grove,Moon,,,19.87%
 Heavy Blaster,Iceberg,SUPER|brie+,,,3.90%
-Heavy Blaster,Iceberg,,,,4.20%
-Supernatural,Gnawnia Rift,Brie String,,,12.21%
+Heavy Blaster,Iceberg,,,,4.15%
+Supernatural,Gnawnia Rift,Brie String,,,12.25%
 Supernatural,Gnawnia Rift,Swiss String,,,8.99%
 Supernatural,Gnawnia Rift,Magical String,,,8.11%
 Crag Elder,Fungal Cavern,Dumpling Cheese,Firecracker,,10.21%
@@ -1442,9 +1454,9 @@ Red-Eyed Watcher Owl,Whisker Woods Rift,Magical String,Cherry,,5.94%
 Red-Eyed Watcher Owl,Whisker Woods Rift,Brie String,Gnarled,,5.20%
 Red-Eyed Watcher Owl,Whisker Woods Rift,Brie String,Cherry,,5.38%
 Crystalback,Fungal Cavern,Mineral,,,23.87%
-Pyrite,Claw Shot City,SUPER|brie+,,,3.08%
-Pyrite,Claw Shot City,Dumpling Cheese,,,4.43%
+Pyrite,Claw Shot City,SUPER|brie+,,,3.09%
 Pyrite,Claw Shot City,,Sheriff's Badge,,1.02%
+Pyrite,Claw Shot City,Dumpling Cheese,,,4.43%
 Pyrite,Claw Shot City,Dumpling Cheese,Prospector's,,4.54%
 Hydrophobe,Seasonal Garden,SUPER|brie+,,,2.96%
 Hydrophobe,Seasonal Garden,,,,3.62%
@@ -1452,10 +1464,10 @@ Desert Archer,Fiery Warpath,,Warpath Archer,,22.20%
 Desert Archer,Fiery Warpath,SUPER|brie+,Super Warpath Archer,,22.96%
 Desert Archer,Fiery Warpath,SUPER|brie+,Warpath Archer,,22.18%
 Spring Familiar,Seasonal Garden,SUPER|brie+,,,0.62%
-Puffer,Sunken City,,,,1.75%
-Puffer,Sunken City,SUPER|brie+,,,1.44%
-Ethereal Librarian,Lost City,Dewthief Camembert,Searcher,,18.28%
-Ethereal Librarian,Lost City,Dewthief Camembert,,,20.45%
+Puffer,Sunken City,,,,1.54%
+Puffer,Sunken City,SUPER|brie+,,,1.23%
+Ethereal Librarian,Lost City,Dewthief Camembert,Searcher,,18.22%
+Ethereal Librarian,Lost City,Dewthief Camembert,,,20.63%
 Red Coat Bear,Whisker Woods Rift,Brie String,Cherry,,5.54%
 Red Coat Bear,Whisker Woods Rift,Brie String,Gnarled,,6.84%
 Red Coat Bear,Whisker Woods Rift,Magical String,Gnarled,,6.68%
@@ -1494,8 +1506,8 @@ Shard Centurion,Gnawnia Rift,Dumpling Cheese,,,8.54%
 Meteorite Mystic,Fort Rox,Moon,,,3.01%
 Meteorite Mystic,Fort Rox,Moon,Candy,,4.69%
 Meteorite Mystic,Fort Rox,Crescent Cheese,Candy,,4.20%
-Icewing,Iceberg,SUPER|brie+,,,1.89%
-Icewing,Iceberg,,,,0.92%
+Icewing,Iceberg,,,,0.91%
+Icewing,Iceberg,SUPER|brie+,,,1.69%
 Page,King's Gauntlet,Gauntlet Tier 3,,,18.54%
 Crystal Cave Worm,Fungal Cavern,Mineral,,,5.84%
 Coral Cuddler,Sunken City,SUPER|brie+,,,0.49%
@@ -1509,9 +1521,10 @@ Ravenous Zombie,Mousoleum,Radioactive Blue,Brain,,33.24%
 Ravenous Zombie,Mousoleum,Undead Emmental,Brain,,19.54%
 Rogue,King's Gauntlet,Gauntlet Tier 2,,,5.42%
 Rogue,King's Gauntlet,Dumpling Cheese,,,2.45%
-Photographer,Gnawnian Express Station,,Prospector's,,13.62%
-Photographer,Gnawnian Express Station,,,,8.36%
-Photographer,Gnawnian Express Station,,Supply Schedule,,7.18%
+Photographer,Gnawnian Express Station,,Prospector's,,13.70%
+Photographer,Gnawnian Express Station,SUPER|brie+,,,6.64%
+Photographer,Gnawnian Express Station,,Dusty Coal,,6.25%
+Photographer,Gnawnian Express Station,,,,8.31%
 Gluttonous Zombie,Mousoleum,Rancid Radioactive Blue,Brain,,6.78%
 Gluttonous Zombie,Mousoleum,Undead Emmental,Brain,,7.40%
 Gluttonous Zombie,Mousoleum,Undead Emmental,Super Brain,,10.53%
@@ -1523,12 +1536,12 @@ Alchemist,Cape Clawed,,,,7.92%
 Alchemist,Cape Clawed,Shell,,,19.18%
 Nightshade Nanny,Zokor,,,,2.51%
 Nightshade Nanny,Zokor,Glowing Gruyere,,,2.46%
-Camoflower,Living Garden,Duskshade Camembert,,,7.88%
-Camoflower,Living Garden,SUPER|brie+,,,8.70%
-Undertaker,Claw Shot City,,,,0.37%
+Camoflower,Living Garden,SUPER|brie+,,,8.73%
+Camoflower,Living Garden,,,,7.84%
+Camoflower,Living Garden,Duskshade Camembert,,,7.97%
 Undertaker,Claw Shot City,,Prospector's,,0.58%
-Undertaker,Claw Shot City,SUPER|brie+,,,1.31%
 Undertaker,Claw Shot City,,Sheriff's Badge,,0.44%
+Undertaker,Claw Shot City,SUPER|brie+,,,1.33%
 Bionic,Laboratory,,,,23.81%
 Bionic,Town of Digby,,Prospector's,,22.33%
 Bionic,Laboratory,SUPER|brie+,,,26.06%
@@ -1538,22 +1551,25 @@ Shaman,Lagoon,SUPER|brie+,,,28.54%
 Portal Plunderer,Bristle Woods Rift,Ancient String Cheese,,,3.02%
 Portal Plunderer,Bristle Woods Rift,Brie String,,,16.54%
 Portal Plunderer,Bristle Woods Rift,Magical String,,,8.09%
-Quesodillo,Sand Dunes,Dewthief Camembert,Grubling Chow,,19.36%
-Quesodillo,Sand Dunes,Dewthief Camembert,,,24.98%
+Angry Train Staff,Gnawnian Express Station,,Prospector's,,10.50%
+Angry Train Staff,Gnawnian Express Station,,,,8.14%
+Angry Train Staff,Gnawnian Express Station,SUPER|brie+,,,9.60%
+Quesodillo,Sand Dunes,Dewthief Camembert,,,24.91%
+Quesodillo,Sand Dunes,Dewthief Camembert,Grubling Chow,,19.51%
 Dumpling Delivery,Furoma Rift,Magical String,,,16.79%
 Dumpling Delivery,NOT FOUND,Magical String,,,18.76%
-Grubling,Sand Dunes,Dewthief Camembert,Grubling Chow,,23.07%
-Grubling,Sand Dunes,Dewthief Camembert,,,0.20%
+Grubling,Sand Dunes,Dewthief Camembert,Grubling Chow,,22.93%
+Grubling,Sand Dunes,Dewthief Camembert,,,0.19%
 Trailblazer,Cape Clawed,Crunchy,,,18.91%
 Trailblazer,Derr Dunes,,,,8.34%
 Trailblazer,Cape Clawed,,,,8.07%
 Stalagmite,Fungal Cavern,Mineral,,,14.64%
 Over-Prepared,Seasonal Garden,,,,3.76%
 Over-Prepared,Seasonal Garden,SUPER|brie+,,,2.18%
-Stagecoach Driver,Claw Shot City,SUPER|brie+,,,1.39%
-Stagecoach Driver,Claw Shot City,,Sheriff's Badge,,0.57%
-Stagecoach Driver,Claw Shot City,,,,0.44%
-Stagecoach Driver,Claw Shot City,,Prospector's,,1.33%
+Stagecoach Driver,Claw Shot City,,Prospector's,,0.58%
+Stagecoach Driver,Claw Shot City,SUPER|brie+,,,1.29%
+Stagecoach Driver,Claw Shot City,,,,0.46%
+Stagecoach Driver,Claw Shot City,,Sheriff's Badge,,0.44%
 Drummer,King's Gauntlet,Gauntlet Tier 4,,,19.74%
 Monster Tail,Toxic Spill,Rancid Radioactive Blue,,,2.68%
 Monster Tail,Toxic Spill,Rancid Radioactive Blue,Rotten,,7.42%
@@ -1563,25 +1579,26 @@ Technic Pawn,Zugzwang's Tower,,,,23.62%
 Technic Pawn,Zugzwang's Tower,SUPER|brie+,,,17.92%
 Hope,Training Grounds,SUPER|brie+,,,1.96%
 Hope,Training Grounds,,,,0.79%
-Agitated Gentle Giant,Gnawnia Rift,Brie String,,,13.67%
+Agitated Gentle Giant,Gnawnia Rift,Brie String,,,13.73%
 Agitated Gentle Giant,Gnawnia Rift,Dumpling Cheese,,,5.65%
 Agitated Gentle Giant,Gnawnia Rift,Magical String,,,8.63%
 Agitated Gentle Giant,Gnawnia Rift,Swiss String,,,19.46%
 Arcane Summoner,Fort Rox,Moon,,,4.06%
 Arcane Summoner,Fort Rox,Crescent Cheese,,,3.54%
 Arcane Summoner,Fort Rox,Moon,Candy,,6.05%
-Outlaw,Claw Shot City,,Prospector's,,1.50%
+Outlaw,Claw Shot City,SUPER|brie+,,,0.90%
+Outlaw,Claw Shot City,,Prospector's,,1.51%
 Outlaw,Claw Shot City,,Sheriff's Badge,,0.44%
-Outlaw,Claw Shot City,,,,0.89%
+Outlaw,Claw Shot City,,,,0.91%
 Tree Troll,Whisker Woods Rift,Magical String,Stagnant,,6.53%
 Tree Troll,Whisker Woods Rift,Swiss String,,,3.64%
 Tree Troll,Whisker Woods Rift,Brie String,,,2.62%
 Tree Troll,Whisker Woods Rift,Magical String,,,4.77%
 Tree Troll,Whisker Woods Rift,Brie String,Cherry,,4.83%
 Tree Troll,Whisker Woods Rift,Brie String,Stagnant,,4.53%
-Ruffian,Claw Shot City,,,,16.36%
-Ruffian,Claw Shot City,SUPER|brie+,,,14.99%
-Ruffian,Claw Shot City,,Sheriff's Badge,,16.03%
+Ruffian,Claw Shot City,,Sheriff's Badge,,16.32%
+Ruffian,Claw Shot City,,,,16.75%
+Ruffian,Claw Shot City,SUPER|brie+,,,13.93%
 Master of the Chi Fang,Furoma Rift,Master Fusion Cheese,Candy,,31.94%
 Master of the Chi Fang,Furoma Rift,Rift Combat Cheese,,,99.50%
 Master of the Chi Fang,NOT FOUND,Master Fusion Cheese,,,32.69%
@@ -1589,9 +1606,9 @@ Master of the Chi Fang,Furoma Rift,Master Fusion Cheese,,,31.75%
 Firebreather,Seasonal Garden,,,,4.61%
 Firebreather,Seasonal Garden,SUPER|brie+,,,4.88%
 Princess Fist,Iceberg,,,,2.78%
-Princess Fist,Iceberg,SUPER|brie+,,,2.14%
-Dunehopper,Sand Dunes,Dewthief Camembert,Grubling Chow,,19.23%
-Dunehopper,Sand Dunes,Dewthief Camembert,,,24.64%
+Princess Fist,Iceberg,SUPER|brie+,,,2.15%
+Dunehopper,Sand Dunes,Dewthief Camembert,,,24.94%
+Dunehopper,Sand Dunes,Dewthief Camembert,Grubling Chow,,19.32%
 Karmachameleon,Whisker Woods Rift,Magical String,Stagnant,,5.41%
 Karmachameleon,Whisker Woods Rift,Magical String,,,7.77%
 Karmachameleon,Whisker Woods Rift,Swiss String,,,5.48%
@@ -1606,8 +1623,8 @@ Master Burglar,Town of Gnawnia,Gilded,,,20.21%
 Master Burglar,Bazaar,SUPER|brie+,,,8.06%
 Dragon,Dracano,Inferno Havarti,,,37.59%
 Aquos,King's Gauntlet,Gauntlet Tier 5,,,22.15%
-Dread Pirate Mousert,Sunken City,,,,0.60%
-Dread Pirate Mousert,Sunken City,SUPER|brie+,,,0.40%
+Dread Pirate Mousert,Sunken City,,,,0.58%
+Dread Pirate Mousert,Sunken City,SUPER|brie+,,,0.54%
 Desert Soldier,Fiery Warpath,,Warpath Warrior,,18.86%
 Desert Soldier,Fiery Warpath,SUPER|brie+,Warpath Warrior,,22.14%
 Desert Soldier,Fiery Warpath,SUPER|brie+,Super Warpath Warrior,,27.37%
@@ -1636,10 +1653,8 @@ Candy Cat,Spooky Sandcastle,Candy Corn,Extra Spooky,,4.18%
 Candy Cat,Spooky Sandcastle,Ghoulgonzola,,,1.43%
 Mershark,Sunken City,,,,2.17%
 Mershark,Sunken City,SUPER|brie+,,,1.98%
-Stingray,Sunken City,,Prospector's,,3.86%
-Stingray,Sunken City,SUPER|brie+,Prospector's,,7.47%
-Stingray,Sunken City,,Candy,,6.33%
-Stingray,Sunken City,,Dark Chocolate,,4.20%
+Stingray,Sunken City,,,,3.57%
+Stingray,Sunken City,SUPER|brie+,,,2.67%
 Mutant Ninja,Toxic Spill,Rancid Radioactive Blue,Rotten,,3.45%
 Mutant Ninja,Toxic Spill,Rancid Radioactive Blue,,,4.44%
 Brimstone,Balack's Cove,Vanilla Stilton,,,14.92%
@@ -1653,9 +1668,10 @@ Coral Guard,Sunken City,,,,1.74%
 Coral Guard,Sunken City,SUPER|brie+,,,1.86%
 Present,Great Winter Hunt,SUPER|brie+,Winter,,10.38%
 Present,Great Winter Hunt,SUPER|brie+,,,11.48%
-Cute Crate Carrier,Gnawnian Express Station,,,,6.02%
-Cute Crate Carrier,Gnawnian Express Station,,Supply Schedule,,20.67%
-Cute Crate Carrier,Gnawnian Express Station,SUPER|brie+,,,5.88%
+Cute Crate Carrier,Gnawnian Express Station,SUPER|brie+,,,6.43%
+Cute Crate Carrier,Gnawnian Express Station,,,,5.91%
+Cute Crate Carrier,Gnawnian Express Station,,Supply Schedule,,21.06%
+Cute Crate Carrier,Gnawnian Express Station,,Prospector's,,0.58%
 Epoch Golem,Bristle Woods Rift,Ancient String Cheese,,,3.55%
 Epoch Golem,Bristle Woods Rift,Magical String,,,15.09%
 Epoch Golem,Bristle Woods Rift,Runic String Cheese,,,0.98%
@@ -1681,33 +1697,30 @@ Puppet Master,King's Gauntlet,Dumpling Cheese,,,7.67%
 Radioactive Ooze,Burroughs Rift,Polluted Parmesan,Candy,,2.04%
 Radioactive Ooze,Burroughs Rift,Polluted Parmesan,,,5.73%
 Iceblock,Iceberg,,,,12.65%
-Iceblock,Iceberg,SUPER|brie+,,,10.87%
+Iceblock,Iceberg,SUPER|brie+,,,10.88%
 Balack the Banished,Balack's Cove,Vengeful Vanilla Stilton,,,11.75%
 Steam Grip,Crystal Library,SUPER|brie+,,,7.95%
 Steam Grip,Crystal Library,,,,8.49%
 Funglore,Fungal Cavern,,,,12.16%
 Funglore,Fungal Cavern,SUPER|brie+,,,12.13%
-Force Fighter Yellow,Birthday Party Zone,Extra Sweet Cupcake Colby,,,8.51%
-Force Fighter Yellow,Birthday Party Zone,Cupcake Colby,,,10.24%
 Carrion Medium,Bristle Woods Rift,Magical String,,,0.36%
 Carrion Medium,Bristle Woods Rift,Runic String Cheese,,,18.58%
 Carrion Medium,Bristle Woods Rift,Brie String,,,0.25%
 Carrion Medium,Bristle Woods Rift,Ancient String Cheese,,,0.95%
 Tech Golem,Zokor,SUPER|brie+,,,1.87%
 Tech Golem,Zokor,Glowing Gruyere,Candy,,2.06%
-Chrono,Acolyte Realm,Runic,,,2.22%
+Chrono,Acolyte Realm,Runic,,,2.28%
 Mystic Herald,Zokor,Glowing Gruyere,Candy,,3.25%
 Mystic Herald,Zokor,,,,1.60%
-Essence Guardian,Cursed City,Graveblossom Camembert,,,22.60%
+Essence Guardian,Lost City,Graveblossom Camembert,,,23.86%
+Essence Guardian,Cursed City,Graveblossom Camembert,,,22.33%
 Essence Guardian,Cursed City,Graveblossom Camembert,Safeguard,,24.06%
-Essence Guardian,Lost City,Graveblossom Camembert,,,24.75%
 Essence Guardian,Lost City,Graveblossom Camembert,Safeguard,,24.93%
-Dangerous Duo,Gnawnian Express Station,,Door Guard,,7.02%
-Dangerous Duo,Gnawnian Express Station,SUPER|brie+,Door Guard,,4.65%
-Dangerous Duo,Gnawnian Express Station,SUPER|brie+,Greasy Glob,,3.79%
-Dangerous Duo,Gnawnian Express Station,,Greasy Glob,,8.03%
-Dangerous Duo,Gnawnian Express Station,,Roof Rack,,7.66%
-Dangerous Duo,Gnawnian Express Station,SUPER|brie+,Roof Rack,,5.77%
+Dangerous Duo,Gnawnian Express Station,,Roof Rack,,7.46%
+Dangerous Duo,Gnawnian Express Station,,Door Guard,,7.44%
+Dangerous Duo,Gnawnian Express Station,,Greasy Glob,,9.94%
+Dangerous Duo,Gnawnian Express Station,SUPER|brie+,Roof Rack,,10.56%
+Dangerous Duo,Gnawnian Express Station,SUPER|brie+,Door Guard,,8.61%
 RR-8,Labyrinth,Toxic SUPER|brie+,,,9.26%
 RR-8,Labyrinth,Glowing Gruyere,Dark Chocolate,,11.78%
 RR-8,Labyrinth,,Athlete,,15.96%
@@ -1717,8 +1730,8 @@ Wealth,NOT FOUND,Magical String,,,9.00%
 Wealth,Furoma Rift,Swiss String,,,7.75%
 Wealth,Furoma Rift,Magical String,,,7.70%
 Wealth,NOT FOUND,Swiss String,,,7.97%
-Snow Sniper,Slushy Shoreline,,Softserve,,14.72%
-Snow Sniper,Slushy Shoreline,SUPER|brie+,Softserve,,8.75%
+Snow Sniper,Slushy Shoreline,SUPER|brie+,Softserve,,8.85%
+Snow Sniper,Slushy Shoreline,,Softserve,,14.44%
 Harvest Harrier,Seasonal Garden,,,,11.18%
 Harvest Harrier,Seasonal Garden,SUPER|brie+,,,14.06%
 Spectral Butler,Spooky Sandcastle,Candy Corn,Shortcut,,18.02%
@@ -1727,16 +1740,19 @@ Spectral Butler,Spooky Sandcastle,Candy Corn,Extra Spooky,,2.61%
 Spectral Butler,Spooky Sandcastle,Candy Corn,Spooky,,15.65%
 Spectral Butler,Spooky Sandcastle,Candy Corn,,,4.91%
 Spectral Butler,Spooky Sandcastle,Ghoulgonzola,Extra Spooky,,1.68%
-Camofusion,Living Garden,Lunaria Camembert,,,37.77%
-Camofusion,Twisted Garden,Lunaria Camembert,,,33.77%
+Camofusion,Living Garden,Lunaria Camembert,,,37.83%
+Camofusion,Twisted Garden,Lunaria Camembert,,,34.15%
+Camofusion,Twisted Garden,Duskshade Camembert,,,14.16%
 Big Bad Behemoth Burroughs,Burroughs Rift,Polluted Parmesan,,,0.10%
 Big Bad Behemoth Burroughs,Burroughs Rift,Terre Ricotta,,,12.08%
 Sludge Soaker,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.24%
-Sludge Soaker,Toxic Spill,Rancid Radioactive Blue,Rotten,,9.52%
+Sludge Soaker,Toxic Spill,Rancid Radioactive Blue,,,6.10%
+Sludge Soaker,Toxic Spill,Rancid Radioactive Blue,Rotten,,9.51%
 Sludge Soaker,Toxic Spill,Rancid Radioactive Blue,Super Rotten,,1.37%
 Ancient Scribe,Zokor,Glowing Gruyere,,,5.50%
-Magmatic Crystal Thief,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,20.94%
-Magmatic Crystal Thief,Gnawnian Express Station,,Magmatic Crystal,,13.00%
+Magmatic Crystal Thief,Gnawnian Express Station,,Magmatic Crystal,,12.15%
+Magmatic Crystal Thief,Gnawnian Express Station,Toxic SUPER|brie+,Magmatic Crystal,,21.74%
+Magmatic Crystal Thief,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,25.43%
 Rift Guardian,Furoma Rift,Swiss String,,,7.67%
 Rift Guardian,Gnawnia Rift,Riftiago,,,15.83%
 Rift Guardian,NOT FOUND,Swiss String,,,8.28%
@@ -1756,16 +1772,13 @@ Nightmancer,Fort Rox,Crescent Cheese,,,5.21%
 Flame Warrior,Fiery Warpath,,Warpath Warrior,,29.92%
 Flame Warrior,Fiery Warpath,SUPER|brie+,Warpath Warrior,,23.05%
 Flame Warrior,Fiery Warpath,SUPER|brie+,Super Warpath Warrior,,24.77%
-Hookshot,Gnawnian Express Station,SUPER|brie+,,,2.53%
-Hookshot,Gnawnian Express Station,,Greasy Glob,,8.03%
-Hookshot,Gnawnian Express Station,,Roof Rack,,6.98%
-Hookshot,Gnawnian Express Station,,Supply Schedule,,1.28%
-Hookshot,Gnawnian Express Station,,,,2.09%
+Hookshot,Gnawnian Express Station,SUPER|brie+,,,2.57%
+Hookshot,Gnawnian Express Station,,,,2.00%
 Swamp Runner,Birthday Party Zone,Extra Sweet Cupcake Colby,,,0.25%
 Swamp Runner,Toxic Spill,Rancid Radioactive Blue,,,1.75%
 Cherry,Calm Clearing,Cherry,,,13.61%
 Riftweaver,Gnawnia Rift,Swiss String,,,10.54%
-Riftweaver,Gnawnia Rift,Brie String,,,14.40%
+Riftweaver,Gnawnia Rift,Brie String,,,14.35%
 Riftweaver,Gnawnia Rift,Magical String,,,9.77%
 Nerg Chieftain,Nerg Plains,Gumbo,,,15.62%
 Mystic Bishop,Zugzwang's Tower,Checkmate,,,7.36%
@@ -1778,13 +1791,11 @@ Student of the Chi Belt,Furoma Rift,Maki String Cheese,,,17.66%
 Student of the Chi Belt,NOT FOUND,Maki String Cheese,,,18.15%
 Student of the Chi Belt,Furoma Rift,Maki String Cheese,Candy,,19.16%
 Wandering Monk,Furoma Rift,Brie String,,,7.08%
-Ridiculous Sweater,Great Winter Hunt,Arctic Asiago,Candy,,3.52%
-Ridiculous Sweater,Great Winter Hunt,Arctic Asiago,Prospector's,,4.70%
-Manatee,Sunken City,,,,1.61%
-Manatee,Sunken City,SUPER|brie+,,,1.58%
+Manatee,Sunken City,SUPER|brie+,,,1.43%
+Manatee,Sunken City,,,,1.36%
 Micro,Gnawnia Rift,Magical String,,,12.97%
-Micro,Gnawnia Rift,Brie String,,,1.89%
 Micro,Gnawnia Rift,Dumpling Cheese,,,7.98%
+Micro,Gnawnia Rift,Brie String,,,1.90%
 Granite,Bazaar,,,,23.72%
 Vampire,Catacombs,Undead Emmental,Antiskele,,10.27%
 Vampire,Catacombs,Undead Emmental,,,11.86%
@@ -1840,18 +1851,19 @@ Scout,Cape Clawed,Shell,,,21.31%
 Bear,Great Gnarled Tree,Dumpling Cheese,,,13.74%
 Bear,Calm Clearing,Cherry,,,17.97%
 Bear,Calm Clearing,,,,11.57%
-Cursed,Lost City,Dewthief Camembert,,,9.45%
-Cursed,Lost City,Dewthief Camembert,Searcher,,8.79%
+Cursed,Lost City,Dewthief Camembert,Searcher,,9.73%
+Cursed,Lost City,Dewthief Camembert,,,9.55%
 Robat,Burroughs Rift,Magical String,,,3.82%
 Robat,Burroughs Rift,Swiss String,,,2.89%
 Robat,Burroughs Rift,Brie String,,,4.60%
 Dark Templar,Zokor,SUPER|brie+,,,2.41%
 Dark Templar,Zokor,Glowing Gruyere,,,1.82%
-Black Powder Thief,Gnawnian Express Station,SUPER|brie+,Black Powder,,23.25%
-Black Powder Thief,Gnawnian Express Station,,Black Powder,,19.05%
-Travelling Barber,Gnawnian Express Station,,,,8.82%
-Travelling Barber,Gnawnian Express Station,SUPER|brie+,,,7.45%
-Travelling Barber,Gnawnian Express Station,,Prospector's,,11.88%
+Black Powder Thief,Gnawnian Express Station,SUPER|brie+,Black Powder,,23.31%
+Black Powder Thief,Gnawnian Express Station,,Black Powder,,19.56%
+Travelling Barber,Gnawnian Express Station,SUPER|brie+,Black Powder,,6.78%
+Travelling Barber,Gnawnian Express Station,SUPER|brie+,,,7.44%
+Travelling Barber,Gnawnian Express Station,,,,8.95%
+Travelling Barber,Gnawnian Express Station,,Prospector's,,11.95%
 Fairy,Great Gnarled Tree,Gnarled,,,10.28%
 Fairy,Great Gnarled Tree,,,,6.69%
 Fairy,Lagoon,Gnarled,,,5.85%
@@ -1877,12 +1889,12 @@ Medicine,Whisker Woods Rift,Brie String,Gnarled,,4.24%
 Floating Spore,Fungal Cavern,Dumpling Cheese,,,19.65%
 Mammoth,Iceberg,,,,1.00%
 Mammoth,Iceberg,SUPER|brie+,,,0.71%
-Fuel,Gnawnian Express Station,,Magmatic Crystal,,7.58%
-Fuel,Gnawnian Express Station,,Dusty Coal,,9.27%
-Fuel,Gnawnian Express Station,SUPER|brie+,Black Powder,,10.25%
-Fuel,Gnawnian Express Station,SUPER|brie+,Magmatic Crystal,,9.36%
-Fuel,Gnawnian Express Station,,Black Powder,,8.93%
-Fuel,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,10.06%
+Fuel,Gnawnian Express Station,,Dusty Coal,,10.23%
+Fuel,Gnawnian Express Station,,Black Powder,,9.33%
+Fuel,Gnawnian Express Station,SUPER|brie+,Black Powder,,11.11%
+Fuel,Gnawnian Express Station,,Magmatic Crystal,,9.81%
+Fuel,Gnawnian Express Station,SUPER|brie+,Dusty Coal,,9.58%
+Fuel,Gnawnian Express Station,Toxic SUPER|brie+,Black Powder,,11.95%
 Lambent Crystal,Town of Digby,Limelight,,,7.99%
 Limestone Miner,Muridae Market,Runny,,,98.84%
 Limestone Miner,Muridae Market,SUPER|brie+,Artisan,,17.96%
