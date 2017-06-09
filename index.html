@@ -11,21 +11,17 @@
 <div id="container">
     <div id="input">
         <div class="header">
+            <p>Based on Chad Moore's and <a href="https://dl.dropboxusercontent.com/u/14589881/map.html">haoala's</a> Map Solver. Using data from <a href="http://goo.gl/y17T4q">MH Calculator</a>. Sourcecode on <a href="https://github.com/olf/mhmapsolver">GitHub</a></p>
             <p>Copy and paste mice from maps or type mice names leaving a line break between each</p>
             <p>Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions</p>
 
-            <!-- news -->
-
-            <p><strong>Bookmarklet:</strong> bookmark <a href="javascript:void function(){for(var e='http://olf.github.io/mhmapsolver/',o=document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)'),t=[],n=0;n<o.length;n++)t.push(o[n].getAttribute('data-name'));t.length>0&&window.open(e+'?mice='+encodeURI(t.join('/')),'mhmapsolver')}();">this link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy the list of uncaught mice here.</p>
+            <p><strong>Bookmarklet:</strong> bookmark <a href="javascript:/*bookmarklet*/">this link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy the list of uncaught mice here.</p>
             <textarea id="map" rows="25" cols="40"></textarea>
             <div id="mousecount"></div>
         </div>
         <div id="unknownmicecontainer">
             <h2>Unknown</h2>
             <div id="unknownmice"></div>
-        </div>
-        <div class="acknoledgement">
-            <p>Based on Chad Moore's and <a href="https://dl.dropboxusercontent.com/u/14589881/map.html">haoala's</a> Map Solver. Sourcecode on <a href="https://github.com/olf/mhmapsolver">GitHub</a></p>
         </div>
     </div>
     <div id="bestlocationscontainer">
@@ -48,7 +44,6 @@
         </div>
     </div>
 </div>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.a-tools.js"></script>
 <script type="text/javascript" src="js/jquery.asuggest.js"></script>

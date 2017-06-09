@@ -62,8 +62,8 @@ gulp.task('release', ['jsminify'], function() {
 
     gulp.src('./index.html')
         .pipe(insert({
-            '<!-- piwik -->': '_piwik.html',
-            '<!-- news -->': '_news.html'
+            '/*bookmarklet*/': 'docs/js/bookmarklet.js',
+            '<!-- piwik -->': '_piwik.inc'
         }))
         .pipe(gulp.dest('./docs'));
 
