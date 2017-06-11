@@ -147,11 +147,11 @@ function processPopulationData(csv) {
         if (attractionRate > 0.0) {
             var mouseName = data[5].capitalise();
             var location = data[0];
-            if (data[1] !== '-') {
+            if (data[1].length > 1) {
                 location += ' - ' + data[1];
             }
             var cheese = data[2];
-            var charm = (data[3] !== '-' ? data[3] : '');
+            var charm = (data[3].length > 1 ? data[3] : '');
 
             if (populationData[mouseName] === undefined) populationData[mouseName] = []; //If mouse doesn't exist in array
             if (populationData[mouseName][location] === undefined) populationData[mouseName][location] = [];
