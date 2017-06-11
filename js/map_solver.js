@@ -142,20 +142,21 @@ function csvToArray(strData, strDelimiter) {
 function processPopulationData(csv) {
     for (var row in csv) {
         var data = csv[row];
-        var attractionRate = parseFloat(data[5]);
+        var attractionRate = parseFloat(data[4]);
 
         if (attractionRate > 0.0) {
-            var mouseName = data[0].capitalise();
-            var location = data[1];
+            var mouseName = data[5].capitalise();
+            var location = data[0];
+            if (data[1] !== '-') {
+                location += ' - ' + data[1];
+            }
             var cheese = data[2];
-            var charm = data[3];
-            var base = data[4] + (data[4] !== '' ? ' Base' : '');
+            var charm = (data[3] !== '-' ? data[3] : '');
 
             if (populationData[mouseName] === undefined) populationData[mouseName] = []; //If mouse doesn't exist in array
             if (populationData[mouseName][location] === undefined) populationData[mouseName][location] = [];
-            if (populationData[mouseName][location][base] === undefined) populationData[mouseName][location][base] = [];
-            if (populationData[mouseName][location][base][cheese] === undefined) populationData[mouseName][location][base][cheese] = [];
-            populationData[mouseName][location][base][cheese][charm] = attractionRate;
+            if (populationData[mouseName][location][cheese] === undefined) populationData[mouseName][location][cheese] = [];
+            populationData[mouseName][location][cheese][charm] = attractionRate;
         }
     }
 
@@ -205,38 +206,34 @@ function processMap(mapText) {
             var mouseLocationCheese = [];
 
             for (var locationName in populationData[mouseName]) {
-                for (var baseName in populationData[mouseName][locationName]) {
-                    for (var cheeseName in populationData[mouseName][locationName][baseName]) {
-                        for (var charmName in populationData[mouseName][locationName][baseName][cheeseName]) {
-                            var locationbaseCheeseCharm = locationName;
+                for (var cheeseName in populationData[mouseName][locationName]) {
+                    for (var charmName in populationData[mouseName][locationName][cheeseName]) {
+                        var locationCheeseCharm = locationName;
 
-                            if (baseName !== '') locationbaseCheeseCharm += '#' + baseName;
-                            if (cheeseName !== '') locationbaseCheeseCharm += '#' + cheeseName;
-                            if (charmName !== '') locationbaseCheeseCharm += '#' + charmName;
+                        if (cheeseName !== '') locationCheeseCharm += '#' + cheeseName;
+                        if (charmName !== '') locationCheeseCharm += '#' + charmName;
 
-                            var attractionRate = populationData[mouseName][locationName][baseName][cheeseName][charmName];
+                        var attractionRate = populationData[mouseName][locationName][cheeseName][charmName];
 
-                            var mouse = {
-                                name: mouseName,
-                                rate: attractionRate
+                        var mouse = {
+                            name: mouseName,
+                            rate: attractionRate
+                        };
+
+                        if (bestLocations[locationCheeseCharm] === undefined) {
+                            bestLocations[locationCheeseCharm] = {
+                                location: locationName,
+                                cheese: cheeseName,
+                                charm: charmName,
+                                totalRate: attractionRate,
+                                mice: [mouse]
                             };
-
-                            if (bestLocations[locationbaseCheeseCharm] === undefined) {
-                                bestLocations[locationbaseCheeseCharm] = {
-                                    location: locationName,
-                                    cheese: cheeseName,
-                                    charm: charmName,
-                                    base: baseName,
-                                    totalRate: attractionRate,
-                                    mice: [mouse]
-                                };
-                            } else {
-                                bestLocations[locationbaseCheeseCharm].totalRate += attractionRate;
-                                bestLocations[locationbaseCheeseCharm].mice.push(mouse);
-                            }
-
-                            mouseLocationCheese[locationbaseCheeseCharm] = attractionRate;
+                        } else {
+                            bestLocations[locationCheeseCharm].totalRate += attractionRate;
+                            bestLocations[locationCheeseCharm].mice.push(mouse);
                         }
+
+                        mouseLocationCheese[locationCheeseCharm] = attractionRate;
                     }
                 }
             }
@@ -356,7 +353,6 @@ function printBestLocations(locations) {
                         '<strong>' + c.location + '</strong>' +
                         ' (' + c.totalRate.toFixed(2) + '%)' +
                     '</p>' +
-                    (c.base.length > 0 ? '<p>' + strikethrough(c.base) + '</p>' : '') +
                     (c.cheese.length > 0 ? '<p>' + strikethrough(c.cheese) + '</p>' : '') +
                     (c.charm.length > 0 ? '<p>' + strikethrough(c.charm) + '</p>' : '') +
                 '</td>' +
