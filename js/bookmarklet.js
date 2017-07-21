@@ -1,6 +1,6 @@
 /* eslint no-unused-labels: 0 */
 javascript:void(function(){
-    var url = 'http://olf.github.io/mhmapsolver/';
+    var url = 'https://olf.github.io/mhmapsolver/';
 
     var list = document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)');
     var mice = [];
