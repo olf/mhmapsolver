@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Map Solver and Mouse Finder for MouseHunt</title>
     <meta charset="UTF-8">
     <meta name="description" content="Treasure map solver and mouse finder for the browser game MouseHunt by HitGrab">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-<h1>Map Solver and Mouse Finder</h1>
-<div id="container">
-    <div id="input">
-        <div class="header">
-            <p>Copy and paste mice from maps or type mice names leaving a line break between each</p>
-            <p>Press <b>Enter</b> to autocomplete, and <b>Tab</b> to cycle through suggestions</p>
+    <h1>Map Solver and Mouse Finder</h1>
+    <div id="container">
+        <div id="input">
+            <div class="header">
+                <p>Copy and paste mice from maps or type mice names leaving a line break between each</p>
+                <p>Press
+                    <b>Enter</b> to autocomplete, and
+                    <b>Tab</b> to cycle through suggestions</p>
 
-            <!-- news -->
+                <!-- news -->
 
-            <p><strong>Bookmarklet:</strong> bookmark <a href="javascript:void function(){for(var e='https://olf.github.io/mhmapsolver/',o=document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)'),t=[],n=0;n<o.length;n++)t.push(o[n].getAttribute('data-name'));t.length>0&&window.open(e+'?mice='+encodeURI(t.join('/')),'mhmapsolver')}();">this link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy the list of uncaught mice here.</p>
+                <p>
+                    <strong>Bookmarklet:</strong> bookmark
+                    <a href="javascript:void function(){for(var e='https://olf.github.io/mhmapsolver/',o=document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)'),t=[],n=0;n<o.length;n++)t.push(o[n].getAttribute('data-name'));t.length>0&&window.open(e+'?mice='+encodeURI(t.join('/')),'mhmapsolver')}();">this link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy the
+                    list of uncaught mice here.</p>
 
-            <p><a href="https://github.com/olf/mhmapsolver/issues">Feedback on GitHub</a></p>
+                <p>
+                    <a href="https://github.com/olf/mhmapsolver/issues">Feedback on GitHub</a>
+                </p>
 
-            <textarea id="map" rows="25" cols="40"></textarea>
-            <div id="mousecount"></div>
+                <textarea id="map" rows="25" cols="40"></textarea>
+                <div id="mousecount"></div>
+            </div>
+            <div id="unknownmicecontainer">
+                <h2>Unknown</h2>
+                <div id="unknownmice"></div>
+            </div>
+            <div class="acknoledgement">
+                <p>Based on Chad Moore's and
+                    <a href="https://dl.dropboxusercontent.com/u/14589881/map.html">haoala's</a> Map Solver. Attraction Rate data from
+                    <a href="https://github.com/tsitu/MH-Tools">Tsitu'S MH-Tools</a>. Sourcecode on
+                    <a href="https://github.com/olf/mhmapsolver">GitHub</a>
+                </p>
+            </div>
         </div>
-        <div id="unknownmicecontainer">
-            <h2>Unknown</h2>
-            <div id="unknownmice"></div>
+        <div id="bestlocationscontainer">
+            <h2>Best Locations</h2>
+            <p>
+                <a id="overviewlink" href="#mouselistcontainer">Mice Overview</a>
+            </p>
+            <div id="bestlocations">
+                <table data-sortable>
+                    <thead>
+                        <tr>
+                            <th data-sortable-type="numeric">Location</th>
+                            <th data-sortable-type="numeric">Mice</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
-        <div class="acknoledgement">
-            <p>Based on Chad Moore's and <a href="https://dl.dropboxusercontent.com/u/14589881/map.html">haoala's</a> Map Solver. Attraction Rate data from <a href="https://github.com/tsitu">Tsitu</a>. Sourcecode on <a href="https://github.com/olf/mhmapsolver">GitHub</a></p>
+
+        <div id="mouselistcontainer">
+            <h2>Mice</h2>
+            <div id="mouselist">
+                <table>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
     </div>
-    <div id="bestlocationscontainer">
-        <h2>Best Locations</h2>
-        <p><a id="overviewlink" href="#mouselistcontainer">Mice Overview</a></p>
-        <div id="bestlocations">
-            <table data-sortable>
-                <thead><tr><th data-sortable-type="numeric">Location</th><th data-sortable-type="numeric">Mice</th></tr></thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
 
-    <div id="mouselistcontainer">
-        <h2>Mice</h2>
-        <div id="mouselist">
-            <table>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.a-tools.js"></script>
-<script type="text/javascript" src="js/jquery.asuggest.js"></script>
-<script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/map_solver.js"></script>
-<script type="text/javascript" src="js/sortable.js"></script>
-<!-- piwik -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.a-tools.js"></script>
+    <script type="text/javascript" src="js/jquery.asuggest.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/map_solver.js"></script>
+    <script type="text/javascript" src="js/sortable.js"></script>
+    <!-- piwik -->
 </body>
+
 </html>

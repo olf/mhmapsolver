@@ -2,20 +2,20 @@
 
 for HitGrab's [MouseHunt](https://www.mousehuntgame.com/) browser game.
 
-Based upon code by Chad Moore and [haoala](https://dl.dropboxusercontent.com/u/14589881/map.html)
-
-Using data from [MH Calculator](http://goo.gl/y17T4q)
-
 ### Try it ###
 
 You can try it [here on GitHub](http://olf.github.io/mhmapsolver/)
 
 ### Build instructions ###
 
-Clone the repository, then do <code>npm install</code>, then <code>gulp release</code>. It will update the docs directory that you can either use locally or move to your own server. Mouse data will be fetched from GitHub.
+- clone the repository
+- install npm package dependencies with 'yarn'
+- ``yarn build`` will update the docs directory that you can either use locally or move to your own server. Mouse data will be fetched from GitHub.
+- ``yarn start`` will start the dev environment with live updating in BrowserSync on localhost:3000
+- ``yarn sass`` generates the CSS file
 
-Available gulp tasks:
+### Credits ###
 
-* gulp (default) - launch dev environment with BrowserSync
-* gulp release - update the release/ directory
-* gulp sass - generate css file
+- based upon code by Chad Moore and [haoala](https://dl.dropboxusercontent.com/u/14589881/map.html)
+- Attraction rate data from [Tsitu's MH-Tools](https://github.com/tsitu/MH-Tools)
+
