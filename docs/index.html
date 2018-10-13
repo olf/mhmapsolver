@@ -10,6 +10,8 @@
 
 <body>
     <h1>Map Solver and Mouse Finder</h1>
+    <p style="color:red"><strong>Please consider using <strong><a href="https://tsitu.github.io/MH-Tools/map.html">Tsitu's
+                    MapSolver</a></strong> - this one is no longer actively maintained.</p>
     <div id="container">
         <div id="input">
             <div class="header">
@@ -24,9 +26,6 @@
                     It offers
                     much more options than this one and is actively maintained.</p>
 
-                <p><strong>Bookmarklet:</strong> bookmark <a href="javascript:void function(){for(var e='http://olf.github.io/mhmapsolver/',o=document.querySelectorAll('.treasureMapPopup-mice-group-mouse:not(.caught)'),t=[],n=0;n<o.length;n++)t.push(o[n].getAttribute('data-name'));t.length>0&&window.open(e+'?mice='+encodeURI(t.join('/')),'mhmapsolver')}();">this
-                        link</a> then click it when checking the "Active Map" overview in MouseHunt to directly copy
-                    the list of uncaught mice here.</p>
                 <textarea id="map" rows="25" cols="40"></textarea>
                 <div id="mousecount"></div>
             </div>
