@@ -1,3 +1,9 @@
+# Please note
+
+**This code is no longer actively maintained. I suggest moving to [Tsitu's excellent MapSolver](https://tsitu.github.io/MH-Tools/map.html) ([GitHub project](https://github.com/tsitu/MH-Tools/)) instead. Also check out his other [Mousehunt Tools](https://tsitu.github.io/MH-Tools/).**
+
+---
+
 ## Treasure Map Solver and Mouse Finder ##
 
 for HitGrab's [MouseHunt](https://www.mousehuntgame.com/) browser game.
